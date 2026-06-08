@@ -1,10 +1,8 @@
 $(function() {
-//ACHAT CLICHÉS
+//ACHAT CLICHÃ‰S
 $("input#changeCliche").click(function(){ $("#changeClicheChamp").toggle(); });
 
-
 $('.blocCliche').each(function(){
-
 
         var cliche1soutien = $('.soutien1').css('display');
         var cliche1combattant = $('.combattant1').css('display');
@@ -55,9 +53,7 @@ $('.blocCliche').each(function(){
         var cliche10combattant = $('.combattant10').css('display');
         var cliche10collectionneur = $('.collectionneur10').css('display');
 
-
         $('.blocCliche > div').css('display', 'none');
-
 
       //BRANCHE SOUTIEN
         if ( $('.clicheList').text().indexOf('01-01-50') === -1 ){
@@ -451,7 +447,6 @@ $('.blocCliche').each(function(){
           }
         });
 
-
       //BRANCHE COMBATTANT
         if ( $('.clicheList').text().indexOf('02-01-50') === -1 ){
           $('.combattant1').css('display', 'block');
@@ -843,7 +838,6 @@ $('.blocCliche').each(function(){
             $('.combattant10').css('display', cliche10combattant);
           }
         });
-
 
       //BRANCHE COLLECTIONNEUR
         if ( $('.clicheList').text().indexOf('03-01-50') === -1 ){
@@ -1237,12 +1231,10 @@ $('.blocCliche').each(function(){
           }
         });
 
-
-      //Décochage automatique
+      //DÃ©cochage automatique
         $('.blocCliche input').change(function(){
           $('.blocCliche > div[style*="display: none"] input').prop('checked', false);
         });
-
 
         if( $('.clicheList').text().indexOf('01-03-100') >= 0 || $('.clicheList').text().indexOf('02-03-100') >= 0 || $('.clicheList').text().indexOf('03-03-100') >= 0 ){
           $('.soutien3').addClass('removeCliche');
@@ -1258,19 +1250,18 @@ $('.blocCliche').each(function(){
         });
   });
 
-
 });
-  //CLICHÉS DANS LE PANIER
+  //CLICHÃ‰S DANS LE PANIER
       $('.buttonCliche').click(function(){
         if( $('.blocCliche input[type="checkbox"]').is(':checked') ) {
-          if( $('#myCart').text().indexOf('Achat Cliché(s)') >= 0 ){
+          if( $('#myCart').text().indexOf('Achat ClichÃ©(s)') >= 0 ){
             $('.blocCliche .soutien input[type="checkbox"]:checked').each(function () {
               var clicheSoutien = $(this).val(),
                   clichePx = $(this).closest('label').find('span').text();
               if( $('#myCart').text().indexOf(clicheSoutien) >= 0 ){
                 $('.panierCliche').append('');
               } else{
-                $('.panierCliche').append(`<p>• J’achète le cliché <clrsoutien><b>` + clicheSoutien + `</b></clrsoutien> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`);
+                $('.panierCliche').append(`<p>â€¢ Jâ€™achÃ¨te le clichÃ© <clrsoutien><b>` + clicheSoutien + `</b></clrsoutien> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`);
               }
             });
             $('.blocCliche .combattant input[type="checkbox"]:checked').each(function () {
@@ -1279,7 +1270,7 @@ $('.blocCliche').each(function(){
               if( $('#myCart').text().indexOf(clicheCombat) >= 0 ){
                 $('.panierCliche').append('');
               } else{
-                $('.panierCliche').append(`<p>• J’achète le cliché <clrcombat><b>` + clicheCombat + `</b></clrcombat> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`);
+                $('.panierCliche').append(`<p>â€¢ Jâ€™achÃ¨te le clichÃ© <clrcombat><b>` + clicheCombat + `</b></clrcombat> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`);
               }
             });
             $('.blocCliche .collectionneur input[type="checkbox"]:checked').each(function () {
@@ -1288,25 +1279,25 @@ $('.blocCliche').each(function(){
               if( $('#myCart').text().indexOf(clicheCollec) >= 0 ){
                 $('.panierCliche').append('');
               } else{
-                $('.panierCliche').append(`<p>• J’achète le cliché <clrcollec><b>` + clicheCollec + `</b></clrcollec> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`);
+                $('.panierCliche').append(`<p>â€¢ Jâ€™achÃ¨te le clichÃ© <clrcollec><b>` + clicheCollec + `</b></clrcollec> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`);
               }
             });
           } else {
-            var templateCliche = `<h4 class="titreCliche">Achat Cliché(s)</h4><div class="panierCliche"><span class="remove_cliche">x</span>`;
+            var templateCliche = `<h4 class="titreCliche">Achat ClichÃ©(s)</h4><div class="panierCliche"><span class="remove_cliche">x</span>`;
             $('.blocCliche .soutien input[type="checkbox"]:checked').each(function () {
               var clicheSoutien = $(this).val(),
                   clichePx = $(this).closest('label').find('span').text();
-              templateCliche = templateCliche + `<p>• J’achète le cliché <clrsoutien><b>` + clicheSoutien + `</b></clrsoutien> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`;
+              templateCliche = templateCliche + `<p>â€¢ Jâ€™achÃ¨te le clichÃ© <clrsoutien><b>` + clicheSoutien + `</b></clrsoutien> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`;
             });
             $('.blocCliche .combattant input[type="checkbox"]:checked').each(function () {
               var clicheCombat = $(this).val(),
                   clichePx = $(this).closest('label').find('span').text();
-              templateCliche = templateCliche + `<p>• J’achète le cliché <clrcombat><b>` + clicheCombat + `</b></clrcombat> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`;
+              templateCliche = templateCliche + `<p>â€¢ Jâ€™achÃ¨te le clichÃ© <clrcombat><b>` + clicheCombat + `</b></clrcombat> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`;
             });
             $('.blocCliche .collectionneur input[type="checkbox"]:checked').each(function () {
               var clicheCollec = $(this).val(),
                   clichePx = $(this).closest('label').find('span').text();
-              templateCliche = templateCliche + `<p>• J’achète le cliché <clrcollec><b>` + clicheCollec + `</b></clrcollec> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`;
+              templateCliche = templateCliche + `<p>â€¢ Jâ€™achÃ¨te le clichÃ© <clrcollec><b>` + clicheCollec + `</b></clrcollec> pour <clrbw><b>` + clichePx + ` px</b></clrbw>.</p>`;
             });
               templateCliche = templateCliche + '</div>';
               $('#myCart').append(templateCliche);
@@ -1317,16 +1308,16 @@ $('.blocCliche').each(function(){
               });
           }
         } else if( $('.changeCliche input[type="checkbox"]').is(':checked') ){
-            if( $('#myCart').text().indexOf('Changement de Cliché(s)') >= 0 ){
+            if( $('#myCart').text().indexOf('Changement de ClichÃ©(s)') >= 0 ){
               var oldCliche = $('#changeClicheOld').val(),
                   newCliche = $('#changeClicheNew').val(),
                   prixCliche = $('#changeClichePrix').val();
-              $('.panierChCliche').append(`<p>• Je change mon cliché ` + oldCliche + ` par le cliché  <clrbw>` + newCliche + `</clrbw> pour  <clrbw>` + prixCliche + ` px</clrbw>.</p>`);
+              $('.panierChCliche').append(`<p>â€¢ Je change mon clichÃ© ` + oldCliche + ` par le clichÃ©  <clrbw>` + newCliche + `</clrbw> pour  <clrbw>` + prixCliche + ` px</clrbw>.</p>`);
             } else{
               var oldCliche = $('#changeClicheOld').val(),
                   newCliche = $('#changeClicheNew').val(),
                   prixCliche = $('#changeClichePrix').val();
-              $('#myCart').append(`<h4 class="titreChCliche">Changement de Cliché(s)</h4><div class="panierChCliche"><span class="remove_chcliche">x</span><p>• Je change mon cliché ` + oldCliche + ` par le cliché  <clrbw>` + newCliche + `</clrbw> pour  <clrbw>` + prixCliche + ` px</clrbw>.</p></div>`);
+              $('#myCart').append(`<h4 class="titreChCliche">Changement de ClichÃ©(s)</h4><div class="panierChCliche"><span class="remove_chcliche">x</span><p>â€¢ Je change mon clichÃ© ` + oldCliche + ` par le clichÃ©  <clrbw>` + newCliche + `</clrbw> pour  <clrbw>` + prixCliche + ` px</clrbw>.</p></div>`);
               $('.remove_chcliche').click(function(){
                 $(this).parent().remove();
                 $('.titreChCliche').remove();
@@ -1334,59 +1325,56 @@ $('.blocCliche').each(function(){
               });
             }
         } else {
-          alert("Tu dois sélectionner au moins un cliché !");
+          alert("Tu dois sÃ©lectionner au moins un clichÃ© !");
         }
     generateCartButtons();
     });
-
 
 $(function() {
   //NOUVELLES ACQUISITIONS
 $('.newAcquisition').each(function(){
         if ( $('.clicheList').text().indexOf('01-01-50') >= 0 ){
-          $('.newAcquisition').append('<div><label for="potion" class="soutien"><input type="checkbox" id="potion" name="potion" value="×1 Potion" /><div><img src="https://i.imgur.com/SZ4PHca.png"/> ×1 Potion</div></label></div>');
+          $('.newAcquisition').append('<div><label for="potion" class="soutien"><input type="checkbox" id="potion" name="potion" value="Ã—1 Potion" /><div><img src="https://i.imgur.com/SZ4PHca.png"/> Ã—1 Potion</div></label></div>');
         }
         if ( $('.clicheList').text().indexOf('01-02.1-100') >= 0 ){
-          $('.newAcquisition').append('<div><label for="totalsoin" class="soutien"><input type="checkbox" id="totalsoin" name="totalsoin" value="×2 Total-Soin" /><div><img src="https://i.imgur.com/kOlSyZl.png"/> ×2 Total-Soin</div></label></div>');
+          $('.newAcquisition').append('<div><label for="totalsoin" class="soutien"><input type="checkbox" id="totalsoin" name="totalsoin" value="Ã—2 Total-Soin" /><div><img src="https://i.imgur.com/kOlSyZl.png"/> Ã—2 Total-Soin</div></label></div>');
         }
         if ( $('.clicheList').text().indexOf('01-02.2-100') >= 0 ){
-          $('.newAcquisition').append('<div><label for="jardinage" class="soutien"><input type="checkbox" id="jardinage" name="jardinage" value="×2 Baies Tier 1" /><div><img src="https://i.imgur.com/qaBZLtn.png"/> ×2 Baies Tier 1 <select id="jardinage1" style="display: none;"><option value="no-baie" selected>Aucune baie sélectionnée</option><option value="×1 Baie Abriko">×1 Baie Abriko</option><option value="×1 Baie Cherrim">×1 Baie Cherrim</option><option value="×1 Baie Jaboca">×1 Baie Jaboca</option><option value="×1 Baie Kika">×1 Baie Kika</option><option value="×1 Baie Lansat">×1 Baie Lansat</option><option value="×1 Baie Micle">×1 Baie Micle</option><option value="×1 Baie Oran">×1 Baie Oran</option><option value="×1 Baie Prine">×1 Baie Prine</option><option value="×1 Baie Sailak">×1 Baie Sailak</option><option value="×1 Baie Lichii">×1 Baie Lichii</option></select><select id="jardinage2" style="display: none;"><option value="no-baie" selected>Aucune baie sélectionnée</option><option value="×1 Baie Abriko">×1 Baie Abriko</option><option value="×1 Baie Cherrim">×1 Baie Cherrim</option><option value="×1 Baie Jaboca">×1 Baie Jaboca</option><option value="×1 Baie Kika">×1 Baie Kika</option><option value="×1 Baie Lansat">×1 Baie Lansat</option><option value="×1 Baie Micle">×1 Baie Micle</option><option value="×1 Baie Oran">×1 Baie Oran</option><option value="×1 Baie Prine">×1 Baie Prine</option><option value="×1 Baie Sailak">×1 Baie Sailak</option><option value="×1 Baie Lichii">×1 Baie Lichii</option></select></div></label></div>');
+          $('.newAcquisition').append('<div><label for="jardinage" class="soutien"><input type="checkbox" id="jardinage" name="jardinage" value="Ã—2 Baies Tier 1" /><div><img src="https://i.imgur.com/qaBZLtn.png"/> Ã—2 Baies Tier 1 <select id="jardinage1" style="display: none;"><option value="no-baie" selected>Aucune baie sÃ©lectionnÃ©e</option><option value="Ã—1 Baie Abriko">Ã—1 Baie Abriko</option><option value="Ã—1 Baie Cherrim">Ã—1 Baie Cherrim</option><option value="Ã—1 Baie Jaboca">Ã—1 Baie Jaboca</option><option value="Ã—1 Baie Kika">Ã—1 Baie Kika</option><option value="Ã—1 Baie Lansat">Ã—1 Baie Lansat</option><option value="Ã—1 Baie Micle">Ã—1 Baie Micle</option><option value="Ã—1 Baie Oran">Ã—1 Baie Oran</option><option value="Ã—1 Baie Prine">Ã—1 Baie Prine</option><option value="Ã—1 Baie Sailak">Ã—1 Baie Sailak</option><option value="Ã—1 Baie Lichii">Ã—1 Baie Lichii</option></select><select id="jardinage2" style="display: none;"><option value="no-baie" selected>Aucune baie sÃ©lectionnÃ©e</option><option value="Ã—1 Baie Abriko">Ã—1 Baie Abriko</option><option value="Ã—1 Baie Cherrim">Ã—1 Baie Cherrim</option><option value="Ã—1 Baie Jaboca">Ã—1 Baie Jaboca</option><option value="Ã—1 Baie Kika">Ã—1 Baie Kika</option><option value="Ã—1 Baie Lansat">Ã—1 Baie Lansat</option><option value="Ã—1 Baie Micle">Ã—1 Baie Micle</option><option value="Ã—1 Baie Oran">Ã—1 Baie Oran</option><option value="Ã—1 Baie Prine">Ã—1 Baie Prine</option><option value="Ã—1 Baie Sailak">Ã—1 Baie Sailak</option><option value="Ã—1 Baie Lichii">Ã—1 Baie Lichii</option></select></div></label></div>');
           $("input#jardinage").click(function(){ $("select#jardinage1").toggle(); });
           $("input#jardinage").click(function(){ $("select#jardinage2").toggle(); });
         }
         if ( $('.clicheList').text().indexOf('02-01-50') >= 0 ){
-          $('.newAcquisition').append('<div><label for="vitamine" class="combattant"><input type="checkbox" id="vitamine" name="vitamine" value="×1 Vitamine" /><div><img src="https://i.servimg.com/u/f24/18/99/97/34/vitami10.png"/> ×1 Vitamine <select id="vitamine" style="display: none;"><option value="no-vitamine" selected>Aucune vitamine sélectionnée</option><option value="×1 Magnésium">×1 Magnésium (PV)</option><option value="×1 Protéine">×1 Protéine (ATK)</option><option value="×1 Fer">×1 Fer (DEF)</option><option value="×1 Calcium">×1 Calcium (S.ATK)</option><option value="×1 Zinc">×1 Zinc (S.DEF)</option><option value="×1 Carbone">×1 Carbone (VIT)</option></select></div></label></div>');
+          $('.newAcquisition').append('<div><label for="vitamine" class="combattant"><input type="checkbox" id="vitamine" name="vitamine" value="Ã—1 Vitamine" /><div><img src="https://i.servimg.com/u/f24/18/99/97/34/vitami10.png"/> Ã—1 Vitamine <select id="vitamine" style="display: none;"><option value="no-vitamine" selected>Aucune vitamine sÃ©lectionnÃ©e</option><option value="Ã—1 MagnÃ©sium">Ã—1 MagnÃ©sium (PV)</option><option value="Ã—1 ProtÃ©ine">Ã—1 ProtÃ©ine (ATK)</option><option value="Ã—1 Fer">Ã—1 Fer (DEF)</option><option value="Ã—1 Calcium">Ã—1 Calcium (S.ATK)</option><option value="Ã—1 Zinc">Ã—1 Zinc (S.DEF)</option><option value="Ã—1 Carbone">Ã—1 Carbone (VIT)</option></select></div></label></div>');
           $("input#vitamine").click(function(){ $("select#vitamine").toggle(); });
         }
         if ( $('.clicheList').text().indexOf('02-02.1-100') >= 0 ){
-          $('.newAcquisition').append('<div><label for="ecaille" class="combattant"><input type="checkbox" id="ecaille" name="ecaille" value="×2 Écaille-cœur" /><div><img src="https://i.imgur.com/B1MRDAY.png"/> ×2 Écaille-cœur</div></label></div>');
+          $('.newAcquisition').append('<div><label for="ecaille" class="combattant"><input type="checkbox" id="ecaille" name="ecaille" value="Ã—2 Ã‰caille-cÅ“ur" /><div><img src="https://i.imgur.com/B1MRDAY.png"/> Ã—2 Ã‰caille-cÅ“ur</div></label></div>');
         }
         if ( $('.clicheList').text().indexOf('03-01-50') >= 0 ){
-          $('.newAcquisition').append('<div><label for="pokeball" class="collectionneur"><input type="checkbox" id="pokeball" name="pokeball" value="×3 Pokéball" /><div><img src="https://i.imgur.com/wAPvUFv.png"/> ×3 Pokéball</div></label></div>');
+          $('.newAcquisition').append('<div><label for="pokeball" class="collectionneur"><input type="checkbox" id="pokeball" name="pokeball" value="Ã—3 PokÃ©ball" /><div><img src="https://i.imgur.com/wAPvUFv.png"/> Ã—3 PokÃ©ball</div></label></div>');
         }
         if ( $('.clicheList').text().indexOf('03-02.2-75') >= 0 ){
-          $('.newAcquisition').append('<div><label for="objevo" class="collectionneur"><input type="checkbox" id="objevo" name="objevo" value="×1 Objet Évolutif" /><div><img src="https://i.imgur.com/UviWNBu.png"/> ×1 Objet Évolutif <select id="objevo" style="display: none;"><option value="no-objet" selected>Aucun objet sélectionné</option><option value="×1 Grelot Zen">×1 Grelot Zen</option><option value="×1 Pierre Aube">×1 Pierre Aube</option><option value="×1 Pierre Eau">×1 Pierre Eau</option><option value="×1 Pierre Éclat">×1 Pierre Éclat</option><option value="×1 Pierre Feu">×1 Pierre Feu</option><option value="×1 Pierre Foudre">×1 Pierre Foudre</option><option value="×1 Pierre Glace">×1 Pierre Glace</option><option value="×1 Pierre Lune">×1 Pierre Lune</option><option value="×1 Pierre  Nuit">×1 Pierre  Nuit</option><option value="×1 Pierre Plante">×1 Pierre Plante</option><option value="×1 Pierre Soleil">×1 Pierre Soleil</option><option value="×1 Pointeau ADN">×1 Pointeau ADN</option></select></div></label></div>');
+          $('.newAcquisition').append('<div><label for="objevo" class="collectionneur"><input type="checkbox" id="objevo" name="objevo" value="Ã—1 Objet Ã‰volutif" /><div><img src="https://i.imgur.com/UviWNBu.png"/> Ã—1 Objet Ã‰volutif <select id="objevo" style="display: none;"><option value="no-objet" selected>Aucun objet sÃ©lectionnÃ©</option><option value="Ã—1 Grelot Zen">Ã—1 Grelot Zen</option><option value="Ã—1 Pierre Aube">Ã—1 Pierre Aube</option><option value="Ã—1 Pierre Eau">Ã—1 Pierre Eau</option><option value="Ã—1 Pierre Ã‰clat">Ã—1 Pierre Ã‰clat</option><option value="Ã—1 Pierre Feu">Ã—1 Pierre Feu</option><option value="Ã—1 Pierre Foudre">Ã—1 Pierre Foudre</option><option value="Ã—1 Pierre Glace">Ã—1 Pierre Glace</option><option value="Ã—1 Pierre Lune">Ã—1 Pierre Lune</option><option value="Ã—1 Pierre  Nuit">Ã—1 Pierre  Nuit</option><option value="Ã—1 Pierre Plante">Ã—1 Pierre Plante</option><option value="Ã—1 Pierre Soleil">Ã—1 Pierre Soleil</option><option value="Ã—1 Pointeau ADN">Ã—1 Pointeau ADN</option></select></div></label></div>');
           $("input#objevo").click(function(){ $("select#objevo").toggle(); });
         }
         if ( $('.clicheList').text().indexOf('03-10-1000') >= 0 ){
-          $('.newAcquisition').append('<div><label for="masterball" class="collectionneur"><input type="checkbox" id="masterball" name="masterball" value="×2 Masterball" /><div><img src="https://i.imgur.com/3ENnXUf.png"/> ×2 Masterball</div></label></div>');
+          $('.newAcquisition').append('<div><label for="masterball" class="collectionneur"><input type="checkbox" id="masterball" name="masterball" value="Ã—2 Masterball" /><div><img src="https://i.imgur.com/3ENnXUf.png"/> Ã—2 Masterball</div></label></div>');
         }
         if ( $('.clicheList').text().indexOf('01-09.1-475') >= 0 ){
-          $('.newAcquisition').append('<div><label for="recolte" class="soutien"><input type="checkbox" id="recolte" name="recolte" value="×2 Ingrédients Tier 3" /><div><img src="https://i.imgur.com/rGYFdqb.png"/> ×2 Ingrédients Tier 3 <select id="recolte1" style="display: none;"><option value="no-recolte" selected>Aucun ingrédient sélectionné</option><option value="×1 Crème fraîche">×1 Crème fraîche</option><option value="×1 Curry instantané">×1 Curry instantané</option><option value="×1 Lait de coco">×1 Lait de coco</option><option value="×1 Os à moelle">×1 Os à moelle</option><option value="×1 Tubercule">×1 Tubercule</option></select><select id="recolte2" style="display: none;"><option value="no-recolte" selected>Aucun ingrédient sélectionné</option><option value="×1 Crème fraîche">×1 Crème fraîche</option><option value="×1 Curry instantané">×1 Curry instantané</option><option value="×1 Lait de coco">×1 Lait de coco</option><option value="×1 Os à moelle">×1 Os à moelle</option><option value="×1 Tubercule">×1 Tubercule</option></select></div></label></div>');
+          $('.newAcquisition').append('<div><label for="recolte" class="soutien"><input type="checkbox" id="recolte" name="recolte" value="Ã—2 IngrÃ©dients Tier 3" /><div><img src="https://i.imgur.com/rGYFdqb.png"/> Ã—2 IngrÃ©dients Tier 3 <select id="recolte1" style="display: none;"><option value="no-recolte" selected>Aucun ingrÃ©dient sÃ©lectionnÃ©</option><option value="Ã—1 CrÃ¨me fraÃ®che">Ã—1 CrÃ¨me fraÃ®che</option><option value="Ã—1 Curry instantanÃ©">Ã—1 Curry instantanÃ©</option><option value="Ã—1 Lait de coco">Ã—1 Lait de coco</option><option value="Ã—1 Os Ã  moelle">Ã—1 Os Ã  moelle</option><option value="Ã—1 Tubercule">Ã—1 Tubercule</option></select><select id="recolte2" style="display: none;"><option value="no-recolte" selected>Aucun ingrÃ©dient sÃ©lectionnÃ©</option><option value="Ã—1 CrÃ¨me fraÃ®che">Ã—1 CrÃ¨me fraÃ®che</option><option value="Ã—1 Curry instantanÃ©">Ã—1 Curry instantanÃ©</option><option value="Ã—1 Lait de coco">Ã—1 Lait de coco</option><option value="Ã—1 Os Ã  moelle">Ã—1 Os Ã  moelle</option><option value="Ã—1 Tubercule">Ã—1 Tubercule</option></select></div></label></div>');
           $("input#recolte").click(function(){ $("select#recolte1").toggle(); });
           $("input#recolte").click(function(){ $("select#recolte2").toggle(); });
         }
         if ( $('.clicheList').text().indexOf('01-09.2-525') >= 0 ){
-          $('.newAcquisition').append(`<div><label for="cr" class="soutien"><input type="checkbox" id="cr" name="cr" value="×1 CR" /><div><img src="https://i.imgur.com/LzZJZSA.png"/> ×1 CR <div id="champCR" style="display: none;"><input id="nameCR" placeholder="Nom de la CR choisie"></div></div></label></div>`);
+          $('.newAcquisition').append(`<div><label for="cr" class="soutien"><input type="checkbox" id="cr" name="cr" value="Ã—1 CR" /><div><img src="https://i.imgur.com/LzZJZSA.png"/> Ã—1 CR <div id="champCR" style="display: none;"><input id="nameCR" placeholder="Nom de la CR choisie"></div></div></label></div>`);
         }
-
 
         $('.newAcquisition').append(`<div><label for="autreAcquisition" class="autre"><input type="checkbox" id="autreAcquisition" name="autreAcquisition" value="Autre Acquisition" /><div><img src="https://i.imgur.com/4JmOkQZ.png"/> Autre acquisition <div id="champsAcqui" style="display: none;"><input id="nameAcqui" placeholder="Nom de l'objet acquis"><input id="linkAcqui" placeholder="Lien vers l'acquisition (page event, etc.)"></div></div></label></div>`);
         $("input#autreAcquisition").click(function(){ $("#champsAcqui").toggle(); });
         $("input#cr").click(function(){ $("#champCR").toggle(); });
 });
 });
-
 
   //PANIER ACQUISITION
     $('.buttonAcquisition').click(function(){
@@ -1397,7 +1385,7 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf(monItem) >= 0 ){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je prépare <clrsoutien><b>` + monItem + `</b></clrsoutien>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je prÃ©pare <clrsoutien><b>` + monItem + `</b></clrsoutien>.</p>`);
           }
         });
         $('.newAcquisition input#totalsoin[type="checkbox"]:checked').each(function () {
@@ -1405,24 +1393,24 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf(monItem) >= 0 ){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je concocte <clrsoutien><b>` + monItem + `</b></clrsoutien>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je concocte <clrsoutien><b>` + monItem + `</b></clrsoutien>.</p>`);
           }
         });
         $('.newAcquisition input#jardinage[type="checkbox"]:checked').each(function () {
           var choixBaie1 = $('select#jardinage1 option:selected').val();
           var choixBaie2 = $('select#jardinage2 option:selected').val();
-          if($('#myCart').text().indexOf('cultivé') >= 0){
+          if($('#myCart').text().indexOf('cultivÃ©') >= 0){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• J'ai cultivé <clrsoutien><b>` + choixBaie1 + `</b></clrsoutien> et <clrsoutien><b>` + choixBaie2 + `</b></clrsoutien>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ J'ai cultivÃ© <clrsoutien><b>` + choixBaie1 + `</b></clrsoutien> et <clrsoutien><b>` + choixBaie2 + `</b></clrsoutien>.</p>`);
           }
         });
         $('.newAcquisition input#vitamine[type="checkbox"]:checked').each(function () {
           var choixVitamine = $('select#vitamine option:selected').val();
-          if($('#myCart').text().indexOf('crée') >= 0){
+          if($('#myCart').text().indexOf('crÃ©e') >= 0){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je crée <clrcombat><b>` + choixVitamine + `</b></clrcombat>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je crÃ©e <clrcombat><b>` + choixVitamine + `</b></clrcombat>.</p>`);
           }
         });
         $('.newAcquisition input#ecaille[type="checkbox"]:checked').each(function () {
@@ -1430,7 +1418,7 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf(monItem) >= 0 ){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• J'ai trouvé <clrcombat><b>` + monItem + `</b></clrcombat>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ J'ai trouvÃ© <clrcombat><b>` + monItem + `</b></clrcombat>.</p>`);
           }
         });
         $('.newAcquisition input#pokeball[type="checkbox"]:checked').each(function () {
@@ -1438,7 +1426,7 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf(monItem) >= 0 ){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je fabrique <clrcollec><b>` + monItem + `</b></clrcollec>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je fabrique <clrcollec><b>` + monItem + `</b></clrcollec>.</p>`);
           }
         });
         $('.newAcquisition input#objevo[type="checkbox"]:checked').each(function () {
@@ -1446,7 +1434,7 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf('crafte') >= 0){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je crafte <clrcollec><b>` + choixObjet + `</b></clrcollec>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je crafte <clrcollec><b>` + choixObjet + `</b></clrcollec>.</p>`);
           }
         });
         $('.newAcquisition input#masterball[type="checkbox"]:checked').each(function () {
@@ -1454,16 +1442,16 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf(monItem) >= 0 ){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je fabrique <clrcollec><b>` + monItem + `</b></clrcollec>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je fabrique <clrcollec><b>` + monItem + `</b></clrcollec>.</p>`);
           }
         });
         $('.newAcquisition input#recolte[type="checkbox"]:checked').each(function () {
           var choixIng1 = $('select#recolte1 option:selected').val();
           var choixIng2 = $('select#recolte2 option:selected').val();
-          if($('#myCart').text().indexOf('récolté') >= 0){
+          if($('#myCart').text().indexOf('rÃ©coltÃ©') >= 0){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• J'ai récolté <clrsoutien><b>` + choixIng1 + `</b></clrsoutien> et <clrsoutien><b>` + choixIng2 + `</b></clrsoutien>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ J'ai rÃ©coltÃ© <clrsoutien><b>` + choixIng1 + `</b></clrsoutien> et <clrsoutien><b>` + choixIng2 + `</b></clrsoutien>.</p>`);
           }
         });
         $('.newAcquisition input#cr[type="checkbox"]:checked').each(function () {
@@ -1471,78 +1459,75 @@ $('.newAcquisition').each(function(){
           if($('#myCart').text().indexOf(choixCR) >= 0 ){
             $('.panierAcqui').append('');
           } else{
-            $('.panierAcqui').append(`<p>• Je fabrique <clrsoutien><b>×1 CR ` + choixCR + `</b></clrsoutien>.</p>`);
+            $('.panierAcqui').append(`<p>â€¢ Je fabrique <clrsoutien><b>Ã—1 CR ` + choixCR + `</b></clrsoutien>.</p>`);
           }
         });
-
 
         $('.newAcquisition input#autreAcquisition[type="checkbox"]:checked').each(function () {
           var nameAcqui = $('input#nameAcqui').val(),
               linkAcqui = $('input#linkAcqui').val();
-          $('.panierAcqui').append(`<p>• J'ai obtenu <b>` + nameAcqui + `</b> à cet endroit : <clrbw><a href="` + linkAcqui + `">www</a></clrbw>.</p>`);
+          $('.panierAcqui').append(`<p>â€¢ J'ai obtenu <b>` + nameAcqui + `</b> Ã  cet endroit : <clrbw><a href="` + linkAcqui + `">www</a></clrbw>.</p>`);
         });
-
 
       } else{
         var templateAcquisition = `<h4 class="titreAcqui">Nouvelle(s) Acquisition(s)</h4><div class="panierAcqui"><span class="remove_acqui">x</span>`;
         $('.newAcquisition input#potion[type="checkbox"]:checked').each(function () {
-          templateAcquisition = templateAcquisition + `<p>• Je prépare <clrsoutien><b>` + $(this).val() + `</b></clrsoutien>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je prÃ©pare <clrsoutien><b>` + $(this).val() + `</b></clrsoutien>.</p>`;
         });
         $('.newAcquisition input#totalsoin[type="checkbox"]:checked').each(function () {
-          templateAcquisition = templateAcquisition + `<p>• Je concocte <clrsoutien><b>` + $(this).val() + `</b></clrsoutien>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je concocte <clrsoutien><b>` + $(this).val() + `</b></clrsoutien>.</p>`;
         });
         $('.newAcquisition input#jardinage[type="checkbox"]:checked').each(function () {
           var choixBaie1 = $('select#jardinage1 option:selected').val();
           var choixBaie2 = $('select#jardinage2 option:selected').val();
-          templateAcquisition = templateAcquisition + `<p>• J'ai cultivé <clrsoutien><b>` + choixBaie1 + `</b></clrsoutien> et <clrsoutien><b>` + choixBaie2 + `</b></clrsoutien>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ J'ai cultivÃ© <clrsoutien><b>` + choixBaie1 + `</b></clrsoutien> et <clrsoutien><b>` + choixBaie2 + `</b></clrsoutien>.</p>`;
         });
         $('.newAcquisition input#vitamine[type="checkbox"]:checked').each(function () {
           var choixVitamine = $('select#vitamine option:selected').val();
-          templateAcquisition = templateAcquisition + `<p>• Je crée <clrcombat><b>` + choixVitamine + `</b></clrcombat>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je crÃ©e <clrcombat><b>` + choixVitamine + `</b></clrcombat>.</p>`;
         });
         $('.newAcquisition input#ecaille[type="checkbox"]:checked').each(function () {
-          templateAcquisition = templateAcquisition + `<p>• J'ai trouvé <clrcombat><b>` + $(this).val() + `</b></clrcombat>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ J'ai trouvÃ© <clrcombat><b>` + $(this).val() + `</b></clrcombat>.</p>`;
         });
         $('.newAcquisition input#pokeball[type="checkbox"]:checked').each(function () {
-          templateAcquisition = templateAcquisition + `<p>• Je fabrique <clrcollec><b>` + $(this).val() + `</b></clrcollec>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je fabrique <clrcollec><b>` + $(this).val() + `</b></clrcollec>.</p>`;
         });
         $('.newAcquisition input#objevo[type="checkbox"]:checked').each(function () {
           var choixObjet = $('select#objevo option:selected').val();
-          templateAcquisition = templateAcquisition + `<p>• Je crafte <clrcollec><b>` + choixObjet + `</b></clrcollec>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je crafte <clrcollec><b>` + choixObjet + `</b></clrcollec>.</p>`;
         });
         $('.newAcquisition input#masterball[type="checkbox"]:checked').each(function () {
-          templateAcquisition = templateAcquisition + `<p>• Je fabrique <clrcollec><b>` + $(this).val() + `</b></clrcollec>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je fabrique <clrcollec><b>` + $(this).val() + `</b></clrcollec>.</p>`;
         });
         $('.newAcquisition input#recolte[type="checkbox"]:checked').each(function () {
           var choixIng1 = $('select#recolte1 option:selected').val();
           var choixIng2 = $('select#recolte2 option:selected').val();
-          templateAcquisition = templateAcquisition + `<p>• J'ai récolté <clrsoutien><b>` + choixIng1 + `</b></clrsoutien> et <clrsoutien><b>` + choixIng2 + `</b></clrsoutien>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ J'ai rÃ©coltÃ© <clrsoutien><b>` + choixIng1 + `</b></clrsoutien> et <clrsoutien><b>` + choixIng2 + `</b></clrsoutien>.</p>`;
         });
         $('.newAcquisition input#cr[type="checkbox"]:checked').each(function () {
           var choixCR = $('input#nameCR').val();
-          templateAcquisition = templateAcquisition + `<p>• Je fabrique <clrsoutien><b>×1 CR ` + choixCR + `</b></clrsoutien>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ Je fabrique <clrsoutien><b>Ã—1 CR ` + choixCR + `</b></clrsoutien>.</p>`;
         });
         $('.newAcquisition input#autreAcquisition[type="checkbox"]:checked').each(function () {
           var nameAcqui = $('input#nameAcqui').val(),
               linkAcqui = $('input#linkAcqui').val();
-          templateAcquisition = templateAcquisition + `<p>• J'ai obtenu <b>` + nameAcqui + `</b> à cet endroit : <clrbw><a href="` + linkAcqui + `">www</a></clrbw>.</p>`;
+          templateAcquisition = templateAcquisition + `<p>â€¢ J'ai obtenu <b>` + nameAcqui + `</b> Ã  cet endroit : <clrbw><a href="` + linkAcqui + `">www</a></clrbw>.</p>`;
         });
       }
 
-
         if( $('.newAcquisition input[type="checkbox"]').is(':checked') ) {
           if( $('.newAcquisition input#jardinage[type="checkbox"]').is(':checked') && ( $('select#jardinage1 option:selected').val() == 'no-baie' || $('select#jardinage2 option:selected').val() == 'no-baie') ) {
-            alert("Sélectionne les baies qui ont poussé dans ton jardin.");
+            alert("SÃ©lectionne les baies qui ont poussÃ© dans ton jardin.");
           } else if( $('.newAcquisition input#vitamine[type="checkbox"]').is(':checked') && ( $('select#vitamine option:selected').val() == 'no-vitamine') ){
-            alert("Sélectionne la vitamine que tu veux créer !");
+            alert("SÃ©lectionne la vitamine que tu veux crÃ©er !");
           } else if( $('.newAcquisition input#objevo[type="checkbox"]').is(':checked') && ( $('select#objevo option:selected').val() == 'no-objet') ){
-            alert("Sélectionne l'objet évolutif que tu veux créer !");
+            alert("SÃ©lectionne l'objet Ã©volutif que tu veux crÃ©er !");
           } else if( $('.newAcquisition input#recolte[type="checkbox"]').is(':checked') && ( $('select#recolte1 option:selected').val() == 'no-recolte' || $('select#recolte2 option:selected').val() == 'no-recolte') ) {
-            alert("Sélectionne les ingrédients que tu veux créer.");
+            alert("SÃ©lectionne les ingrÃ©dients que tu veux crÃ©er.");
           } else if( $('.newAcquisition input#cr[type="checkbox"]').is(':checked') && ( $('input#nameCR').val() == '') ){
-            alert("Le nom de ta CR doit être rempli.");
+            alert("Le nom de ta CR doit Ãªtre rempli.");
           } else if( $('.newAcquisition input#autreAcquisition[type="checkbox"]').is(':checked') && ( $('input#nameAcqui').val() == '' || $('input#linkAcqui').val() == '') ){
-            alert("Les champs de ta nouvelle acquisition doivent être remplis.");
+            alert("Les champs de ta nouvelle acquisition doivent Ãªtre remplis.");
           } else {
             templateAcquisition = templateAcquisition + '</div>';
             $('#myCart').append(templateAcquisition);
@@ -1550,7 +1535,6 @@ $('.newAcquisition').each(function(){
         } else {
           alert("Tu dois cocher au moins une acquisition !");
         }
-
 
         //Retirer les acquisitions du panier
         $('.remove_acqui').click(function(){
@@ -1561,8 +1545,7 @@ $('.newAcquisition').each(function(){
     generateCartButtons();
     });
 
-
-  //CLICHÉ CUISINE
+  //CLICHÃ‰ CUISINE
   $('.recetteCuisine select').change(function(){
     //Baie Myrte que dans un rang Dracaufeu
     if( $('.recetteCuisine select#ingredient1 option:selected').hasClass('t5') ){
@@ -1578,7 +1561,6 @@ $('.newAcquisition').each(function(){
       $('#ingredient1 option, #ingredient2 option, #ingredient3 option').css('display', 'block');
     }
 
-
     //1 seule baie par recette
     /*if($('.recetteCuisine select#ingredient1 option:selected').hasClass('baie') ){
       $('#ingredient2 .baie, #ingredient3 .baie').css('display', 'none');
@@ -1590,8 +1572,7 @@ $('.newAcquisition').each(function(){
       $('#ingredient1 .baie, #ingredient2 .baie, #ingredient3 .baie').css('display', 'block');
     }*/
 
-
-    //Cacher la baie Myrte si l'ingrédient est pas t4
+    //Cacher la baie Myrte si l'ingrÃ©dient est pas t4
     if( $('.recetteCuisine select#ingredient1 option:selected').hasClass('t1') || $('.recetteCuisine select#ingredient1 option:selected').hasClass('t2') || $('.recetteCuisine select#ingredient1 option:selected').hasClass('t3') ){
       $('#ingredient2 .t5, #ingredient3 .t5').css('display', 'none');
     } else if( $('.recetteCuisine select#ingredient2 option:selected').hasClass('t1') || $('.recetteCuisine select#ingredient2 option:selected').hasClass('t2') || $('.recetteCuisine select#ingredient2 option:selected').hasClass('t3') ){
@@ -1599,7 +1580,6 @@ $('.newAcquisition').each(function(){
     } else if( $('.recetteCuisine select#ingredient3 option:selected').hasClass('t1') || $('.recetteCuisine select#ingredient3 option:selected').hasClass('t2') || $('.recetteCuisine select#ingredient3 option:selected').hasClass('t3') ){
       $('#ingredient1 .t5, #ingredient2 .t5').css('display', 'none');
     }
-
 
     //Calcul du rang et des gains
     var calculTier = 0,
@@ -1609,27 +1589,25 @@ $('.newAcquisition').each(function(){
         gainChoix4 = '</br></br><input type="radio" id="cuisineExp" name="gainChoix" value="50"><label for="cuisineExp">50 Exp</label></br></br><input type="radio" id="cuisineP" name="gainChoix" value="500"><label for="cuisineP">500 p$</label>',
         gainChoix5 = '</br></br><input type="radio" id="cuisineExp" name="gainChoix" value="100"><label for="cuisineExp">100 Exp</label></br></br><input type="radio" id="cuisineP" name="gainChoix" value="1000"><label for="cuisineP">1000 p$</label>';
 
-
     $('.recetteCuisine select option').each(function(i){
       $('.recetteCuisine select option.t' + i + ':selected').each(function () {
         calculTier = calculTier + i;
       });
     });
 
-
     if(calculTier == 13){
       $('.tierRecette').html("<span>Rang Dracaufeu (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix5);
     } else if(calculTier == 12){
       $('.tierRecette').html("<span>Rang Pachyradjah (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix4);
     } else if(calculTier == 9 || calculTier == 10 || calculTier == 11){
-      $('.tierRecette').html("<span>Rang Crèmy (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix3);
+      $('.tierRecette').html("<span>Rang CrÃ¨my (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix3);
     } else if(calculTier == 6 || calculTier == 7 || calculTier == 8){
-      $('.tierRecette').html("<span>Rang Qulbutoké (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix2);
+      $('.tierRecette').html("<span>Rang QulbutokÃ© (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix2);
     } else if(calculTier == 3 || calculTier == 4 || calculTier == 5){
       $('.tierRecette').html("<span>Rang Smogo (<span id='lvlRecette'>niveau " + calculTier + "</span>)</span>" + gainChoix1);
     }
     $('.recetteCuisine select option.nothing:selected').each(function () {
-      $('.tierRecette').html("Rang : Sélectionne 3 ingrédients !");
+      $('.tierRecette').html("Rang : SÃ©lectionne 3 ingrÃ©dients !");
     });
   });
   
@@ -1644,52 +1622,47 @@ function btnCuisine(){
           cuisineGain = $('input[name="gainChoix"]:checked').val();
       var myGain = parseInt($('.gainTotal').text()) + parseInt(cuisineGain);
 
-
       if(ingredient1 == "nothing" || ingredient2 == "nothing" || ingredient3 == "nothing"){
-        alert("Tu dois ajouter 3 ingrédients !");
+        alert("Tu dois ajouter 3 ingrÃ©dients !");
       } else if(cuisineGain == undefined){
-        alert("Choisis le gain (exp ou p$ selon le cliché possédé) !");
+        alert("Choisis le gain (exp ou p$ selon le clichÃ© possÃ©dÃ©) !");
       }
 
-
-      //Contrôle pour pas mélanger exp et p$
+      //ContrÃ´le pour pas mÃ©langer exp et p$
       else if( $('recette .cuisineDisplay').text().indexOf('Exp') >= 0 && $('#cuisineP').is(':checked') ){
-        alert(`Toutes les recettes doivent avoir le même gain : Exp ou p$ !`);
+        alert(`Toutes les recettes doivent avoir le mÃªme gain : Exp ou p$ !`);
       } else if( $('recette .cuisineDisplay').text().indexOf('p$') >= 0 && $('#cuisineExp').is(':checked') ){
-        alert(`Toutes les recettes doivent avoir le même gain : Exp ou p$ !`);
+        alert(`Toutes les recettes doivent avoir le mÃªme gain : Exp ou p$ !`);
       }
 
-
-      //Contrôle pour ne pas dépasser 50 exp ou 500 p$
+      //ContrÃ´le pour ne pas dÃ©passer 50 exp ou 500 p$
       else if( ($('#cuisineExp').is(':checked') && cuisineRang != "niveau 13" && myGain > 50) || ($('#cuisineExp').is(':checked') && $('recette').text().indexOf('niveau 13') >= 0 && myGain > 50) || ($('#cuisineExp').is(':checked') && cuisineRang == "niveau 13" && $('recette').text().indexOf('Mes recettes') >= 0) ){
-        alert('Tu ne peux pas dépasser 50 Exp par mois, hors recette de rang Dracaufeu (limitée à 1 par mois) !');
+        alert('Tu ne peux pas dÃ©passer 50 Exp par mois, hors recette de rang Dracaufeu (limitÃ©e Ã  1 par mois) !');
       } else if( ($('#cuisineP').is(':checked') && cuisineRang != "niveau 13" && myGain > 500) || ($('#cuisineP').is(':checked') && $('recette').text().indexOf('niveau 13') >= 0 && myGain > 500) || ($('#cuisineP').is(':checked') && cuisineRang == "niveau 13" && $('recette').text().indexOf('Mes recettes') >= 0) ){
-        alert('Tu ne peux pas dépasser 500 p$ par mois, hors recette de rang Dracaufeu (limitée à 1 par mois) !');
+        alert('Tu ne peux pas dÃ©passer 500 p$ par mois, hors recette de rang Dracaufeu (limitÃ©e Ã  1 par mois) !');
       }
-
 
       else if( $('#myCart').text().indexOf('Mes recettes') >= 0 ){
         if( $('#cuisineP').is(':checked') ){
-          $('recette').append('<div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> p$</b></clrbw></span>)</p><p>Je mélange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div>');
+          $('recette').append('<div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> p$</b></clrbw></span>)</p><p>Je mÃ©lange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div>');
           gainTotal = parseInt( $('.gainTotal').text() ) + parseInt(cuisineGain);
           $('.gainTotal').html(gainTotal);
         } else {
-          $('.distributionExp').before('<div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> Exp</b></clrbw></span>)</p><p>Je mélange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div>');
+          $('.distributionExp').before('<div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> Exp</b></clrbw></span>)</p><p>Je mÃ©lange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div>');
           gainTotal = parseInt( $('.gainTotal').text() ) + parseInt(cuisineGain);
           $('.gainTotal').html(gainTotal);
         }
       } else {
           if( $('#cuisineP').is(':checked') ){
             gainTotal = cuisineGain;
-          $('#myCart').append('<recette><h4 class="titreCuisine">Mes recettes</h4><div class="cuisineDisplay">Je gagne au total <clrbw><span class="gainTotal">' + gainTotal + '</span> p$</clrbw>.</div><div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> p$</b></clrbw></span>)</p><p>Je mélange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div></recette>');
+          $('#myCart').append('<recette><h4 class="titreCuisine">Mes recettes</h4><div class="cuisineDisplay">Je gagne au total <clrbw><span class="gainTotal">' + gainTotal + '</span> p$</clrbw>.</div><div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> p$</b></clrbw></span>)</p><p>Je mÃ©lange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div></recette>');
         } else {
           gainTotal = cuisineGain;
-          $('#myCart').append('<recette><h4 class="titreCuisine">Mes recettes</h4><div class="cuisineDisplay">Je gagne au total <clrbw><span class="gainTotal">' + gainTotal + '</span> Exp</clrbw>.</div><div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> Exp</b></clrbw></span>)</p><p>Je mélange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div><div class="cuisineDisplay distributionExp">Je donne mes recettes à ce(s) pokémon(s) : <br/><textarea id="cuisinePokemon" placeholder="Espèce lvl 15 (0/10) → lvl 16 (5/10)"></textarea></div></recette>');
+          $('#myCart').append('<recette><h4 class="titreCuisine">Mes recettes</h4><div class="cuisineDisplay">Je gagne au total <clrbw><span class="gainTotal">' + gainTotal + '</span> Exp</clrbw>.</div><div class="panierCuisine"><span class="remove_recette" onClick="removeCuisine(this)">x</span><p class="recette_title">Recette de ' + cuisineRang + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + cuisineGain + '</gain> Exp</b></clrbw></span>)</p><p>Je mÃ©lange <clrsoutien>' + ingredient1 + '</clrsoutien>, <clrsoutien>' + ingredient2 + '</clrsoutien> et <clrsoutien>' + ingredient3 + '</clrsoutien>.</p></div><div class="cuisineDisplay distributionExp">Je donne mes recettes Ã  ce(s) pokÃ©mon(s) : <br/><textarea id="cuisinePokemon" placeholder="EspÃ¨ce lvl 15 (0/10) â†’ lvl 16 (5/10)"></textarea></div></recette>');
         }
       }
 generateCartButtons();
 }
-
 
 //Retirer la recette du panier
 function removeCuisine(recetteremove){
@@ -1708,10 +1681,7 @@ function removeCuisine(recetteremove){
 }
 
 
-
-
 //PRIMES DE RECHERCHE
-
 
 $(document).ready(function() {
 var primes = [
@@ -1719,299 +1689,297 @@ var primes = [
       id: 0,
       niveau: "1",
       numero: "01",
-      description: "Capturer un Pokémon sur un dé compris entre 1 et 5 inclus.",
+      description: "Capturer un PokÃ©mon sur un dÃ© compris entre 1 et 5 inclus.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 1,
       niveau: "1",
       numero: "02",
-      description: "Capturer un Pokémon d'expédition.",
+      description: "Capturer un PokÃ©mon d'expÃ©dition.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 2,
       niveau: "1",
       numero: "03",
-      description: "Capturer un Pokémon de type Eau ailleurs qu’à Kopadia.",
+      description: "Capturer un PokÃ©mon de type Eau ailleurs quâ€™Ã  Kopadia.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 3,
       niveau: "1",
       numero: "04",
-      description: "Capturer un Pokémon à son premier stade d’évolution (forme de base > premier stade > évolution finale ; il s’agit de l’ « évolution du milieu »).",
+      description: "Capturer un PokÃ©mon Ã  son premier stade dâ€™Ã©volution (forme de base > premier stade > Ã©volution finale ; il sâ€™agit de lâ€™ Â« Ã©volution du milieu Â»).",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 4,
       niveau: "1",
       numero: "05",
-      description: "Capturer un Pokémon de double type Vol - Normal.",
+      description: "Capturer un PokÃ©mon de double type Vol - Normal.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 5,
       niveau: "1",
       numero: "06",
-      description: "Capturer un Pokémon avec une Superball.",
+      description: "Capturer un PokÃ©mon avec une Superball.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 6,
       niveau: "1",
       numero: "07",
-      description: "Capturer un Pokémon de type Spectre apparu en 9e génération.",
+      description: "Capturer un PokÃ©mon de type Spectre apparu en 9e gÃ©nÃ©ration.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 7,
       niveau: "1",
       numero: "08",
-      description: "Capturer un Pokémon avec taux de capture de 190 ou 200 selon Poképédia.",
+      description: "Capturer un PokÃ©mon avec taux de capture de 190 ou 200 selon PokÃ©pÃ©dia.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 8,
       niveau: "1",
       numero: "09",
-      description: "Capturer un Pokémon dont un des talents est apparu en 4e génération.",
+      description: "Capturer un PokÃ©mon dont un des talents est apparu en 4e gÃ©nÃ©ration.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 9,
       niveau: "1",
       numero: "10",
-      description: "Capturer un Pokémon incapable d’apprendre la CT Abri à son stade d’évolution actuel.",
+      description: "Capturer un PokÃ©mon incapable dâ€™apprendre la CT Abri Ã  son stade dâ€™Ã©volution actuel.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 10,
       niveau: "1",
       numero: "11",
-      description: "Capturer un Pokémon appartenant au groupe d’œufs Amorphe.",
+      description: "Capturer un PokÃ©mon appartenant au groupe dâ€™Å“ufs Amorphe.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 11,
       niveau: "1",
       numero: "12",
-      description: "Capturer un Pokémon dont la couleur principale selon Poképédia est le gris.",
+      description: "Capturer un PokÃ©mon dont la couleur principale selon PokÃ©pÃ©dia est le gris.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 12,
       niveau: "1",
       numero: "13",
-      description: "Capturer un Pokémon présentant un dimorphisme sexuel.",
+      description: "Capturer un PokÃ©mon prÃ©sentant un dimorphisme sexuel.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
       id: 13,
       niveau: "1",
       numero: "14",
-      description: "Capturer un Pokémon dont le nom de “catégorie” contient le mot « oiseau ».",
+      description: "Capturer un PokÃ©mon dont le nom de â€œcatÃ©gorieâ€ contient le mot Â« oiseau Â».",
       gain: "[100 p$ / 10 EXP]"
     },
  {
       id: 14,
       niveau: "2",
       numero: "01",
-      description: "Capturer un Pokémon évoluant avec une Pierre Foudre.",
+      description: "Capturer un PokÃ©mon Ã©voluant avec une Pierre Foudre.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 15,
       niveau: "2",
       numero: "02",
-      description: "Capturer un Pokémon au niveau 13.",
+      description: "Capturer un PokÃ©mon au niveau 13.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 16,
       niveau: "2",
       numero: "03",
-      description: "Capturer un Pokémon capable d’apprendre la capacité Estocorne, que ce soit par niveau ou par CT.",
+      description: "Capturer un PokÃ©mon capable dâ€™apprendre la capacitÃ© Estocorne, que ce soit par niveau ou par CT.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 17,
       niveau: "2",
       numero: "04",
-      description: "Capturer un Pokémon Starter d’une des 9 générations à son premier stade d'évolution (forme de base > premier stade > évolution finale ; il s’agit de l’évolution du milieu).",
+      description: "Capturer un PokÃ©mon Starter dâ€™une des 9 gÃ©nÃ©rations Ã  son premier stade d'Ã©volution (forme de base > premier stade > Ã©volution finale ; il sâ€™agit de lâ€™Ã©volution du milieu).",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 18,
       niveau: "2",
       numero: "05",
-      description: "Capturer un Pokémon dont l'espèce est uniquement femelle.",
+      description: "Capturer un PokÃ©mon dont l'espÃ¨ce est uniquement femelle.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 19,
       niveau: "2",
       numero: "06",
-      description: "Capturer un Pokémon avec un double-type dont l’un des types est faible à l’autre.",
+      description: "Capturer un PokÃ©mon avec un double-type dont lâ€™un des types est faible Ã  lâ€™autre.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 20,
       niveau: "2",
       numero: "07",
-      description: "Capturer un Pokémon qui possède au moins deux formes différentes non régionales, et qui ne résultent pas d’un dimorphisme sexuel.",
+      description: "Capturer un PokÃ©mon qui possÃ¨de au moins deux formes diffÃ©rentes non rÃ©gionales, et qui ne rÃ©sultent pas dâ€™un dimorphisme sexuel.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 21,
       niveau: "2",
       numero: "08",
-      description: "Capturer un Pokémon de moins de 20 cm.",
+      description: "Capturer un PokÃ©mon de moins de 20 cm.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 22,
       niveau: "2",
       numero: "09",
-      description: "Capturer un Pokémon avec un double-type et qui a au maximum une seule faiblesse, en comptant un éventuel talent immunisant.",
+      description: "Capturer un PokÃ©mon avec un double-type et qui a au maximum une seule faiblesse, en comptant un Ã©ventuel talent immunisant.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
       id: 23,
       niveau: "3",
       numero: "01",
-      description: "Capturer un Pokémon possédant Méga-Sangsue dans son movepool (autrement dit, la capacité fait partie de ses possibilités d'apprentissage, même s'il ne la connaît pas).",
+      description: "Capturer un PokÃ©mon possÃ©dant MÃ©ga-Sangsue dans son movepool (autrement dit, la capacitÃ© fait partie de ses possibilitÃ©s d'apprentissage, mÃªme s'il ne la connaÃ®t pas).",
       gain: "[300 p$ / 30 EXP]"
     },
  {
       id: 24,
       niveau: "3",
       numero: "02",
-      description: "Capturer un Pokémon pouvant apprendre Requiem.",
+      description: "Capturer un PokÃ©mon pouvant apprendre Requiem.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
       id: 25,
       niveau: "3",
       numero: "03",
-      description: "Capturer un Pokémon qui serait rouge ou violet et que l’on retrouverait essentiellement dans les milieux urbains, selon Poképédia.",
+      description: "Capturer un PokÃ©mon qui serait rouge ou violet et que lâ€™on retrouverait essentiellement dans les milieux urbains, selon PokÃ©pÃ©dia.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
       id: 26,
       niveau: "3",
       numero: "04",
-      description: "Capturer un Pokémon à son dernier stade d’évolution et pouvant méga-évoluer.",
+      description: "Capturer un PokÃ©mon Ã  son dernier stade dâ€™Ã©volution et pouvant mÃ©ga-Ã©voluer.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
       id: 27,
       niveau: "3",
       numero: "05",
-      description: "Capturer un Pokémon qui ne peut se trouver que dans une seule zone sur le forum.",
+      description: "Capturer un PokÃ©mon qui ne peut se trouver que dans une seule zone sur le forum.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
       id: 28,
       niveau: "3",
       numero: "06",
-      description: "Capturer un Pokémon dont l’habitat est un “milieu hostile” selon Poképédia, et qui a déjà évolué au moins une fois.",
+      description: "Capturer un PokÃ©mon dont lâ€™habitat est un â€œmilieu hostileâ€ selon PokÃ©pÃ©dia, et qui a dÃ©jÃ  Ã©voluÃ© au moins une fois.",
       gain: "[300 p$ / 30 EXP]"
     },
   {
       id: 29,
       niveau: "4",
       numero: "01",
-      description: "Capturer un Pokémon de niveau 1.",
+      description: "Capturer un PokÃ©mon de niveau 1.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 30,
       niveau: "4",
       numero: "02",
-      description: "Capturer un Pokémon ayant attaqué le joueur 3 fois d'affilée avant capture.",
+      description: "Capturer un PokÃ©mon ayant attaquÃ© le joueur 3 fois d'affilÃ©e avant capture.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 31,
       niveau: "4",
       numero: "03",
-      description: "Capturer un Pokémon de plus de 4 m.",
+      description: "Capturer un PokÃ©mon de plus de 4 m.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 32,
       niveau: "4",
       numero: "04",
-      description: "Capturer un Pokémon dont la somme des statistiques de base est supérieure à 535 selon Poképédia.",
+      description: "Capturer un PokÃ©mon dont la somme des statistiques de base est supÃ©rieure Ã  535 selon PokÃ©pÃ©dia.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 33,
       niveau: "4",
       numero: "05",
-      description: "Capturer un Pokémon possédant plus (+) de 6 faiblesses selon Poképédia.",
+      description: "Capturer un PokÃ©mon possÃ©dant plus (+) de 6 faiblesses selon PokÃ©pÃ©dia.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 34,
       niveau: "4",
       numero: "06",
-      description: "Capturer un Pokémon possédant au moins 4 talents selon Poképédia.",
+      description: "Capturer un PokÃ©mon possÃ©dant au moins 4 talents selon PokÃ©pÃ©dia.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 35,
       niveau: "4",
       numero: "07",
-      description: "Capturer un Pokémon qui pèse au moins 400 kg.",
+      description: "Capturer un PokÃ©mon qui pÃ¨se au moins 400 kg.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
       id: 36,
       niveau: "5",
       numero: "01",
-      description: "Capturer un Pokémon introuvable en dessous de la zone 4.",
+      description: "Capturer un PokÃ©mon introuvable en dessous de la zone 4.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
       id: 37,
       niveau: "5",
       numero: "02",
-      description: "Capturer un Pokémon en 4 lancers exactement.",
+      description: "Capturer un PokÃ©mon en 4 lancers exactement.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
       id: 38,
       niveau: "5",
       numero: "03",
-      description: "Capturer un Pokémon de type Eau OU Feu OU Plante chromatique.",
+      description: "Capturer un PokÃ©mon de type Eau OU Feu OU Plante chromatique.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
       id: 39,
       niveau: "5",
       numero: "04",
-      description: "Capturer un Pokémon pouvant à la fois posséder le talent Heavy Metal et Light Metal.",
+      description: "Capturer un PokÃ©mon pouvant Ã  la fois possÃ©der le talent Heavy Metal et Light Metal.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
       id: 40,
       niveau: "5",
       numero: "05",
-      description: "Capturer un Pokémon “de justesse”, c’est-à-dire sur un dé à la limite du taux de capture (exemple, sur un 15 en Zone verte avec une pokéball).",
+      description: "Capturer un PokÃ©mon â€œde justesseâ€, câ€™est-Ã -dire sur un dÃ© Ã  la limite du taux de capture (exemple, sur un 15 en Zone verte avec une pokÃ©ball).",
       gain: "[500 p$ / 50 EXP]"
     }];
-
 
   DisplayProductList(primes);
 });
 
-
 function DisplayProductList(prime) {
   var template = "";
   prime.forEach(function(item) {
-    template += '<div class="product productshow1 niveau' + item.niveau + '"><span class="item_name"><span class="defi_num">Niveau ' + item.niveau + '</span> - ' + item.numero + '</span><div class="item_cate">Gain : <span class="gain">Exp ou p$ ?</span></div><div class="item_bottom"><p class="item_desc">' + item.description + '</p><input type="text" placeholder="Espèce et niveau du pokémon capturé" class="pokemonPrime"><input type="url" placeholder="Lien vers la capture" class="urlRp"><a class="buttonPrime btn_add" onClick="btnPrime(this)"><div class="btn_hover"></div><div class="btn_text">Ajouter la prime au panier</div></a></div></div></div>';
+    template += '<div class="product productshow1 niveau' + item.niveau + '"><span class="item_name"><span class="defi_num">Niveau ' + item.niveau + '</span> - ' + item.numero + '</span><div class="item_cate">Gain : <span class="gain">Exp ou p$ ?</span></div><div class="item_bottom"><p class="item_desc">' + item.description + '</p><input type="text" placeholder="EspÃ¨ce et niveau du pokÃ©mon capturÃ©" class="pokemonPrime"><input type="url" placeholder="Lien vers la capture" class="urlRp"><a class="buttonPrime btn_add" onClick="btnPrime(this)"><div class="btn_hover"></div><div class="btn_text">Ajouter la prime au panier</div></a></div></div></div>';
   });
   $('.primeGain input').change(function(){
       if( $('#primeP').prop('checked') == true ){
@@ -2051,7 +2019,6 @@ function DisplayProductList(prime) {
   $('.products').html(template);
 }
 
-
 function btnPrime(element){
   var primeParent = $(element).closest('div.product'),
       lvlPrime = $(primeParent).find('.item_name').text(),
@@ -2061,47 +2028,43 @@ function btnPrime(element){
       primeLink = $(primeParent).find('.urlRp').val();
   var myPGain = parseInt($('.primeTotal').text()) + parseInt(primeGain);
 
-
   if(primePoke == "" || primeLink == ""){
-    alert("Tous les champs doivent être remplis !");
+    alert("Tous les champs doivent Ãªtre remplis !");
   } else if(primeGain == ""){
-    alert("Sélectionne les gains selon ton cliché : Exp ou p$ ?");
+    alert("SÃ©lectionne les gains selon ton clichÃ© : Exp ou p$ ?");
   }
 
-
-  //Contrôle pour pas mélanger exp et p$
+  //ContrÃ´le pour pas mÃ©langer exp et p$
       else if( $('prime .primeDisplay').text().indexOf('Exp') >= 0 && $('#primeP').is(':checked') ){
-        alert(`Toutes les primes doivent avoir le même gain : Exp ou p$ !`);
+        alert(`Toutes les primes doivent avoir le mÃªme gain : Exp ou p$ !`);
       } else if( $('prime .primeDisplay').text().indexOf('p$') >= 0 && $('#primeExp').is(':checked') ){
-        alert(`Toutes les primes doivent avoir le même gain : Exp ou p$ !`);
+        alert(`Toutes les primes doivent avoir le mÃªme gain : Exp ou p$ !`);
       }
 
-
-      //Contrôle pour ne pas dépasser 50 exp ou 500 p$
+      //ContrÃ´le pour ne pas dÃ©passer 50 exp ou 500 p$
       else if( $('#primeExp').is(':checked') && myPGain > 50 ){
-        alert('Tu ne peux pas dépasser 50 Exp par mois !');
+        alert('Tu ne peux pas dÃ©passer 50 Exp par mois !');
       } else if( $('#primeP').is(':checked') && myPGain > 500 ){
-        alert('Tu ne peux pas dépasser 500 p$ par mois !');
+        alert('Tu ne peux pas dÃ©passer 500 p$ par mois !');
       }
-
 
   else if( $('#myCart').text().indexOf('Mes primes') >= 0 ){
         if( $('#primeP').is(':checked') ){
-          $('prime').append('<div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> p$</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p class="prime_pokemon">J’ai attrapé un <clrbw>' + primePoke + '</clrbw> à cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div>');
+          $('prime').append('<div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> p$</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p class="prime_pokemon">Jâ€™ai attrapÃ© un <clrbw>' + primePoke + '</clrbw> Ã  cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div>');
           primeTotal = parseInt( $('.primeTotal').text() ) + parseInt(primeGain);
           $('.primeTotal').html(primeTotal);
         } else {
-          $('.pdistributionExp').before('<div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> Exp</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p class="prime_pokemon">J’ai attrapé un <clrbw>' + primePoke + '</clrbw> à cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div>');
+          $('.pdistributionExp').before('<div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> Exp</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p class="prime_pokemon">Jâ€™ai attrapÃ© un <clrbw>' + primePoke + '</clrbw> Ã  cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div>');
           primeTotal = parseInt( $('.primeTotal').text() ) + parseInt(primeGain);
           $('.primeTotal').html(primeTotal);
         }
   } else {
     if( $('#primeP').is(':checked') ){
             primeTotal = primeGain;
-          $('#myCart').append('<prime><h4 class="titrePrime">Mes primes</h4><div class="primeDisplay">Je gagne au total <clrbw><span class="primeTotal">' + primeTotal + '</span> p$</clrbw>.</div><div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> p$</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p>J’ai attrapé un <clrbw>' + primePoke + '</clrbw> à cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div></prime>');
+          $('#myCart').append('<prime><h4 class="titrePrime">Mes primes</h4><div class="primeDisplay">Je gagne au total <clrbw><span class="primeTotal">' + primeTotal + '</span> p$</clrbw>.</div><div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> p$</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p>Jâ€™ai attrapÃ© un <clrbw>' + primePoke + '</clrbw> Ã  cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div></prime>');
         } else {
           primeTotal = primeGain;
-          $('#myCart').append('<prime><h4 class="titrePrime">Mes primes</h4><div class="primeDisplay">Je gagne au total <clrbw><span class="primeTotal">' + primeTotal + '</span> Exp</clrbw>.</div><div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> Exp</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p>J’ai attrapé un <clrbw>' + primePoke + '</clrbw> à cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div><div class="primeDisplay pdistributionExp">Je donne mes gains à ce(s) pokémon(s) : <br/><textarea id="primePokemon" placeholder="Espèce lvl 15 (0/10) → lvl 16 (5/10)"></textarea></div></prime>');
+          $('#myCart').append('<prime><h4 class="titrePrime">Mes primes</h4><div class="primeDisplay">Je gagne au total <clrbw><span class="primeTotal">' + primeTotal + '</span> Exp</clrbw>.</div><div class="panierPrime"><span class="remove_prime" onClick="removePrime(this)">x</span><p class="prime_title">Prime de ' + lvlPrime + ' (gain de <span class="gainmaxp"><clrbw><b><gain>' + primeGain + '</gain> Exp</b></clrbw></span>)</p><p class="rappelPrime">Rappel de la prime : ' + primeDesc + '</p><p>Jâ€™ai attrapÃ© un <clrbw>' + primePoke + '</clrbw> Ã  cet endroit : <clrbw><a href="' + primeLink + '">www</a></clrbw></p></div><div class="primeDisplay pdistributionExp">Je donne mes gains Ã  ce(s) pokÃ©mon(s) : <br/><textarea id="primePokemon" placeholder="EspÃ¨ce lvl 15 (0/10) â†’ lvl 16 (5/10)"></textarea></div></prime>');
         }
   }
 generateCartButtons();
@@ -2122,9 +2085,7 @@ function removePrime(primeremove){
     }
 }
 
-
 //EXPLOITS DU COMBATTANT
-
 
 $(document).ready(function() {
 var exploits = [
@@ -2132,7 +2093,7 @@ var exploits = [
       id: 0,
       niveau: "1",
       numero: "01",
-      description: "Faire 3 OS d’affilée en PVE dans le même sujet.",
+      description: "Faire 3 OS dâ€™affilÃ©e en PVE dans le mÃªme sujet.",
       nb_champs: 3,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2140,7 +2101,7 @@ var exploits = [
       id: 1,
       niveau: "1",
       numero: "02",
-      description: "Vaincre un adversaire en étant faible à au moins un de ses types.",
+      description: "Vaincre un adversaire en Ã©tant faible Ã  au moins un de ses types.",
       nb_champs: 1,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2148,7 +2109,7 @@ var exploits = [
       id: 2,
       niveau: "1",
       numero: "03",
-      description: "Utiliser 3 capacités non offensives.",
+      description: "Utiliser 3 capacitÃ©s non offensives.",
       nb_champs: 3,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2156,7 +2117,7 @@ var exploits = [
       id: 3,
       niveau: "1",
       numero: "04",
-      description: "Utiliser 3 capacités super efficaces.",
+      description: "Utiliser 3 capacitÃ©s super efficaces.",
       nb_champs: 3,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2164,7 +2125,7 @@ var exploits = [
       id: 4,
       niveau: "1",
       numero: "05",
-      description: "Utiliser 3 capacités bénéficiant du STAB.",
+      description: "Utiliser 3 capacitÃ©s bÃ©nÃ©ficiant du STAB.",
       nb_champs: 3,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2172,7 +2133,7 @@ var exploits = [
       id: 5,
       niveau: "1",
       numero: "06",
-      description: "Vaincre 3 Pokémon en zone verte.",
+      description: "Vaincre 3 PokÃ©mon en zone verte.",
       nb_champs: 3,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2180,7 +2141,7 @@ var exploits = [
       id: 6,
       niveau: "1",
       numero: "07",
-      description: "Déclencher une météo durant un combat, à l’aide d’une capacité ou d’un talent.",
+      description: "DÃ©clencher une mÃ©tÃ©o durant un combat, Ã  lâ€™aide dâ€™une capacitÃ© ou dâ€™un talent.",
       nb_champs: 1,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2196,7 +2157,7 @@ var exploits = [
       id: 8,
       niveau: "1",
       numero: "09",
-      description: "Paralyser ou brûler 5 adversaires. Les statuts sont combinables, c’est-à-dire que paralyser 3 fois et brûler 2 fois compterait, par exemple.",
+      description: "Paralyser ou brÃ»ler 5 adversaires. Les statuts sont combinables, câ€™est-Ã -dire que paralyser 3 fois et brÃ»ler 2 fois compterait, par exemple.",
       nb_champs: 5,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2204,7 +2165,7 @@ var exploits = [
       id: 9,
       niveau: "1",
       numero: "10",
-      description: "Terminer un combat face à un autre joueur, qu’il soit remporté ou perdu.",
+      description: "Terminer un combat face Ã  un autre joueur, quâ€™il soit remportÃ© ou perdu.",
       nb_champs: 1,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2212,7 +2173,7 @@ var exploits = [
       id: 10,
       niveau: "1",
       numero: "11",
-      description: "Utiliser une capacité de zone ou multicible, de manière à ce qu’elle touche effectivement plusieurs cibles. Elle peut être offensive ou non offensive, au choix.",
+      description: "Utiliser une capacitÃ© de zone ou multicible, de maniÃ¨re Ã  ce quâ€™elle touche effectivement plusieurs cibles. Elle peut Ãªtre offensive ou non offensive, au choix.",
       nb_champs: 1,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2220,7 +2181,7 @@ var exploits = [
       id: 11,
       niveau: "1",
       numero: "12",
-      description: "Utiliser à 3 reprises un objet sur son Pokémon au combat via une action dresseur. « Au combat » signifie qu’un combat doit être en cours, et qu’il ne peut s’agir que du Pokémon de tête, celui qui combat effectivement.",
+      description: "Utiliser Ã  3 reprises un objet sur son PokÃ©mon au combat via une action dresseur. Â« Au combat Â» signifie quâ€™un combat doit Ãªtre en cours, et quâ€™il ne peut sâ€™agir que du PokÃ©mon de tÃªte, celui qui combat effectivement.",
       nb_champs: 3,
       gain: "[150 p$ / 15 EXP]"
     },
@@ -2228,7 +2189,7 @@ var exploits = [
       id: 12,
       niveau: "2",
       numero: "01",
-      description: "Faire 5 OS d’affilée en PVE dans le même sujet.",
+      description: "Faire 5 OS dâ€™affilÃ©e en PVE dans le mÃªme sujet.",
       nb_champs: 5,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2236,7 +2197,7 @@ var exploits = [
       id: 13,
       niveau: "2",
       numero: "02",
-      description: "Vaincre un adversaire en étant doublement faible à l’un de ses types.",
+      description: "Vaincre un adversaire en Ã©tant doublement faible Ã  lâ€™un de ses types.",
       nb_champs: 1,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2244,7 +2205,7 @@ var exploits = [
       id: 14,
       niveau: "2",
       numero: "03",
-      description: "Utiliser 7 capacités non offensives.",
+      description: "Utiliser 7 capacitÃ©s non offensives.",
       nb_champs: 7,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2252,7 +2213,7 @@ var exploits = [
       id: 15,
       niveau: "2",
       numero: "04",
-      description: "Utiliser 7 capacités super efficaces.",
+      description: "Utiliser 7 capacitÃ©s super efficaces.",
       nb_champs: 7,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2260,7 +2221,7 @@ var exploits = [
       id: 16,
       niveau: "2",
       numero: "05",
-      description: "Utiliser 7 capacités bénéficiant du STAB.",
+      description: "Utiliser 7 capacitÃ©s bÃ©nÃ©ficiant du STAB.",
       nb_champs: 7,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2268,7 +2229,7 @@ var exploits = [
       id: 17,
       niveau: "2",
       numero: "06",
-      description: "Vaincre 3 Pokémon en zone orange.",
+      description: "Vaincre 3 PokÃ©mon en zone orange.",
       nb_champs: 3,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2284,7 +2245,7 @@ var exploits = [
       id: 19,
       niveau: "2",
       numero: "08",
-      description: "Vaincre un adversaire en PVE avec au moins 5 niveaux d’écart (au désavantage du joueur).",
+      description: "Vaincre un adversaire en PVE avec au moins 5 niveaux dâ€™Ã©cart (au dÃ©savantage du joueur).",
       nb_champs: 1,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2300,7 +2261,7 @@ var exploits = [
       id: 21,
       niveau: "2",
       numero: "10",
-      description: "Outspeed 3 Pokémon. Ce qu’on entend par « outspeed » c’est, en tant que Joueur n° 2, agir en premier grâce à une vitesse ou une priorité plus importante.",
+      description: "Outspeed 3 PokÃ©mon. Ce quâ€™on entend par Â« outspeed Â» câ€™est, en tant que Joueur nÂ° 2, agir en premier grÃ¢ce Ã  une vitesse ou une prioritÃ© plus importante.",
       nb_champs: 3,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2308,7 +2269,7 @@ var exploits = [
       id: 22,
       niveau: "2",
       numero: "11",
-      description: "Vaincre 6 espèces de Pokémon différentes.",
+      description: "Vaincre 6 espÃ¨ces de PokÃ©mon diffÃ©rentes.",
       nb_champs: 6,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2316,7 +2277,7 @@ var exploits = [
       id: 23,
       niveau: "2",
       numero: "12",
-      description: "Déclencher un talent en combat à 4 reprises. Ce peut être le même talent ou des talents différents, et ce peut être dans des combats différents.",
+      description: "DÃ©clencher un talent en combat Ã  4 reprises. Ce peut Ãªtre le mÃªme talent ou des talents diffÃ©rents, et ce peut Ãªtre dans des combats diffÃ©rents.",
       nb_champs: 4,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2324,7 +2285,7 @@ var exploits = [
       id: 24,
       niveau: "2",
       numero: "13",
-      description: "Vaincre un Pokémon obscur sauvage.",
+      description: "Vaincre un PokÃ©mon obscur sauvage.",
       nb_champs: 1,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2332,7 +2293,7 @@ var exploits = [
       id: 25,
       niveau: "2",
       numero: "14",
-      description: "Vaincre un adversaire avec uniquement des aléas 1 ou 2.",
+      description: "Vaincre un adversaire avec uniquement des alÃ©as 1 ou 2.",
       nb_champs: 1,
       gain: "[250 p$ / 25 EXP]"
     },
@@ -2340,7 +2301,7 @@ var exploits = [
       id: 26,
       niveau: "3",
       numero: "01",
-      description: "Faire 7 OS d’affilée en PVE dans le même sujet.",
+      description: "Faire 7 OS dâ€™affilÃ©e en PVE dans le mÃªme sujet.",
       nb_champs: 7,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2348,7 +2309,7 @@ var exploits = [
       id: 27,
       niveau: "3",
       numero: "02",
-      description: "Vaincre 2 adversaires à l’aide d’une ou plusieurs capacités auxquelles ils sont résistants uniquement.",
+      description: "Vaincre 2 adversaires Ã  lâ€™aide dâ€™une ou plusieurs capacitÃ©s auxquelles ils sont rÃ©sistants uniquement.",
       nb_champs: 2,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2356,7 +2317,7 @@ var exploits = [
       id: 28,
       niveau: "3",
       numero: "03",
-      description: "Utiliser 11 capacités non offensives.",
+      description: "Utiliser 11 capacitÃ©s non offensives.",
       nb_champs: 11,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2364,7 +2325,7 @@ var exploits = [
       id: 29,
       niveau: "3",
       numero: "04",
-      description: "Utiliser 11 capacités super efficaces.",
+      description: "Utiliser 11 capacitÃ©s super efficaces.",
       nb_champs: 11,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2372,7 +2333,7 @@ var exploits = [
       id: 30,
       niveau: "3",
       numero: "05",
-      description: "Utiliser 11 capacités bénéficiant du STAB.",
+      description: "Utiliser 11 capacitÃ©s bÃ©nÃ©ficiant du STAB.",
       nb_champs: 11,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2380,7 +2341,7 @@ var exploits = [
       id: 31,
       niveau: "3",
       numero: "06",
-      description: "Vaincre 5 Pokémon en zone orange.",
+      description: "Vaincre 5 PokÃ©mon en zone orange.",
       nb_champs: 5,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2388,7 +2349,7 @@ var exploits = [
       id: 32,
       niveau: "3",
       numero: "07",
-      description: "Remporter 3 combats, sous 3 météos différentes (un par météo).",
+      description: "Remporter 3 combats, sous 3 mÃ©tÃ©os diffÃ©rentes (un par mÃ©tÃ©o).",
       nb_champs: 3,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2396,7 +2357,7 @@ var exploits = [
       id: 33,
       niveau: "3",
       numero: "08",
-      description: "Vaincre un adversaire en PVE avec au moins 7 niveaux d’écart (au désavantage du joueur).",
+      description: "Vaincre un adversaire en PVE avec au moins 7 niveaux dâ€™Ã©cart (au dÃ©savantage du joueur).",
       nb_champs: 1,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2404,7 +2365,7 @@ var exploits = [
       id: 34,
       niveau: "3",
       numero: "09",
-      description: "Geler ou endormir 5 fois un adversaire. Les statuts sont combinables, c’est-à-dire que geler 3 fois et endormir 2 fois compterait, par exemple.",
+      description: "Geler ou endormir 5 fois un adversaire. Les statuts sont combinables, câ€™est-Ã -dire que geler 3 fois et endormir 2 fois compterait, par exemple.",
       nb_champs: 5,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2420,7 +2381,7 @@ var exploits = [
       id: 36,
       niveau: "3",
       numero: "11",
-      description: "Vaincre 9 espèces de Pokémon différentes.",
+      description: "Vaincre 9 espÃ¨ces de PokÃ©mon diffÃ©rentes.",
       nb_champs: 9,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2428,7 +2389,7 @@ var exploits = [
       id: 37,
       niveau: "3",
       numero: "12",
-      description: "Déclencher un talent en combat à 6 reprises. Ce peut être le même talent ou des talents différents, et ce peut être dans des combats différents.",
+      description: "DÃ©clencher un talent en combat Ã  6 reprises. Ce peut Ãªtre le mÃªme talent ou des talents diffÃ©rents, et ce peut Ãªtre dans des combats diffÃ©rents.",
       nb_champs: 6,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2436,7 +2397,7 @@ var exploits = [
       id: 38,
       niveau: "3",
       numero: "13",
-      description: "Vaincre un Pokémon Alpha.",
+      description: "Vaincre un PokÃ©mon Alpha.",
       nb_champs: 1,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2444,7 +2405,7 @@ var exploits = [
       id: 39,
       niveau: "3",
       numero: "14",
-      description: "Faire Méga-Évoluer un Pokémon.",
+      description: "Faire MÃ©ga-Ã‰voluer un PokÃ©mon.",
       nb_champs: 1,
       gain: "[350 p$ / 35 EXP]"
     },
@@ -2460,7 +2421,7 @@ var exploits = [
       id: 41,
       niveau: "4",
       numero: "01",
-      description: "Faire 9 OS d’affilée en PVE dans le même sujet.",
+      description: "Faire 9 OS dâ€™affilÃ©e en PVE dans le mÃªme sujet.",
       nb_champs: 9,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2468,7 +2429,7 @@ var exploits = [
       id: 42,
       niveau: "4",
       numero: "02",
-      description: "Encaisser 3 capacités super efficaces et y survivre.",
+      description: "Encaisser 3 capacitÃ©s super efficaces et y survivre.",
       nb_champs: 3,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2476,7 +2437,7 @@ var exploits = [
       id: 43,
       niveau: "4",
       numero: "03",
-      description: "Utiliser 14 capacités non offensives.",
+      description: "Utiliser 14 capacitÃ©s non offensives.",
       nb_champs: 14,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2484,7 +2445,7 @@ var exploits = [
       id: 44,
       niveau: "4",
       numero: "04",
-      description: "Utiliser 14 capacités super efficaces.",
+      description: "Utiliser 14 capacitÃ©s super efficaces.",
       nb_champs: 14,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2492,7 +2453,7 @@ var exploits = [
       id: 45,
       niveau: "4",
       numero: "05",
-      description: "Utiliser 14 capacités bénéficiant du STAB.",
+      description: "Utiliser 14 capacitÃ©s bÃ©nÃ©ficiant du STAB.",
       nb_champs: 14,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2500,7 +2461,7 @@ var exploits = [
       id: 46,
       niveau: "4",
       numero: "06",
-      description: "Vaincre 2 Pokémon en zone rouge.",
+      description: "Vaincre 2 PokÃ©mon en zone rouge.",
       nb_champs: 2,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2508,7 +2469,7 @@ var exploits = [
       id: 47,
       niveau: "4",
       numero: "07",
-      description: "Remporter 5 combats, sous 5 météos différentes (un par météo).",
+      description: "Remporter 5 combats, sous 5 mÃ©tÃ©os diffÃ©rentes (un par mÃ©tÃ©o).",
       nb_champs: 5,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2516,7 +2477,7 @@ var exploits = [
       id: 48,
       niveau: "4",
       numero: "08",
-      description: "Vaincre un adversaire en PVE avec au moins 10 niveaux d’écart (au désavantage du joueur).",
+      description: "Vaincre un adversaire en PVE avec au moins 10 niveaux dâ€™Ã©cart (au dÃ©savantage du joueur).",
       nb_champs: 1,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2524,7 +2485,7 @@ var exploits = [
       id: 49,
       niveau: "4",
       numero: "09",
-      description: "Réussir de justesse une capacité avec une précision baissée, c’est-à-dire en obtenant au dé le résultat équivalent à la valeur de précision ou jusqu’à 4 de moins.<br/>Par exemple, si la précision est de 70 %, l’exploit est réussi si le dé sort 66, 67, 68, 69 ou 70.",
+      description: "RÃ©ussir de justesse une capacitÃ© avec une prÃ©cision baissÃ©e, câ€™est-Ã -dire en obtenant au dÃ© le rÃ©sultat Ã©quivalent Ã  la valeur de prÃ©cision ou jusquâ€™Ã  4 de moins.<br/>Par exemple, si la prÃ©cision est de 70 %, lâ€™exploit est rÃ©ussi si le dÃ© sort 66, 67, 68, 69 ou 70.",
       nb_champs: 1,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2532,7 +2493,7 @@ var exploits = [
       id: 50,
       niveau: "4",
       numero: "10",
-      description: "Remporter une saison à l’Arena Caelestia ou être sacré champion·ne de son île.",
+      description: "Remporter une saison Ã  lâ€™Arena Caelestia ou Ãªtre sacrÃ© championÂ·ne de son Ã®le.",
       nb_champs: 1,
       gain: "[500 p$ / 50 EXP]"
     },
@@ -2553,24 +2514,20 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     }];
 
-
   DisplayExploitList(exploits);
 });
-
 
 function DisplayExploitList(exploit) {
   var template = "";
   exploit.forEach(function(item) {
 
-
     template = template + '<div class="exploitproduct exploitproductshow1 exploitniveau' + item.niveau + '"><span class="item_name"><span class="defi_num">Niveau ' + item.niveau + '</span> - ' + item.numero + '</span><div class="item_cate">Gain : <span class="gain">Exp ou p$ ?</span></div><div class="item_bottom"><p class="item_desc">' + item.description + '</p><div><div class="exploit_scroll">';
 
-
     for(let i = 0; i < item.nb_champs; i++){
-      template = template + `<span><input type="text" placeholder="Espèce et niveau" class="pokemonExploit"><input type="url" placeholder="Lien vers le post" class="urlExploit"></span>`;
+      template = template + `<span><input type="text" placeholder="EspÃ¨ce et niveau" class="pokemonExploit"><input type="url" placeholder="Lien vers le post" class="urlExploit"></span>`;
     }
     
-    template = template + '</div></div><a class="buttonExploit btn_add" onClick="btnExploit(this)"><div class="btn_hover"></div><div class="btn_text">Ajouter l’exploit au panier</div></a></div></div></div>';
+    template = template + '</div></div><a class="buttonExploit btn_add" onClick="btnExploit(this)"><div class="btn_hover"></div><div class="btn_text">Ajouter lâ€™exploit au panier</div></a></div></div></div>';
   });
   $('.exploitGain input').change(function(){
       if( $('#exploitP').prop('checked') == true ){
@@ -2604,7 +2561,6 @@ function DisplayExploitList(exploit) {
   $('.exploitProducts').html(template);
 }
 
-
 function btnExploit(element){
   var exploitParent = $(element).closest('div.exploitproduct'),
       lvlExploit = $(exploitParent).find('.item_name').text(),
@@ -2612,53 +2568,48 @@ function btnExploit(element){
       exploitDesc = $(exploitParent).find('.item_desc').html();
   var myPGain = parseInt($('.exploitTotal').text()) + parseInt(exploitGain);
 
-
   if( $(exploitParent).find('.exploit_scroll span:nth-child(1) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(1) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(2) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(2) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(3) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(3) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(4) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(4) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(5) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(5) .urlExploit').val() == "" || 
       $(exploitParent).find('.exploit_scroll span:nth-child(6) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(6) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(7) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(7) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(8) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(8) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(9) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(9) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(10) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(10) .urlExploit').val() == "" || 
       $(exploitParent).find('.exploit_scroll span:nth-child(11) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(11) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(12) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(12) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(13) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(13) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(14) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(14) .urlExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(15) .pokemonExploit').val() == "" || $(exploitParent).find('.exploit_scroll span:nth-child(15) .urlExploit').val() == ""){
-    alert("Tous les champs doivent être remplis !");
+    alert("Tous les champs doivent Ãªtre remplis !");
   }
-
 
   else if(exploitGain == ""){
-    alert("Sélectionne les gains selon ton cliché : Exp ou p$ ?");
+    alert("SÃ©lectionne les gains selon ton clichÃ© : Exp ou p$ ?");
   }
 
-
-  //Contrôle pour pas mélanger exp et p$
+  //ContrÃ´le pour pas mÃ©langer exp et p$
       else if( $('exploit .exploitDisplay').text().indexOf('Exp') >= 0 && $('#exploitP').is(':checked') ){
-        alert(`Tous les exploits doivent avoir le même gain : Exp ou p$ !`);
+        alert(`Tous les exploits doivent avoir le mÃªme gain : Exp ou p$ !`);
       } else if( $('exploit .exploitDisplay').text().indexOf('p$') >= 0 && $('#exploitExp').is(':checked') ){
-        alert(`Tous les exploits doivent avoir le même gain : Exp ou p$ !`);
+        alert(`Tous les exploits doivent avoir le mÃªme gain : Exp ou p$ !`);
       }
 
-
-      //Contrôle pour ne pas dépasser 50 exp ou 500 p$
+      //ContrÃ´le pour ne pas dÃ©passer 50 exp ou 500 p$
       else if( $('#exploitExp').is(':checked') && myPGain > 50 ){
-        alert('Tu ne peux pas dépasser 50 Exp par mois !');
+        alert('Tu ne peux pas dÃ©passer 50 Exp par mois !');
       } else if( $('#exploitP').is(':checked') && myPGain > 500 ){
-        alert('Tu ne peux pas dépasser 500 p$ par mois !');
+        alert('Tu ne peux pas dÃ©passer 500 p$ par mois !');
       }
-
 
   else if( $('#myCart').text().indexOf('Mes exploits') >= 0 ){
         if( $('#exploitP').is(':checked') ){
-          var templateExploit = `<div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> p$</b></clrbw></span>)</p><p class="rappelExploit">Rappel de l’exploit : `  + exploitDesc + `</p>`;
+          var templateExploit = `<div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> p$</b></clrbw></span>)</p><p class="rappelExploit">Rappel de lâ€™exploit : `  + exploitDesc + `</p>`;
           $(exploitParent).find('.exploit_scroll span').each(function(){
             var exploitPoke = $(this).find('.pokemonExploit').val();
             var exploitLink = $(this).find('.urlExploit').val();
-            templateExploit = templateExploit + `<p class="exploit_pokemon">• J’ai combattu un <clrbw>` + exploitPoke + `</clrbw> à cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
+            templateExploit = templateExploit + `<p class="exploit_pokemon">â€¢ Jâ€™ai combattu un <clrbw>` + exploitPoke + `</clrbw> Ã  cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
           });
           var templateExploit = templateExploit + `</div>`;
           $('exploit').append(templateExploit);
           exploitTotal = parseInt( $('.exploitTotal').text() ) + parseInt(exploitGain);
           $('.exploitTotal').html(exploitTotal);
         } else {
-          var templateExploit = `<div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> Exp</b></clrbw></span>)</p><p class="rappelExploit">Rappel de l’exploit : `  + exploitDesc + `</p>`;
+          var templateExploit = `<div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> Exp</b></clrbw></span>)</p><p class="rappelExploit">Rappel de lâ€™exploit : `  + exploitDesc + `</p>`;
           $(exploitParent).find('.exploit_scroll span').each(function(){
             var exploitPoke = $(this).find('.pokemonExploit').val();
             var exploitLink = $(this).find('.urlExploit').val();
-            templateExploit = templateExploit + `<p class="exploit_pokemon">• J’ai combattu un <clrbw>` + exploitPoke + `</clrbw> à cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
+            templateExploit = templateExploit + `<p class="exploit_pokemon">â€¢ Jâ€™ai combattu un <clrbw>` + exploitPoke + `</clrbw> Ã  cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
           });
           var templateExploit = templateExploit + `</div>`;
           $('.pdistributionExp').before(templateExploit);
@@ -2668,29 +2619,29 @@ function btnExploit(element){
   } else {
     if( $('#exploitP').is(':checked') ){
             exploitTotal = exploitGain;
-            var templateExploit = `<exploit><h4 class="titreExploit">Mes exploits</h4><div class="exploitDisplay">Je gagne au total <clrbw><span class="exploitTotal">` + exploitTotal + `</span> p$</clrbw>.</div><div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> p$</b></clrbw></span>)</p><p class="rappelExploit">Rappel de l’exploit : `  + exploitDesc + `</p>`;
+            var templateExploit = `<exploit><h4 class="titreExploit">Mes exploits</h4><div class="exploitDisplay">Je gagne au total <clrbw><span class="exploitTotal">` + exploitTotal + `</span> p$</clrbw>.</div><div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> p$</b></clrbw></span>)</p><p class="rappelExploit">Rappel de lâ€™exploit : `  + exploitDesc + `</p>`;
           $(exploitParent).find('.exploit_scroll span').each(function(){
             var exploitPoke = $(this).find('.pokemonExploit').val();
             var exploitLink = $(this).find('.urlExploit').val();
-            templateExploit = templateExploit + `<p class="exploit_pokemon">• J’ai combattu un <clrbw>` + exploitPoke + `</clrbw> à cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
+            templateExploit = templateExploit + `<p class="exploit_pokemon">â€¢ Jâ€™ai combattu un <clrbw>` + exploitPoke + `</clrbw> Ã  cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
           });
           var templateExploit = templateExploit + `</div></exploit>`;
           $('#myCart').append(templateExploit);
         } else {
           exploitTotal = exploitGain;
-          var templateExploit = `<exploit><h4 class="titreExploit">Mes exploits</h4><div class="exploitDisplay">Je gagne au total <clrbw><span class="exploitTotal">` + exploitTotal + `</span> Exp</clrbw>.</div><div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> Exp</b></clrbw></span>)</p><p class="rappelExploit">Rappel de l’exploit : `  + exploitDesc + `</p>`;
+          var templateExploit = `<exploit><h4 class="titreExploit">Mes exploits</h4><div class="exploitDisplay">Je gagne au total <clrbw><span class="exploitTotal">` + exploitTotal + `</span> Exp</clrbw>.</div><div class="panierExploit"><span class="remove_exploit" onClick="removeExploit(this)">x</span><p class="exploit_title">Exploit de ` + lvlExploit + ` (gain de <span class="gainmaxp"><clrbw><b><gain>` + exploitGain + `</gain> Exp</b></clrbw></span>)</p><p class="rappelExploit">Rappel de lâ€™exploit : `  + exploitDesc + `</p>`;
           $(exploitParent).find('.exploit_scroll span').each(function(){
             var exploitPoke = $(this).find('.pokemonExploit').val();
             var exploitLink = $(this).find('.urlExploit').val();
-            templateExploit = templateExploit + `<p class="exploit_pokemon">• J’ai combattu un <clrbw>` + exploitPoke + `</clrbw> à cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
+            templateExploit = templateExploit + `<p class="exploit_pokemon">â€¢ Jâ€™ai combattu un <clrbw>` + exploitPoke + `</clrbw> Ã  cet endroit : <clrbw><a href="` + exploitLink + `">www</a></clrbw></p>`;
           });
-          var templateExploit = templateExploit + `</div><div class="exploitDisplay pdistributionExp">Je donne mes gains à ce(s) pokémon(s) : <br/><textarea id="exploitPokemon" placeholder="Espèce lvl 15 (0/10) → lvl 16 (5/10)"></textarea></div></exploit>`;
+          var templateExploit = templateExploit + `</div><div class="exploitDisplay pdistributionExp">Je donne mes gains Ã  ce(s) pokÃ©mon(s) : <br/><textarea id="exploitPokemon" placeholder="EspÃ¨ce lvl 15 (0/10) â†’ lvl 16 (5/10)"></textarea></div></exploit>`;
           $('#myCart').append(templateExploit);
         }
   }
 generateCartButtons();
 }
-//Retirer l’exploit du panier
+//Retirer lâ€™exploit du panier
 function removeExploit(exploitremove){
   var nbExploit = $('.panierExploit').length;
     if( nbExploit > 0){
@@ -2707,8 +2658,6 @@ function removeExploit(exploitremove){
 }
 
 
-
-
 //REPRODUCTION
 $('.buttonRepro').click(function(){
       var reproMaman = $('#reproMaman').val(),
@@ -2723,28 +2672,25 @@ $('.buttonRepro').click(function(){
       }
       var lienObtention = $('#lienObtention').val();
 
-
       if(reproMaman == '' || reproPapa == ''){
-        alert("L'œuf doit avoir 2 parents !");
+        alert("L'Å“uf doit avoir 2 parents !");
       } else if(lienObtention == ''){
-        alert("Tu dois mettre le lien de l'obtention (vers le Rp ou vers l'événement) !");
+        alert("Tu dois mettre le lien de l'obtention (vers le Rp ou vers l'Ã©vÃ©nement) !");
       } 
 
-
-      else if( $('#myCart').text().indexOf('Reproduction Pokémon') >= 0 ){
+      else if( $('#myCart').text().indexOf('Reproduction PokÃ©mon') >= 0 ){
         if( $('.clicheList').text().indexOf('01-08-400') >= 0 ) {
-          $('oeuf').append(`<div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokémon a ramené un œuf !</b></clrbw></p><p>Sa mère est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son père est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je possède le <clrsoutien>Cliché 08 Reproduction</clrsoutien> !</p><p>J'ai obtenu l'œuf ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div>`);
+          $('oeuf').append(`<div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokÃ©mon a ramenÃ© un Å“uf !</b></clrbw></p><p>Sa mÃ¨re est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son pÃ¨re est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je possÃ¨de le <clrsoutien>ClichÃ© 08 Reproduction</clrsoutien> !</p><p>J'ai obtenu l'Å“uf ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div>`);
         } else {
-          $('oeuf').append(`<div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokémon a ramené un œuf !</b></clrbw></p><p>Sa mère est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son père est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je l'ai obtenu ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div>`);
+          $('oeuf').append(`<div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokÃ©mon a ramenÃ© un Å“uf !</b></clrbw></p><p>Sa mÃ¨re est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son pÃ¨re est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je l'ai obtenu ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div>`);
         }
       } else{
         if( $('.clicheList').text().indexOf('01-08-400') >= 0 ) {
-          $('#myCart').append(`<oeuf><h4 class="titreRepro">Reproduction Pokémon</h4><div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokémon a ramené un œuf !</b></clrbw></p><p>Sa mère est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son père est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je possède le <clrsoutien>Cliché 08 Reproduction</clrsoutien> !</p><p>J'ai obtenu l'œuf ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div></oeuf>`);
+          $('#myCart').append(`<oeuf><h4 class="titreRepro">Reproduction PokÃ©mon</h4><div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokÃ©mon a ramenÃ© un Å“uf !</b></clrbw></p><p>Sa mÃ¨re est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son pÃ¨re est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je possÃ¨de le <clrsoutien>ClichÃ© 08 Reproduction</clrsoutien> !</p><p>J'ai obtenu l'Å“uf ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div></oeuf>`);
         } else {
-          $('#myCart').append(`<oeuf><h4 class="titreRepro">Reproduction Pokémon</h4><div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokémon a ramené un œuf !</b></clrbw></p><p>Sa mère est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son père est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je l'ai obtenu ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div></oeuf>`);
+          $('#myCart').append(`<oeuf><h4 class="titreRepro">Reproduction PokÃ©mon</h4><div class="panierRepro"><span class="remove_oeuf">x</span><p class="repro_title"><clrbw><b>Mon pokÃ©mon a ramenÃ© un Å“uf !</b></clrbw></p><p>Sa mÃ¨re est une <clrbw><strong>` + reproMaman + `</strong></clrbw> ` + Fchromatique + ` et son pÃ¨re est un <clrbw><strong>` + reproPapa + `</strong></clrbw> ` + Mchromatique + ` !</p><p>Je l'ai obtenu ici : <clrbw><a href="` + lienObtention + `">www</a></clrbw></p></div></oeuf>`);
         }
       }
-
 
     //Retirer l'oeuf du panier
     $('.panierRepro').each(function(i){
@@ -2764,28 +2710,22 @@ generateCartButtons();
 });
 
 
-
-
-// PENSION POKÉMON
-
+// PENSION POKÃ‰MON
 
 $('input#pensionExp').change(function(){
   var expValue = parseInt($(this).val());
   $('.pension_bloc > div > span > span').html(expValue * 10);
 });
 
-
 $('.buttonPension1').click(function(){
   var especePension = $('#pensionEspece').val(),
       dresseurPension = $('#pensionDresseur').val();
 
-
-  if( $('#myCart').text().indexOf('Pension Pokémon') >= 0 ){
-    $('pension').append(`<div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>J'accueille un Pokémon en pension !</b></clrbw></p><p>Il s'agit du <clrbw>` + especePension + `</clrbw> appartenant à <clrbw>` + dresseurPension + `</clrbw>.</p></div>`);
+  if( $('#myCart').text().indexOf('Pension PokÃ©mon') >= 0 ){
+    $('pension').append(`<div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>J'accueille un PokÃ©mon en pension !</b></clrbw></p><p>Il s'agit du <clrbw>` + especePension + `</clrbw> appartenant Ã  <clrbw>` + dresseurPension + `</clrbw>.</p></div>`);
   } else {
-    $('#myCart').append(`<pension><h4 class="titrePension">Pension Pokémon</h4><div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>J'accueille un Pokémon en pension !</b></clrbw></p><p>Il s'agit du <clrbw>` + especePension + `</clrbw> appartenant à <clrbw>` + dresseurPension + `</clrbw>.</p></div></pension>`);
+    $('#myCart').append(`<pension><h4 class="titrePension">Pension PokÃ©mon</h4><div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>J'accueille un PokÃ©mon en pension !</b></clrbw></p><p>Il s'agit du <clrbw>` + especePension + `</clrbw> appartenant Ã  <clrbw>` + dresseurPension + `</clrbw>.</p></div></pension>`);
   }
-
 
   //Retirer du panier
   $('.panierPension').each(function(i){
@@ -2802,10 +2742,8 @@ $('.buttonPension1').click(function(){
     });
   });
 
-
 generateCartButtons();
 });
-
 
 $('.buttonPension2').click(function(){
   var expPension = $('#pensionExp').val(),
@@ -2813,15 +2751,13 @@ $('.buttonPension2').click(function(){
       redevancePension = $('#pensionRedevance').val(),
       montantPension = $('.pension_bloc > div > span span').html();
 
-
   if(expPension == '' || accueilPension == '' || redevancePension == ''){
-    alert("Tous les champs doivent être remplis !");
-  } else if( $('#myCart').text().indexOf('Pension Pokémon') >= 0 ){
-    $('pension').append(`<div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>Acquisition des gains !</b></clrbw></p><p>Le Pokémon en pension a reçu <clrbw>` + expPension + ` exp</clrbw> depuis son arrivée (<clrbw><a href="` + accueilPension + `" target="_blank">www</a></clrbw>). Je gagne donc <clrbw>` + montantPension + `&nbsp;p$</clrbw> et la redevance m'a été versée <clrbw><a href="` + redevancePension + `" target="_blank">ici</a></clrbw>.</p></div>`);
+    alert("Tous les champs doivent Ãªtre remplis !");
+  } else if( $('#myCart').text().indexOf('Pension PokÃ©mon') >= 0 ){
+    $('pension').append(`<div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>Acquisition des gains !</b></clrbw></p><p>Le PokÃ©mon en pension a reÃ§u <clrbw>` + expPension + ` exp</clrbw> depuis son arrivÃ©e (<clrbw><a href="` + accueilPension + `" target="_blank">www</a></clrbw>). Je gagne donc <clrbw>` + montantPension + `&nbsp;p$</clrbw> et la redevance m'a Ã©tÃ© versÃ©e <clrbw><a href="` + redevancePension + `" target="_blank">ici</a></clrbw>.</p></div>`);
   } else {
-    $('#myCart').append(`<pension><h4 class="titrePension">Pension Pokémon</h4><div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>Acquisition des gains !</b></clrbw></p><p>Le Pokémon en pension a reçu <clrbw>` + expPension + ` exp</clrbw> depuis son arrivée (<clrbw><a href="` + accueilPension + `" target="_blank">www</a></clrbw>). Je gagne donc <clrbw>` + montantPension + `&nbsp;p$</clrbw> et la redevance m'a été versée <clrbw><a href="` + redevancePension + `" target="_blank">ici</a></clrbw>.</p></div></pension>`);
+    $('#myCart').append(`<pension><h4 class="titrePension">Pension PokÃ©mon</h4><div class="panierPension"><span class="remove_pension">x</span><p class="pension_title"><clrbw><b>Acquisition des gains !</b></clrbw></p><p>Le PokÃ©mon en pension a reÃ§u <clrbw>` + expPension + ` exp</clrbw> depuis son arrivÃ©e (<clrbw><a href="` + accueilPension + `" target="_blank">www</a></clrbw>). Je gagne donc <clrbw>` + montantPension + `&nbsp;p$</clrbw> et la redevance m'a Ã©tÃ© versÃ©e <clrbw><a href="` + redevancePension + `" target="_blank">ici</a></clrbw>.</p></div></pension>`);
   }
-
 
   //Retirer du panier
   $('.panierPension').each(function(i){
@@ -2838,21 +2774,17 @@ $('.buttonPension2').click(function(){
     });
   });
 
-
 generateCartButtons();
 });
 
 
-
-
 //Effacer tout le panier
 function emptyCart() {
-  if(confirm("Êtes-vous sûr·e de vouloir vider le panier ?")) {
+  if(confirm("ÃŠtes-vous sÃ»rÂ·e de vouloir vider le panier ?")) {
     $('#myCart').html('');
   }
   generateCartButtons();
 }
-
 
 //FILTRE HAUT
 function noFilter() {
@@ -2860,7 +2792,6 @@ function noFilter() {
   $('.shop_filter > a').addClass('filtchecked');
   $('.sectionCliche, .sectionAcquisition, .sectionCuisine, .sectionPrime, .sectionExploit, .sectionRepro, .sectionPension').css('display', 'block');
 }
-
 
 $('.shop_filter #clicheFiltre').change(function(){
   $('.shop_filter > a').removeClass('filtchecked');
@@ -2870,7 +2801,6 @@ $('.shop_filter #clicheFiltre').change(function(){
   $('#exploitFiltre').prop('checked', false);
   $('#reproFiltre').prop('checked', false);
   $('#pensionFiltre').prop('checked', false);
-
 
   $('.sectionCliche').css('display', 'block');
   $('.sectionAcquisition').css('display', 'none');
@@ -2892,7 +2822,6 @@ $('.shop_filter #acquisitionFiltre').change(function(){
   $('#reproFiltre').prop('checked', false);
   $('#pensionFiltre').prop('checked', false);
 
-
   $('.sectionCliche').css('display', 'none');
   $('.sectionAcquisition').css('display', 'block');
   $('.sectionCuisine').css('display', 'none');
@@ -2912,7 +2841,6 @@ $('.shop_filter #cuisineFiltre').change(function(){
   $('#exploitFiltre').prop('checked', false);
   $('#reproFiltre').prop('checked', false);
   $('#pensionFiltre').prop('checked', false);
-
 
   $('.sectionCliche').css('display', 'none');
   $('.sectionAcquisition').css('display', 'none');
@@ -2934,7 +2862,6 @@ $('.shop_filter #primeFiltre').change(function(){
   $('#reproFiltre').prop('checked', false);
   $('#pensionFiltre').prop('checked', false);
 
-
   $('.sectionCliche').css('display', 'none');
   $('.sectionAcquisition').css('display', 'none');
   $('.sectionCuisine').css('display', 'none');
@@ -2947,7 +2874,6 @@ $('.shop_filter #primeFiltre').change(function(){
   }
 });
 
-
 $('.shop_filter #exploitFiltre').change(function(){
   $('.shop_filter > a').removeClass('filtchecked');
   $('#clicheFiltre').prop('checked', false);
@@ -2956,7 +2882,6 @@ $('.shop_filter #exploitFiltre').change(function(){
   $('#reproFiltre').prop('checked', false);
   $('#primeFiltre').prop('checked', false);
   $('#pensionFiltre').prop('checked', false);
-
 
   $('.sectionCliche').css('display', 'none');
   $('.sectionAcquisition').css('display', 'none');
@@ -2970,7 +2895,6 @@ $('.shop_filter #exploitFiltre').change(function(){
   }
 });
 
-
 $('.shop_filter #reproFiltre').change(function(){
   $('.shop_filter > a').removeClass('filtchecked');
   $('#clicheFiltre').prop('checked', false);
@@ -2979,7 +2903,6 @@ $('.shop_filter #reproFiltre').change(function(){
   $('#exploitFiltre').prop('checked', false);
   $('#primeFiltre').prop('checked', false);
   $('#pensionFiltre').prop('checked', false);
-
 
   $('.sectionCliche').css('display', 'none');
   $('.sectionAcquisition').css('display', 'none');
@@ -2993,7 +2916,6 @@ $('.shop_filter #reproFiltre').change(function(){
   }
 });
 
-
 $('.shop_filter #pensionFiltre').change(function(){
   $('.shop_filter > a').removeClass('filtchecked');
   $('#clicheFiltre').prop('checked', false);
@@ -3002,7 +2924,6 @@ $('.shop_filter #pensionFiltre').change(function(){
   $('#exploitFiltre').prop('checked', false);
   $('#primeFiltre').prop('checked', false);
   $('#reproFiltre').prop('checked', false);
-
 
   $('.sectionCliche').css('display', 'none');
   $('.sectionAcquisition').css('display', 'none');
@@ -3016,7 +2937,6 @@ $('.shop_filter #pensionFiltre').change(function(){
   }
 });
 
-
 //FILTRE PRIMES
 function noFilterPrime() {
   $('.prime_filter input').prop('checked', false);
@@ -3024,14 +2944,12 @@ function noFilterPrime() {
   $('.niveau1, .niveau2, .niveau3, .niveau4, .niveau5').css('display', 'block');
 }
 
-
 $('.prime_filter #prime1Filtre').change(function(){
   $('.prime_filter > a').removeClass('filtprimechecked');
   $('#prime2Filtre').prop('checked', false);
   $('#prime3Filtre').prop('checked', false);
   $('#prime4Filtre').prop('checked', false);
   $('#prime5Filtre').prop('checked', false);
-
 
   $('.niveau1').css('display', 'block');
   $('.niveau2').css('display', 'none');
@@ -3049,7 +2967,6 @@ $('.prime_filter #prime2Filtre').change(function(){
   $('#prime4Filtre').prop('checked', false);
   $('#prime5Filtre').prop('checked', false);
 
-
   $('.niveau1').css('display', 'none');
   $('.niveau2').css('display', 'block');
   $('.niveau3').css('display', 'none');
@@ -3065,7 +2982,6 @@ $('.prime_filter #prime3Filtre').change(function(){
   $('#prime2Filtre').prop('checked', false);
   $('#prime4Filtre').prop('checked', false);
   $('#prime5Filtre').prop('checked', false);
-
 
   $('.niveau1').css('display', 'none');
   $('.niveau2').css('display', 'none');
@@ -3083,7 +2999,6 @@ $('.prime_filter #prime4Filtre').change(function(){
   $('#prime3Filtre').prop('checked', false);
   $('#prime5Filtre').prop('checked', false);
 
-
   $('.niveau1').css('display', 'none');
   $('.niveau2').css('display', 'none');
   $('.niveau3').css('display', 'none');
@@ -3094,14 +3009,12 @@ $('.prime_filter #prime4Filtre').change(function(){
   }
 });
 
-
 $('.prime_filter #prime5Filtre').change(function(){
   $('.prime_filter > a').removeClass('filtprimechecked');
   $('#prime1Filtre').prop('checked', false);
   $('#prime2Filtre').prop('checked', false);
   $('#prime3Filtre').prop('checked', false);
   $('#prime4Filtre').prop('checked', false);
-
 
   $('.niveau1').css('display', 'none');
   $('.niveau2').css('display', 'none');
@@ -3113,7 +3026,6 @@ $('.prime_filter #prime5Filtre').change(function(){
   }
 });
 
-
  //FILTRE EXPLOITS
 function noFilterExploit() {
   $('.exploit_filter input').prop('checked', false);
@@ -3121,14 +3033,12 @@ function noFilterExploit() {
   $('.exploitniveau1, .exploitniveau2, .exploitniveau3, .exploitniveau4, .exploitniveau5').css('display', 'flex');
 }
 
-
 $('.exploit_filter #exploit1Filtre').change(function(){
   $('.exploit_filter > a').removeClass('filtexploitchecked');
   $('#exploit2Filtre').prop('checked', false);
   $('#exploit3Filtre').prop('checked', false);
   $('#exploit4Filtre').prop('checked', false);
   $('#exploit5Filtre').prop('checked', false);
-
 
   $('.exploitniveau1').css('display', 'flex');
   $('.exploitniveau2').css('display', 'none');
@@ -3146,7 +3056,6 @@ $('.exploit_filter #exploit2Filtre').change(function(){
   $('#exploit4Filtre').prop('checked', false);
   $('#exploit5Filtre').prop('checked', false);
 
-
   $('.exploitniveau1').css('display', 'none');
   $('.exploitniveau2').css('display', 'flex');
   $('.exploitniveau3').css('display', 'none');
@@ -3162,7 +3071,6 @@ $('.exploit_filter #exploit3Filtre').change(function(){
   $('#exploit2Filtre').prop('checked', false);
   $('#exploit4Filtre').prop('checked', false);
   $('#exploit5Filtre').prop('checked', false);
-
 
   $('.exploitniveau1').css('display', 'none');
   $('.exploitniveau2').css('display', 'none');
@@ -3180,7 +3088,6 @@ $('.exploit_filter #exploit4Filtre').change(function(){
   $('#exploit3Filtre').prop('checked', false);
   $('#exploit5Filtre').prop('checked', false);
 
-
   $('.exploitniveau1').css('display', 'none');
   $('.exploitniveau2').css('display', 'none');
   $('.exploitniveau3').css('display', 'none');
@@ -3191,14 +3098,12 @@ $('.exploit_filter #exploit4Filtre').change(function(){
   }
 });
 
-
 $('.exploit_filter #exploit5Filtre').change(function(){
   $('.exploit_filter > a').removeClass('filtexploitchecked');
   $('#exploit1Filtre').prop('checked', false);
   $('#exploit2Filtre').prop('checked', false);
   $('#exploit3Filtre').prop('checked', false);
   $('#exploit4Filtre').prop('checked', false);
-
 
   $('.exploitniveau1').css('display', 'none');
   $('.exploitniveau2').css('display', 'none');
@@ -3209,7 +3114,6 @@ $('.exploit_filter #exploit5Filtre').change(function(){
       noFilterExploit();
   }
 });
-
 
 var generateCartButtons = function() {
   var generateCartButton = $('#myCart').text();
