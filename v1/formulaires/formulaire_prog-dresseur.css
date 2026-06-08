@@ -1,0 +1,1090 @@
+body {
+    margin: 0px;
+    background: var(--forum-main-grey);
+    padding: 10px 0;
+    color: var(--forum-text);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: arial;
+}
+   
+    
+:root {
+    --forum-main-color: #56ab2f;
+    --forum-accent-color: #a8de63;
+    --forum-main-grey: #272727;
+    --forum-second-grey: #111212;
+    --forum-thirth-grey: #3b3a3a;
+    --forum-text: #cdcdcd;
+    --white: #fff;
+    --black: #000;
+    --rouge: linear-gradient(90deg, #de6262, #a44d4d);
+    --jaune: linear-gradient(90deg, #f6c749, #cda63f);
+    --bleu: linear-gradient(90deg, #62dadd, #4da2a4);
+    --color-red: #DE6262;
+    --bleu-main-color: #62dadd;
+    --bleu-accent-color: #4da2a4;
+    --rouge-main-color: #de6262;
+    --rouge-accent-color: #a44d4d;
+    --jaune-main-color: #f6c749;
+    --jaune-accent-color: #cda63f;
+}
+
+
+:root .soutien {
+    --main-color-group: #f6c749;
+    --accent-color-group: #cda63f;
+    --filter-color-group: invert(72%) sepia(10%) saturate(2496%) hue-rotate(358deg) brightness(113%) contrast(93%);
+}
+
+
+:root .combattant {
+    --main-color-group: #de6262;
+    --accent-color-group: #a44d4d;
+    --filter-color-group: invert(48%) sepia(79%) saturate(1123%) hue-rotate(322deg) brightness(93%) contrast(84%);
+}
+
+
+:root .collectionneur {
+    --main-color-group: #62dadd;
+    --accent-color-group: #4da2a4;
+    --filter-color-group: invert(78%) sepia(73%) saturate(321%) hue-rotate(129deg) brightness(90%) contrast(93%);
+}
+
+
+:root .autre {
+    --main-color-group: #a8de63;
+    --accent-color-group: #a8de63; 
+    --filter-color-group: invert(95%) sepia(40%) saturate(1064%) hue-rotate(26deg) brightness(100%) contrast(74%);;
+}
+
+
+clrbw{
+  color: var(--forum-accent-color);
+}
+
+
+clrsoutien {
+  color: #f6c749;
+}
+clrcombat {
+  color: #de6262;
+}
+clrcollec {
+  color: #62dadd;
+}
+
+
+clradamantia{color:#C196F8 !important;}
+clranthos{color:#19BAEF !important;}
+clrcalleis{color:#E6BC00 !important;}
+clrhaptos{color:#30DB30 !important;}
+clrkopadia{color:#F06BF7 !important;}
+clraureas{color:#ceba9c !important;}
+
+
+acier {
+    color:#5a90a4;
+}
+combat {
+    color:#cf3f6b;
+}
+dragon {
+    color:#026ec5;
+}
+eau {
+    color:#4f92d7;
+}
+electrik {
+    color:#f5d33a;
+}
+fee {
+    color:#ed90e7;
+}
+feu {
+    color:#ff9e55;
+}
+glace {
+    color:#73d0c1;
+}
+insecte {
+    color:#93c32c;
+}
+normal {
+    color:#939ca3;
+}
+plante {
+    color:#63bd5a;
+}
+poison {
+    color:#ac6cc9;
+}
+psy {
+    color:#fa727a;
+}
+roche {
+    color:#c6b98e;
+}
+sol {
+    color:#da7944;
+}
+spectre {
+    color:#5169af;
+}
+tenebres {
+    color:#8d756e;
+}
+vol {
+    color:#90abdf;
+}
+
+
+  /* ----- Header ----- */
+
+
+h2 {
+    width: 100%;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px auto 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--forum-second-grey);
+    padding: 10px;
+}
+  
+.header-line-gradient {
+    background-image: linear-gradient(90deg,var(--forum-main-color),var(--forum-accent-color));
+    height: 5px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+    
+a.showCart {
+    background: var(--forum-second-grey);
+    border: 1px solid var(--forum-text);
+    padding: 6px 10px;
+    text-transform: uppercase;
+    transition: 0.5s linear;
+    font-size: 13px;
+    display: block;
+    width: fit-content;
+    margin: -15px auto 40px;
+}
+a.showCart:hover {
+    background: var(--forum-main-color);
+    color: #fff;
+}
+
+
+  /* ----- Général ----- */
+
+
+.clicheList{
+  display: none;
+}
+
+
+.txt_title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--forum-text);
+}
+
+
+.blocCliche {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.clichevisible{
+  display: block!important;
+}
+
+
+.newAcquisition, .recetteCuisine, .primeRecherche, .clicheRepro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.bloc_descriCliche {
+    font-size: 12px;
+    text-align: justify;
+    width: 90%;
+    margin: 14px auto;
+}
+
+
+/* ----- Filtres ----- */
+
+
+.shop_filter, .prime_filter, .exploit_filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px auto 50px;
+}
+.shop_filter > input, .prime_filter > input, .exploit_filter > input {
+    display: none;
+}
+.shop_filter > label, .shop_filter > a, .prime_filter > label, .prime_filter > a, .exploit_filter > label, .exploit_filter > a {
+    width: 15%;
+    text-align: center;
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--white);
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.shop_filter input:checked + label, .shop_filter > a.filtchecked, .prime_filter input:checked + label, .prime_filter > a.filtprimechecked, .exploit_filter input:checked + label, .exploit_filter > a.filtexploitchecked {
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.prime_filter, .exploit_filter {
+    margin: 40px 0;
+}
+.prime_filter > label, .prime_filter > a, .exploit_filter > label, .exploit_filter > a {
+    border-radius: 5px;
+    width: 10%;
+    font-size: 12px;
+}
+.prime_filter input:checked + label, .prime_filter > a.filtprimechecked {
+    background-image: linear-gradient(90deg, var(--bleu-main-color), var(--bleu-accent-color));
+}
+.exploit_filter input:checked + label, .exploit_filter > a.filtexploitchecked {
+    background-image: linear-gradient(90deg, var(--rouge-main-color), var(--rouge-accent-color));
+}
+
+
+/* ----- BOUTONS AJOUT PANIER ----- */
+.btn_add {
+    box-sizing: content-box;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--forum-thirth-grey);
+    border: 1px solid var(--forum-main-color);
+    padding: 6px;
+    padding-left: 30px;
+    height: 12px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 11px;
+    border-radius: 7px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.btn_add:before {
+    content: "+";
+    display: inline-block;
+    background: var(--forum-main-color);
+    color: var(--white);
+    padding: 5px 7px;
+    font-size: 17px;
+    height: 14px;
+    line-height: 15px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    border-radius: 6px 0 0 6px;
+    transition: all 0.5s;
+}
+.btn_add > .btn_hover {
+    width: 155px;
+    background: var(--forum-main-color);
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: -155px;
+    border-radius: 6px;
+    transition: all 0.5s;
+}
+
+
+.btn_add:hover > .btn_hover {
+  left: 0;
+}
+.btn_add > .btn_hover {
+    width: 100%;
+    left: -100%;
+}
+
+
+.btn_text {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+}
+
+
+a.buttonCliche {
+    width: 191px;
+}
+a.buttonAcquisition {
+    width: 222px;
+}
+a.buttonCuisine {
+    width: 190px;
+    margin-top: 20px;
+}
+a.buttonPrime {
+    width: 168px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--bleu-accent-color);
+}
+.buttonPrime:before, .buttonPrime > .btn_hover {
+  background: var(--bleu-accent-color);
+}
+
+
+a.buttonExploit {
+    width: 171px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid var(--rouge-accent-color);
+}
+.buttonExploit:before, .buttonExploit > .btn_hover {
+  background: var(--rouge-accent-color);
+}
+
+
+a.buttonRepro {
+    width: 153px;
+}
+
+
+/* ----- NOUVELLES ACQUISITIONS & CLICHÉS ----- */
+
+
+.newAcquisition > div, .blocCliche > div, .changeCliche > div {
+    margin: 35px auto;
+    width: 230px;
+    text-align: center;
+    color: var(--forum-text);
+}
+
+
+label.autre.changeCliche {
+    display: block;
+    margin: auto;
+    width: 230px;
+}
+
+
+.newAcquisition img, .changeCliche img {
+    width: 30px;
+    display: block;
+    margin: 8px auto;
+    filter: invert(0.9);
+}
+
+
+.blocCliche img {
+    width: 35px;
+    display: block;
+    margin: 8px auto;
+}
+
+
+.newAcquisition select, .changeCliche select {
+    background: var(--main-color-group);
+    border: none;
+    color: var(--forum-second-grey);
+    border-radius: 3px;
+    width: 96%;
+    margin: 5px;
+    text-align: center;
+    height: 23px;
+}
+
+
+.newAcquisition input[type="checkbox"], .blocCliche input[type="checkbox"], .changeCliche input[type="checkbox"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+.newAcquisition input[type="checkbox"] + div, .blocCliche input[type="checkbox"] + div, .changeCliche input[type="checkbox"] + div {
+    border-radius: 0.5rem;
+    border: 1px solid var(--forum-text);
+    transition: 0.15s ease;
+    cursor: pointer;
+    position: relative;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+.blocCliche input[type="checkbox"] + div, .changeCliche input[type="checkbox"] + div {
+  font-size: 13px;
+}
+
+
+.newAcquisition input[type="checkbox"] + div:before, .blocCliche input[type="checkbox"] + div:before, .changeCliche input[type="checkbox"] + div:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--forum-text);
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.25s ease;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+.newAcquisition input[type="checkbox"] + div:hover:before, .blocCliche input[type="checkbox"] + div:hover:before, .changeCliche input[type="checkbox"] + div:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.newAcquisition input[type="checkbox"]:checked + div, .blocCliche input[type="checkbox"]:checked + div, .changeCliche input[type="checkbox"]:checked + div {
+    border: 1px solid var(--main-color-group);
+    color: var(--main-color-group);
+    background: var(--forum-second-grey);
+}
+
+
+.newAcquisition input[type="checkbox"]:checked + div img, .changeCliche input[type="checkbox"]:checked + div img {
+    filter: var(--filter-color-group);
+}
+
+
+.newAcquisition input[type="checkbox"]:checked + div:before, .blocCliche input[type="checkbox"]:checked + div:before, .changeCliche input[type="checkbox"]:checked + div:before {
+    transform: scale(1);
+    opacity: 1;
+    color: var(--main-color-group);
+    background-color: var(--main-color-group);
+    background-image: url(https://i.servimg.com/u/f79/19/95/63/61/check11.png); 
+    /* check claire : https://i.servimg.com/u/f79/19/95/63/61/check10.png */ 
+}
+
+
+.removeCliche{
+  display: none!important;
+}
+
+
+div#champsAcqui > input, div#changeClicheChamp > input, div#champCR > input {
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+div#changeClicheChamp {
+    margin-top: 5px;
+}
+
+
+div#changeClicheChamp > input {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+/* ----- FIN DES ACQUISITIONS & CLICHÉS ----- */
+
+
+
+
+/* ----- DÉBUT CUISINE & PRIMES ----- */
+
+
+.newAcquisition, .recetteCuisine, .primeRecherche, .clicheRepro {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.recetteCuisine > div, .primeRecherche > div {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+.recetteCuisine > select, .recetteCuisine > div, .primeRecherche > select, .primeRecherche > div, .clicheRepro > div {
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+    margin: 35px auto;
+    width: 30%;
+    text-align: center;
+    border: none;
+    min-height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+input#cuisineExp, input#cuisineP, input#Fchromatique, input#Mchromatique, input#cliche9Chroma, input#cliche9Talent, .gain input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 1px solid var(--forum-text);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin: -3px 3px 0 10px;
+}
+input#cuisineExp:checked, input#cuisineP:checked, input#Fchromatique:checked, input#Mchromatique:checked, input#cliche9Chroma:checked, input#cliche9Talent:checked, .gain input[type="radio"]:checked {
+    background-color: var(--forum-accent-color);
+}
+
+
+textarea#cuisinePokemon, textarea#primePokemon, textarea#exploitPokemon {
+    width: 100%!important;
+    height: 70px!important;
+    border: none;
+    background: var(--white);
+    color: var(--forum-second-grey);
+    border-radius: 4px;
+    resize: none;
+    margin-top: 10px;
+    margin-left: -3px;
+}
+
+
+.cuisineDisplay, .primeDisplay, .exploitDisplay {
+    padding: 5px 15px;
+    background: var(--forum-main-grey);
+    border-left: 5px solid var(--forum-main-grey);
+    color: var(--forum-text);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.products, .exploitProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0 50px;
+}
+
+
+.exploitProducts {
+    gap: 0px!important;
+}
+
+
+.product, .exploitproduct {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 275px;
+  width: 100%;
+  background: linear-gradient(-90deg, var(--bleu-main-color), var(--bleu-accent-color));
+}
+
+
+.exploitproduct {
+    background: linear-gradient(-90deg, var(--rouge-main-color), var(--rouge-accent-color));
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+
+.productshow, .productshow1, .exploitproductshow1, .exploitproductshow1 {
+  display: flex;
+}
+
+
+span.item_name, span.product_name {
+    background: var(--forum-second-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.item_bottom, .product_bottom {
+    background: var(--forum-thirth-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+input.urlRp, input.pokemonPrime {
+    width: 100%;
+    border: none;
+    margin: 4px;
+    font-size: 12px;
+    height: 23px;
+    border-radius: 4px;
+}
+
+
+.exploitProducts .item_bottom > span {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+input.urlExploit, input.pokemonExploit {
+    width: 56%;
+    border: none;
+    margin: 4px;
+    font-size: 12px;
+    height: 23px;
+    border-radius: 4px;
+}
+
+
+input.pokemonExploit {
+    width: 38%;
+}
+
+
+textarea.defiComm {
+    width: 100%!important;
+    height: 70px!important;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+
+span.item_subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+
+.noButton1, .noButton2, .noButton3, .noButton4 {
+    width: 180px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+
+.item_cate, .product_gain {
+    font-size: 11px;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+}
+
+
+.item_cate {
+    padding: 6px 0;
+}
+
+
+p.item_desc {
+    background: var(--forum-second-grey);
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 7px;
+    font-size: 12px;
+    height: 57px;
+    overflow: auto;
+}
+
+
+.rappelPrime, .rappelExploit{
+  display: none;
+}
+
+
+.primeGain, .exploitGain {
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+    margin: 35px auto;
+    width: 30%;
+    text-align: center;
+    border: none;
+    min-height: 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+.primeGain > input, .exploitGain > input {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 4px;
+    vertical-align: middle;
+    border: 1px solid var(--forum-main-grey);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin: -3px 3px 0 10px;
+}
+.primeGain > input:checked {
+    background-color: var(--bleu-main-color);
+}
+.exploitGain > input:checked {
+    background-color: var(--rouge-main-color);
+}
+
+
+.exploitProducts .item_bottom {
+    align-content: flex-start;
+    height: 100%;
+}
+
+
+.exploitProducts .item_bottom > div ::-webkit-scrollbar{ 
+  width: 2px;
+  height: 2px;
+  background-color: var(--forum-text)!important;
+  }
+.exploitProducts .item_bottom > div ::-webkit-scrollbar-track{ 
+  background-color: var(--forum-text)!important;
+  }
+.exploitProducts .item_bottom > div ::-webkit-scrollbar-thumb{
+  background-color: var(--rouge-main-color)!important;
+ }
+
+
+.exploit_scroll {
+    margin-top: 7px;
+    height: 155px;
+    overflow: auto;
+}
+
+
+/* ----- FIN CUISINE & PRIMES ----- */
+
+
+/* ----- DÉBUT REPRODUCTION ----- */
+
+
+.repro_parent {
+    padding: 10px;
+}
+
+
+.repro_parent label {
+    font-size: 12px;
+    position: relative;
+    top: -1px;
+    left: 2px;
+}
+
+
+.repro_parent > div {
+    width: 100%;
+    background: var(--forum-main-grey);
+    padding: 5px 10px 5px 0;
+    border-radius: 4px;
+}
+
+
+input#reproMaman, input#reproPapa, input#lienObtention {
+    border: none;
+    border-radius: 4px;
+    height: 25px;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+input#lienObtention {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+
+.repro_parent.cliche9 > div {
+    margin-top: 16px;
+}
+
+
+.repro_parent.cliche9 > div:last-of-type {
+    margin-top: 9px;
+}
+
+
+/* ----- FIN REPRODUCTION ----- */
+
+
+
+
+/* ----- DÉBUT PENSION ----- */
+
+
+.pension_bloc {
+    width: 500px;
+    margin: 30px auto;
+    background: var(--forum-thirth-grey);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.pension_bloc > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.pension_titre {
+    text-transform: uppercase;
+    font-size: 13px;
+    background: var(--forum-second-grey);
+    text-align: center;
+    padding: 5px;
+}
+
+
+.pension_bloc hr {
+    width: 100%;
+    height: 4px;
+    border: none;
+    margin: 0 0 10px 0;
+    background: var(--jaune);
+}
+
+
+.pension_bloc input {
+    width: 450px;
+    display: block;
+    border: none;
+    font-size: 12px;
+    height: 23px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+
+input#pensionExp {
+    width: 380px;
+}
+
+
+.pension_bloc > div > span {
+    font-size: 13px;
+    display: block;
+    width: 70px;
+    padding-left: 5px;
+}
+
+
+.pension_bloc > div > span span {
+    font-weight: bold;
+    color: var(--jaune-main-color);
+}
+
+
+a.buttonPension1.btn_add, a.buttonPension2.btn_add {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid var(--jaune-accent-color);
+}
+a.buttonPension1.btn_add .btn_hover, a.buttonPension2.btn_add .btn_hover {
+    background: var(--jaune-accent-color);
+}
+a.buttonPension1.btn_add:before, a.buttonPension2.btn_add:before {
+    background: var(--jaune-accent-color);
+}
+
+
+/* ----- FIN PENSION ----- */
+
+
+/* ----- DÉBUT PANIER ---- */
+
+
+div#panier, div#panier * {
+    box-sizing: initial;
+}
+
+
+.newBW_V2_content {
+    background: var(--forum-second-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+recette, prime, oeuf, exploit, pension {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+recette > div, prime > div, oeuf > div, exploit > div, pension > div {
+    background-color: #272727;
+    font-size: 12px;
+    padding: 15px;
+    width: 75ch;
+    border-left: 5px solid var(--accent-color);
+    line-height: 1.2;
+}
+
+
+.newBW_V2 .newBW_V2__header .title__firstPart, .newBW_V2 .newBW_V2__header .title__secondPart, .newBW_V2 .newBW_V2__header .title__secondPart span {
+    font-family: Times new roman;
+}
+
+
+#myCart {
+}
+
+
+textarea#detail {
+    background: var(--white);
+    border: none;
+    font: 14px Arial;
+    text-align: justify;
+    width: 100%!important;
+    height: 70px!important;
+    color: var(--black);
+}
+
+
+.newBW_V2 .newBW_V2_content > p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.newBW_V2 .content_text {
+    padding: 20px 0 0!important;
+}
+
+
+.content_text h4 {
+    margin: 0;
+    color: var(--forum-text);
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.panierCliche > p:not(:first-of-type), .panierAcqui > p:not(:first-of-type), .panierCuisine > p:not(:first-of-type), .panierRepro > p:not(:first-of-type), .panierExploit > p:not(:first-of-type), .panierPension > p:not(:first-of-type) {
+    margin-top: 6px;
+}
+
+
+.recette_title, .prime_title, .repro_title, .exploit_title, .pension_title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+
+.btn-empty, .btn-previ, .btn-pay {
+    margin-bottom: 10px;
+    height: 24px;
+    padding: 0 8px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+    display: none;
+}
+.btn-empty {
+  width: 165px;
+  background-image: var(--rouge);
+}
+.btn-previ {
+  width: 120px;
+}
+.btn-pay {
+  width: 177px;
+}
+.btn-empty:hover, .btn-previ:hover, .btn-pay:hover {
+  letter-spacing: 0.5px;
+}
+
+
+.panierCliche, .panierChCliche, .panierAcqui, .panierCuisine, .panierPrime, .panierRepro, .panierExploit, .panierPension {
+    position: relative;
+}
+
+
+span.remove_cliche, span.remove_chcliche, span.remove_acqui, span.remove_recette, span.remove_prime, span.remove_oeuf, span.remove_exploit, span.remove_pension {
+    display: block;
+    box-sizing: border-box!important;
+    background: var(--color-red);
+    padding: 1px;
+    color: var(--white);
+    text-align: center;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -4px;
+    top: -6px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+span.remove_cliche:hover, span.remove_chcliche:hover, span.remove_acqui:hover, span.remove_recette:hover, span.remove_prime:hover, span.remove_oeuf:hover, span.remove_exploit:hover, span.remove_pension:hover {
+    scale: 1.3;
+}
