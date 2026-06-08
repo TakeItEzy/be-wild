@@ -1,0 +1,542 @@
+:root {
+    --forum-main-color: #56ab2f;
+    --forum-accent-color: #a8de63;
+    --forum-main-grey: #272727;
+    --forum-second-grey: #111212;
+    --forum-thirth-grey: #323232;
+    --forum-text: #cdcdcd;
+    --white: #fff;
+    --black: #000;
+    --soutien: #f6c749;
+    --combattant: #de6262;
+    --collectionneur: #62dadd;
+}
+
+
+.signabw, .signabw * {
+  box-sizing: border-box;
+}
+
+
+.signabw {
+    display: flex;
+    flex-wrap: wrap;
+    width: 522px;
+    margin: auto;
+}
+
+
+.signabw_general {
+  border: 1px solid var(--perso-color);
+  padding: 20px;
+  border-radius: 20px;
+  height: 288px;
+}
+
+
+.signabw_all {
+  position: relative;
+  width: 100%;
+}
+
+
+.onglet1, .onglet2, .onglet3, .onglet4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.onglet1 {
+  display: block;
+}
+.onglet2, .onglet3, .onglet4 {
+  display: none;
+}
+
+
+.signabw_onglet2, .signabw_onglet3, .signabw_onglet4 {
+  opacity: 0.7;
+}
+
+
+/* ----- ONGLETS ----- */
+
+
+.signabw_onglets {
+  display: flex;
+  width: 480px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+
+.signabw_onglets > div {
+    background: var(--perso-color);
+    width: 110px;
+    text-align: center;
+    color: var(--white);
+    font: 12px Arial;
+    text-transform: uppercase;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+/* ----- ONGLET COVER ----- */
+
+
+.signabw_cover {
+  width: 480px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* ----- ONGLET PERSONNAGE ----- */
+
+
+.signabw_name {
+  width: 480px;
+  background: var(--forum-second-grey);
+  position: relative;
+  color: var(--white);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: -1.5px;
+  font-style: italic;
+  text-align: center;
+  line-height: 0;
+  padding: 12px;
+  position: relative;
+  top: 5px;
+}
+
+
+.signabw_name::before, .signabw_name::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to left, var(--accent-color), var(--perso-color));
+  position: absolute;
+  left: 0;
+}
+.signabw_name::before {
+  top: -5px;
+}
+.signabw_name::after {
+  bottom: -5px;
+}
+
+
+.signabw_name span {
+  color: var(--perso-color);
+}
+
+
+.signabw_character {
+  display: flex;
+  width: 480px;
+  background: linear-gradient(to right, var(--forum-thirth-grey), var(--forum-second-grey));
+  gap: 5px;
+  padding: 5px;
+}
+
+
+.signabw_character_left {
+  width: 49%;
+  padding: 20px 5px 10px 20px;
+  position: relative;
+}
+
+
+.signabw_icone {
+    position: absolute;
+    z-index: 5;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--white);
+    border-radius: 100%;
+    left: 145px;
+}
+
+
+.signabw_icone img {
+  width: 100%;
+  border-radius: 100%;
+  filter: grayscale(1);
+  transition: 0.3s linear;
+}
+
+
+.signabw_icone img:hover {
+  filter: grayscale(0);
+}
+
+
+.signabw_infos {
+    background: linear-gradient(to left, var(--accent-color), var(--perso-color));
+    position: relative;
+    left: -24px;
+    height: 80px;
+    padding: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
+}
+
+
+.signabw_infos > div {
+  background: var(--forum-second-grey);
+  border-left: 2px solid var(--white);
+  font: 11px Arial;
+  text-transform: uppercase;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+
+.signabw_infos .small {
+  width: 48%;
+}
+
+
+.signabw_infos .large {
+  width: 100%;
+}
+
+
+.fa-solid {
+    font-size: 9px;
+    margin-right: 4px;
+}
+
+
+.signabw_spetype > .signabw_title, .signabw_team > .signabw_title {
+  font: 17px Times;
+  color: var(--white);
+  letter-spacing: -0.5px;
+  font-style: italic;
+}
+.signabw_spetype > .signabw_title span, .signabw_team > .signabw_title span {
+  display: block;
+  font: 12px Arial;
+  color: var(--perso-color);
+  text-transform: uppercase;
+  margin: -4px 0 0 15px;
+}
+
+
+.signabw_spetype.album hr {
+  background: var(--white);
+}
+
+
+.signabw_spetype.album svg {
+  width: 30px;
+  fill: var(--white);
+}
+
+
+.signabw_teampoke, .signabw_pokemon {
+  display: flex;
+  justify-content: space-between;
+}
+.pokeball {
+  width: 32px;
+  height: 32px;
+  opacity: .7;
+}
+.pokeball svg {
+    fill: var(--perso-color);
+}
+
+
+.signabw_pokemon {
+  margin-top: -32px;
+  position: relative;
+}
+.signabw_pokemon > img {
+  width: 32px;
+}
+
+
+.signabw_character_right {
+  width: 55%;
+  padding: 20px 10px 10px 15px;
+}
+
+
+.signabw_desc {
+  border-left: 3px solid var(--perso-color);
+  text-align: justify;
+  font: 12px Arial;
+  color: var(--forum-text);
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 0 15px 0;
+  height: 80px;
+  overflow: auto;
+}
+
+
+.signabw_desc span {
+  color: var(--perso-color);
+}
+
+
+.signabw_adj {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
+.signabw_adj > div:not(.signabw_hexa) {
+    font: 11px Arial;
+    background-color: var(--forum-thirth-grey);
+    border-left: 3px solid var(--perso-color);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px;
+    color: var(--white);
+    width: 47%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signabw_hexa {
+  color: var(--perso-color);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px;
+  width: 47%;
+  font: 15px Times;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+
+.signabw ::-webkit-scrollbar{ 
+  width: 3px;
+  height: 3px;
+  background-color: var(--forum-thirth-grey);
+  }
+.signabw ::-webkit-scrollbar-track{ 
+  background-color: var(--forum-text);
+  }
+.signabw ::-webkit-scrollbar-thumb{
+  background-color: var(--forum-thirth-grey);
+ }
+
+
+/* ----- ONGLET BOÎTE POKÉMON ----- */
+
+
+.signabw_character_left.box_pokemon {
+  width: 40%;
+}
+
+
+.signabw_spetype .signabw_speimg {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+
+.signabw_spetype, .signabw_speright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.signabw_speimg:nth-child(2), .signabw_speimg:nth-child(3), .signabw_speimg:nth-child(4) {
+    margin-left: -8px;
+    z-index: 5;
+}
+
+
+.signabw_speimg:after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 29px;
+    height: 29px;
+    border-radius: 100px;
+    border: 3px solid var(--forum-thirth-grey);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: 3;
+}
+
+
+.signabw_spetype .signabw_speimg img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+
+.signabw_spetype hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: var(--white);
+    margin-top: 14px;
+    margin-left: 7px;
+}
+
+
+.signabw_boxicone_wrap {
+    background-color: var(--forum-main-grey);
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    border-left: 3px solid var(--perso-color);
+    border-right: 3px solid var(--perso-color);
+    margin: 12px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signabw_boxicone {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid var(--perso-color);
+    border-right: 3px solid var(--perso-color);
+    border-bottom: 3px solid var(--perso-color);
+    border-radius: 100%;
+    background-color: var(--forum-second-grey);
+}
+
+
+.signabw_boxicone img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  filter: grayscale(1);
+  transition: 0.3s linear;
+}
+
+
+.signabw_boxicone img:hover {
+  filter: grayscale(0);
+}
+
+
+.signabw_character_right.box_pokemon {
+    width: 59%;
+}
+
+
+.mybox {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, var(--perso-color), var(--accent-color)) 1;
+  height: 183px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+.signabw_pokemon.box_pokemon {
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+
+
+.signabw_teampoke.box_pokemon, .signabw_pokemon.box_pokemon {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 7px;
+  height: 32px;
+  margin: 10px;
+}
+
+
+.signabw_pokemon.box_pokemon span {
+  position: relative;
+  height: 32px;
+}
+
+
+.signabw_pokemon.box_pokemon span img {
+    width: 32px;
+}
+
+
+.signabw_pokemon.box_pokemon .title {
+  position: absolute;
+  background: var(--forum-thirth-grey);
+  color: var(--white);
+  font: 9px Arial;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2px 3px;
+  z-index: 5;
+  height: 15px;
+  border-radius: 4px;
+  border: 1px solid var(--forum-text);
+}
+
+
+/* ----- ONGLET BADGES ----- */
+
+
+.signabw_badge {
+  width: 480px;
+  background: linear-gradient(to right, var(--forum-thirth-grey), var(--forum-second-grey));
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+}
+
+
+.signabw_blocbadge {
+    width: 395px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.signabw_blocbadge img {
+  max-width: 380px;
+  margin-bottom: 5px;
+}
+
+
+.signabw_badge:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 217px;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(to left, var(--accent-color), var(--perso-color));
+}
