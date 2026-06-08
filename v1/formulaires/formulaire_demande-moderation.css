@@ -1,0 +1,238 @@
+:root {
+    --forum-main-color: #56ab2f;
+    --forum-accent-color: #a8de63;
+    --forum-main-grey: #272727;
+    --forum-second-grey: #111212;
+    --forum-thirth-grey: #1a1a1a;
+    --forum-text: #cdcdcd;
+    --white: #fff;
+    --black: #000;
+}
+
+
+/****** CALCULATEUR ******/
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+
+.bw_message .message_content.form {
+    display: block;
+}
+
+
+  .bw_form {
+    background-color: var(--forum-main-grey);
+    font-family: arial;
+    font-size: 14px;
+    color: var(--white);
+    position: relative;
+  }
+  
+  .bw_form .form_background {
+    position:relative;
+    width:100%;    
+  }
+  
+  .bw_form .background_top {
+    background-image: linear-gradient(180deg, var(--forum-main-color), var(--forum-accent-color));
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  
+  form#catchForm {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 0 10px 10px 10px;
+    position: relative;
+    z-index: 2;
+    top: 10px;
+    background-image:url("https://i.servimg.com/u/f24/18/99/97/34/backgr44.png"), linear-gradient(-90deg, rgba(59,59,59,1) 0%, rgba(19,19,19,1) 50%, rgba(59,59,59,1) 100%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  
+  form#catchForm fieldset {
+    border:none;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px 13px;
+    margin-bottom:20px;
+  }
+  
+  form#catchForm .error {
+    display: block;
+    font-size: 10px;
+    color: #e05f5f;
+    text-transform: initial;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  form#catchForm .checkbox {
+    width:138px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  form#catchForm .checkbox div {
+    display: flex;
+  }
+  
+  form#catchForm .checkbox label {
+    display: inline-block;
+    margin: auto;
+    text-transform:none;
+    line-height: 0;
+  }
+  
+  form#catchForm small {
+    display: block;
+    color: #969696;
+    font-size:10px;
+    margin-top:5px;
+    width:100%;
+  }
+
+
+  form#catchForm label, form h4 {
+    display: block;
+    text-transform: uppercase;
+    margin:0 0 2px 0;
+  }
+  
+  form#catchForm .stab_label {
+    display: inline-block;
+  }
+  
+  form#catchForm input[type=number], form#catchForm input[type=text], form#catchForm select {
+    border-radius:5px;
+    border:1px solid #bbbbbb;
+    display: block;
+    height: 18px;
+    color: var(--forum-main-grey);
+}
+
+
+.form_section.two-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    width: 100% !important;
+}
+
+
+.form_section.two-input label {
+    width:100%;
+}
+
+
+.form_section.two-three, .form_section.two-three input, .form_section.two-three select {
+    width: 285px;
+}
+
+
+.form_section.one-three, .form_section.one-three input, .form_section.one-three select {
+    width: 138px;
+}
+
+
+.form_section.three-three, .form_section.three-three input, .form_section.three-three select {
+    width: 440px;
+}
+  
+  form#catchForm input[type=submit] {
+    width: 185px;
+    border:none;
+    font-size:18px;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    color: var(--white);
+    padding:8px 0 6px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin-top:30px;
+  }
+  
+  form#catchForm input[type=submit]:hover {
+    letter-spacing: 2px;
+  }
+  
+  form#catchForm .form_checkbox, form .stab_checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 5px;
+    vertical-align: middle;
+    border: 1px solid #bbbbbb;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  form#catchForm .form_checkbox:checked, form .stab_checkbox:checked {
+    background-color:var(--forum-accent-color);
+  }
+  
+  form#catchForm fieldset legend {
+    color: var(--forum-accent-color);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom:3px;
+  }
+
+
+  .message_content.form table {
+    border:3px solid white;
+    font-family: arial;
+    font-size:12px;
+    color: var(--forum-text);
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+
+  .message_content.form th, .message_content.form td {
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  .message_content.form td {
+    border: 3px solid white;
+  }
+
+
+  .message_content.form th {
+    background-color:var(--forum-main-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    border-left:3px solid white;
+  }
+
+
+  .message_content.form .participant_title {
+    background-color: var(--forum-accent-color);
+    border-top: 3px solid white;
+  }
+
+
+  .message_content.form small {
+    text-transform: uppercase;
+  }
