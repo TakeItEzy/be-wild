@@ -1,0 +1,912 @@
+:root {
+    --forum-main-color: #56ab2f;
+    --forum-accent-color: #a8de63;
+    --forum-main-grey: #272727;
+    --forum-second-grey: #111212;
+    --forum-thirth-grey: #3b3a3a;
+    --forum-text: #cdcdcd;
+    --white: #fff;
+    --black: #000;
+}
+
+
+.type-acier {
+    background:#5a90a4 ! important;
+}
+.type-combat {
+    background:#cf3f6b ! important;
+}
+.type-dragon {
+    background:#026ec5 ! important;
+}
+.type-eau {
+    background:#4f92d7 ! important;
+}
+.type-electrik {
+    background:#f5d33a ! important;
+}
+.type-fee {
+    background:#ed90e7 ! important;
+}
+.type-feu {
+    background:#ff9e55 ! important;
+}
+.type-glace {
+    background:#73d0c1 ! important;
+}
+.type-insecte {
+    background:#93c32c ! important;
+}
+.type-normal {
+    background:#939ca3 ! important;
+}
+.type-plante {
+    background:#63bd5a ! important;
+}
+.type-poison {
+    background:#ac6cc9 ! important;
+}
+.type-psy {
+    background:#fa727a ! important;
+}
+.type-roche {
+    background:#c6b98e ! important;
+}
+.type-sol {
+    background:#da7944 ! important;
+}
+.type-spectre {
+    background:#5169af ! important;
+}
+.type-tenebres {
+    background:#8d756e ! important;
+}
+.type-vol {
+    background:#90abdf ! important;
+}
+
+
+
+/* BOUTIQUE EN RELATIVE */
+
+div#p3, div#p99323 { 
+    position: relative;
+    height: 13400px;
+}
+
+
+/* ----- Formulaire Tirage des boîtes ----- */
+
+.tirageboite_username {
+    color: var(--forum-accent-color);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a.tirageboite_link {
+    color: var(--white)!important;
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 13px auto;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all .5s;
+}
+a.tirageboite_link:hover {
+    color: var(--white)!important;
+    letter-spacing: 0.5px;
+}
+
+h6.tirageboite_subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tirageboite_bonus > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 25px 0;
+}
+
+.tirageboite_bonus .fa-check {
+    color: var(--accent-color);
+    margin-right: 7px;
+}
+
+.tirageboite_bonus > div > p {
+    width: 50%;
+}
+
+.tirageboite_block_autre > p {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    text-align: justify;
+}
+
+/* ----- Formulaire progression dresseur ----- */
+
+div#p1413 {
+    position: relative;
+    height: 14330px;
+}
+
+span.remove_oeuf, .remove_prime, .remove_exploit, .remove_pension {
+    display: none;
+}
+
+.newBW_V2_content {
+    background: var(--forum-second-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+recette, prime, oeuf, exploit, pension {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+recette > div, prime > div, oeuf > div, exploit > div, pension > div {
+    background-color: #272727;
+    font-size: 12px;
+    padding: 15px;
+    width: 75ch;
+    border-left: 5px solid var(--accent-color);
+    line-height: 1.2;
+}
+
+.cuisineDisplay, .primeDisplay, .exploitDisplay {
+    padding: 5px 15px;
+    background: var(--forum-main-grey);
+    border-left: 5px solid var(--forum-main-grey);
+    color: var(--forum-text);
+    font-weight: bold;
+    text-align: center;
+}
+.cuisineDisplay p, .primeDisplay p, .exploitDisplay p {
+    font-weight: normal;
+    margin-top: 9px!important;
+    text-align: justify;
+}
+
+.newBW_V2 .newBW_V2__header .title__firstPart, .newBW_V2 .newBW_V2__header .title__secondPart, .newBW_V2 .newBW_V2__header .title__secondPart span {
+    font-family: Times new roman;
+}
+
+textarea#detail {
+    background: var(--white);
+    border: none;
+    font: 14px Arial;
+    text-align: justify;
+    width: 100%!important;
+    height: 70px!important;
+    color: var(--black);
+}
+
+.newBW_V2 .newBW_V2_content > p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.newBW_V2 .content_text {
+    padding: 20px 0 0!important;
+}
+
+.newBW_V2_content .content_text h4 {
+    margin: 0;
+    color: var(--forum-text);
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.newBW_V2_content .content_text p {
+    font-size: 13px;
+    margin: 0;
+    line-height: normal;
+}
+
+p.rappelPrime, p.rappelExploit {
+    font-family: Courier;
+    background: var(--forum-second-grey);
+    padding: 3px;
+    margin: 8px 0 5px!important;
+}
+
+.panierCliche > p:not(:first-of-type), .panierAcqui > p:not(:first-of-type), .panierCuisine > p:not(:first-of-type), .panierRepro > p:not(:first-of-type), .panierPension > p:not(:first-of-type) {
+    margin-top: 6px;
+}
+
+.recette_title, .prime_title, .repro_title, .exploit_title, .pension_title {
+  text-transform: uppercase;
+  margin-bottom: 5px!important;
+}
+
+.newBW_V2 .autre {
+    text-align: center!important;
+    margin-top: 0!important;
+}
+.detail_dresseur {
+    background: var(--forum-main-grey);
+    padding: 10px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+textarea#detail {
+    display: none;
+}
+
+/* ----- Formulaire boutique événementielle ----- */
+
+div#p114123 {
+    position: relative;
+    height: 7300px;
+}
+
+iframe.iframeShopEvent {
+    overflow: auto;
+}
+
+.shopForm > h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-left: 7px;
+}
+
+.shopevent > .list_item, .shopevent > .list_item .item_name {
+    font-size: 12px!important;
+}
+
+.shopevent > span:first-of-type {
+    margin-left: 7px;
+    margin-right: 2px;
+}
+.shopevent > span {
+    background: var(--forum-thirth-grey);
+    display: inline-block;
+    width: 260px;
+    height: 25px;
+    font-size: 13px;
+    padding-top: 5px;
+    margin-top: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* ----- Formulaire défis luminescents ----- */
+
+div#p17 {
+    position: relative;
+    height: 10000px;
+}
+
+.unDefi.n02 {
+    background: linear-gradient(-90deg,var(--color-soutien));
+    border: 1px solid #f6c749;
+}
+.unDefi.n02 .product_bottom > a {
+    color: #f6c749;
+}
+.unDefi.n03 {
+    background: linear-gradient(-90deg,var(--color-collec));
+    border: 1px solid #62dadd;
+}
+.unDefi.n03 .product_bottom > a {
+    color: #62dadd;
+}
+.unDefi.n04 {
+    background: linear-gradient(-90deg,var(--color-combat));
+    border: 1px solid #de6262;
+}
+.unDefi.n04 .product_bottom > a {
+    color: #de6262;
+}
+
+.defiForm hr {
+    background-image: linear-gradient(90deg, var(--forum-text), var(--white))!important;
+}
+
+.listDefi {
+    width: 529px;
+    padding: 15px 5px 1px;
+    color: var(--white);
+    text-align: justify;
+    background: var(--forum-second-grey);
+}
+
+.unDefi {
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(-90deg, var(--forum-main-color), var(--forum-accent-color));
+    position: relative;
+    border: 1px solid var(--forum-accent-color);
+}
+
+span.product_name {
+    background: var(--forum-main-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.product_gain {
+    font-size: 11px;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+}
+
+.product_descri {
+    background: var(--forum-main-grey);
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 7px;
+    font-size: 12px;
+    max-height: 75px;
+    overflow: auto;
+}
+
+.product_bottom {
+    background: var(--forum-thirth-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.product_bottom > a {
+    width: 100%;
+    text-align: center;
+    color: var(--forum-accent-color);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.product_bottom > .autre {
+    margin: 10px 0 -3px 8px;
+    font-size: 13px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.product_comm {
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Arial;
+    width: 100%;
+    margin: 5px;
+    background: var(--forum-main-grey);
+    padding: 4px;
+}
+
+/* ----- Formulaire trocs et échanges ----- */
+
+.trocgroupe, .echangegroupe {
+    color: var(--group-first-color)!important;
+    font-weight: bold;
+}
+.perso_implique, .echange_effectue {
+    margin: 10px 0;
+}
+.echange_effectue {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+}
+.perso_implique {
+    text-align: center;
+    margin-top: 20px;
+}
+.historique_echange > h6, h6.autre {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.troc_autre {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    text-align: justify;
+}
+
+.perso_implique, .echange_effectue > *, .troc_autre, .historique_echange > a {
+    font-size: 13px!important;
+}
+
+/* ----- Nouvelle boutique ----- */
+
+iframe.iframeShop, iframe.iframeShopEvent, iframe.iframeProgdresseur, iframe.iframeShoppx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+iframe.iframeShoppx {
+    overflow: auto;
+}
+
+div#p71317 { /* Post Boutique Event */
+    position: relative;
+    height: 4000px;
+}
+
+div#p92454 { /* Post Boutique PX */
+    position: relative;
+    height: 2300px;
+}
+
+.shopForm > .list_item {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    margin: 7px;
+    color: var(--white);
+    font-size: 15px;
+}
+.shopForm > .list_item .item_name {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--forum-accent-color);
+}
+.message_subtitle > span {
+    color: var(--forum-accent-color);
+    font-weight: bold;
+}
+span.oldprice {
+    color: var(--forum-text);
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.shopForm > a.shop_historique, .historique_echange > a, a.lien_sujet {
+    display: block;
+    width: 285px;
+    margin: 10px auto;
+    padding: 6px 15px;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+}
+.shopForm > a.shop_historique:hover, .historique_echange > a:hover, a.lien_sujet:hover {
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+.shopForm > p {
+    margin: 0 5px 5px;
+    padding: 10px;
+    background: var(--forum-thirth-grey);
+    text-align: justify;
+    font-size: 13px;
+}
+a.shop_discord img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    transition: all .5s;
+}
+a.shop_discord img:hover{
+    opacity: 0.8;
+}
+
+
+.iframeVidegrenier {
+    margin-left: -20px;
+}
+
+
+/* SUJETS TERMINÉS */
+
+.archivage_sujet {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    margin-top: -3px;
+    margin-bottom: 25px;
+}
+
+.archivage_sujet > div {
+    font-size: 13px;
+}
+
+.st_subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.unsujet > a {
+    text-transform: uppercase;
+    color: var(--white)!important;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    padding: 5px 12px;
+    cursor: pointer;
+    display: block;
+    width: 172px;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 6px;
+    margin: 10px auto 20px;
+}
+
+.st_subtitle2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+
+/* Iframes sur les pages preview et review */
+
+.postbody .content > iframe.iframeShoppx, .postbody .content > iframe.iframeShopEvent, .postbody .content > iframe.iframe_Videgrenier, .postbody .content > iframe.iframeShop, .postbody .content > iframe.iframeProgdresseur {
+    position: relative;
+    height: 150px;
+}
+
+#topicreview .iframe_Videgrenier, #topicreview .iframeShop, #topicreview .iframeProgdresseur {
+    position: relative;
+    height: 150px;
+}
+
+/* ----- BBcode ----- */
+acier {
+    color:#5a90a4;
+}
+combat {
+    color:#cf3f6b;
+}
+dragon {
+    color:#026ec5;
+}
+eau {
+    color:#4f92d7;
+}
+electrik {
+    color:#f5d33a;
+}
+fee {
+    color:#ed90e7;
+}
+feu {
+    color:#ff9e55;
+}
+glace {
+    color:#73d0c1;
+}
+insecte {
+    color:#93c32c;
+}
+normal {
+    color:#939ca3;
+}
+plante {
+    color:#63bd5a;
+}
+poison {
+    color:#ac6cc9;
+}
+psy {
+    color:#fa727a;
+}
+roche {
+    color:#c6b98e;
+}
+sol {
+    color:#da7944;
+}
+spectre {
+    color:#5169af;
+}
+tenebres {
+    color:#8d756e;
+}
+vol {
+    color:#90abdf;
+}
+.bbcodeType > a:nth-child(odd) {
+    margin-left: 5px;
+    margin-bottom: 7px;
+}
+.bbcodeType > a:last-of-type {
+    margin-bottom: 0;
+}
+.sceditor-dropdown.sceditor-type-picker {
+    width: 141px;
+}
+.bbcodeType > a {
+    width: 68px!important;
+    height: 15px;
+}
+
+a.sceditor-button.typespoke, a.sceditor-button.typespoke > div {
+    padding: 0!important;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    background-size: cover;
+    margin: 0;
+}
+a.sceditor-button.typespoke {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.bbcodeBw > a:nth-child(odd) {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.bbcodeBw > a:last-of-type {
+    margin-bottom: 0;
+}
+.bbcodeBw > a {
+    width: 25px;
+    height: 25px;
+}
+.sceditor-bw-picker {
+    width: 55px;
+}
+a.sceditor-button.colorbw, a.sceditor-button.colorbw > div {
+    padding: 0!important;
+    height: 26px!important;
+    width: 26px!important;
+    border-radius: 3px;
+    background-size: cover;
+    margin: 0;
+}
+a.sceditor-button.colorbw {
+    margin-right: 2px;
+}
+
+.bbcodeBw > a:hover {
+    background: none;
+    box-shadow: none;
+}
+.bbcodeBw > a:hover div {
+    opacity: .8;
+}
+
+
+.shopForm > a.shop_historique, .historique_echange > a, a.lien_sujet {
+    color: var(--white)!important;
+}
+
+/* VIDE-GRENIERS */
+
+div#p28322 {
+  position: relative;
+  height: 6000px;
+}
+
+div#p28322 .profile-icons li:nth-child(4) {
+    position: relative;
+    z-index: 999;
+    top: -155px;
+    right: -385px;
+}
+
+iframe.iframe_Videgrenier {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+
+/* ----- T-card (modifications liées aux formulaires) ---- */
+
+:root {
+    --color-collec: #62D9DC,#4EA3A5;
+    --color-soutien: #F6C749,#CDA63F;
+    --color-combat: #DE6262,#A44D4D;
+}
+
+.bw_trainer-card .pokemon_content .content_sprite .sprite_hexagon img {
+    max-width: 100px;
+}
+
+.bw_trainer-card .competences_list .list_competence {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.bw_trainer-card .competences_list .list_competence.soutien {
+    background-image: linear-gradient(180deg,var(--color-soutien));
+}
+.bw_trainer-card .competences_list .list_competence.combattant {
+    background-image: linear-gradient(180deg,var(--color-combat));
+}
+.bw_trainer-card .competences_list .list_competence.collectionneur {
+    background-image: linear-gradient(180deg,var(--color-collec));
+}
+
+.trainer-card_inventaire .bloc_content > div {
+  cursor: text!important;
+}
+.trainer-card_inventaire .bloc_content .remove1Item, .trainer-card_inventaire .bloc_content .add1Item{
+  display: none;
+}
+
+.bw_trainer-card .bloc_content div > a {
+    padding-left: 4px;
+}
+
+.bw_trainer-card img.header_img {
+    width: 150px;
+    height: 150px;
+}
+
+.bw_trainer-card .header_infoperso .infoperso_name {
+    font-size: 29px;
+}
+
+.bw_trainer-card .competences_list .list_competence span:last-of-type {
+    font-size: 0!important;
+}
+
+ul.profile-icons > button#editform:last-of-type, ul.profile-icons a[title="Ajouter un pokémon"]:not(:first-of-type) {
+    display: none!important;
+}
+a.tcard_poke {
+    margin-left: 6px!important;
+}
+
+.bw_trainer-card .inventaire_bloc .bloc_content div:not(.content_title) {
+    gap: 3px;
+}
+
+/* ----- FIN des modifs de la t-card -----*/
+
+a.link_troc {
+    color: var(--white);
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    display: block;
+    width: 200px;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 13px auto;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.total_pris, .total_pose, .total_vente {
+    box-sizing: border-box!important;
+    border: none!important;
+    padding: 5px!important;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%!important;
+    font-size: 12px!important;
+    margin-top: -6px;
+    background: var(--forum-main-grey);
+}
+.detail_videgrenier, .detail_boutique {
+    background: var(--forum-main-grey);
+    border: none!important;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.item_transform img {
+    width: 21px;
+    margin-bottom: -6px;
+}
+
+
+/* T-CARD edit prog */
+
+button#editprog:not(:first-of-type) {
+    display: none;
+}
+
+.tcard_addnewpokemon:last-of-type {
+    display: none;
+}
+
+/* BOUTIQUE DE PX */
+
+.boutique_px .message_subtitle {
+    width: 100%;
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    padding: 6px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    border-top: 10px solid var(--forum-second-grey);
+    color: var(--white);
+}
+
+.message_subtitle_px {
+    border-bottom: 10px solid var(--forum-second-grey);
+    background: var(--forum-thirth-grey);
+    padding: 5px 0;
+    text-align: center;
+}
+
+.boutique_px .titleAutre {
+    margin: 0;
+    color: var(--forum-text);
+    margin-bottom: -10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* T-card Pokémon */
+
+li.modifpkm {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bw__pcV2 .types__tera {
+    padding: 0 !important;
+    background: transparent !important;
+    width: 17px !important;
+    height: 17px !important;
+}
+
+
+/* Boutons */
+
+a.button_form, a.button_form:visited {
+    display: block;
+    margin: auto;
+    width: 185px;
+    padding: 6px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+}
+
+/* Anciennes boutiques */
+
+div#p78550 {
+    position: relative;
+    height: 5600px;
+}
