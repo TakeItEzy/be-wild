@@ -1,0 +1,266 @@
+/****** QUI EST EN LIGNE ? ******/
+
+.qeel_qheader {
+	position: relative;
+}
+
+.qeel_qheader .qheader_title {
+	background-color: var(--forum-main-grey);
+	color: var(--white);
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 4px 0 3px 114px;
+}
+
+.qeel_qheader .qheader_groups {
+	position: absolute;
+	right: 0;
+	background-image: url(https://i.servimg.com/u/f24/18/99/97/34/rectan10.png);
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	top: 25px;
+}
+
+.qeel_qheader .qheader_lastmember {
+	font-size: 12px;
+	color: var(--forum-text);
+	text-transform: uppercase;
+	background-color: var(--forum-second-grey);
+	padding: 8px 0 7px 0;
+	margin-top: 17px;
+}
+
+.qheader_lastmember p {
+	width: 582px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.qeel_qheader .groups_icons {
+	float: right;
+	width: fit-content;
+}
+
+.qeel_qheader .qheader_groups .groups_icons img {
+	margin-right: 24px;
+}
+
+.qeel_qheader .groups_icons #gr1 {
+	margin-right: 26px
+}
+
+.qeel_qheader .groups_icons #gr5 {
+	margin-right: 20px;
+}
+
+.qeel_qcontent {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6px;
+}
+
+.qeel_qcontent .qcontent_connect,
+.qeel_qcontent .qcontent_lastconnexion {
+	background-color: var(--forum-main-grey);
+	position: relative;
+	width: 280px;
+	height: 196px;
+}
+
+.qeel_qcontent .connect_color.top,
+.qeel_qcontent .lastconnexion_color.top {
+	background-image: linear-gradient(var(--forum-main-color), var(--forum-accent-color));
+	height: 50.5%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.qeel_qcontent .connect_text,
+.qeel_qcontent .lastconnexion_text {
+	background-color: var(--forum-main-grey);
+	margin: 5px;
+	position: relative;
+	padding: 10px;
+	color: var(--forum-text);
+	font-size: 12px;
+	text-align: justify;
+	height: 167px;
+	overflow: auto;
+}
+
+.qeel_qcontent .connect_text div:first-of-type {
+	text-align: center;
+}
+
+.qeel_qcontent .connect_text div:last-of-type {
+	height: 138px;
+	overflow: auto;
+}
+
+.qeel_qcontent .groupe_nom {
+	-webkit-background-clip: text!important;
+	-webkit-text-fill-color: transparent;
+	background: linear-gradient(90deg, var(--group-first-color), var(--group-second-color));
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: auto;
+}
+
+.qeel_qcontent #desc_gr1 .groupe_nom::after {
+	background: none;
+	content: "Calléisien·nes";
+	left: 50%;
+	margin: auto;
+	position: absolute;
+	text-shadow: 1px 1px 0 #111212;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	z-index: -1;
+}
+
+.qeel_qcontent #desc_gr2 .groupe_nom::after {
+	background: none;
+	content: "Haptais·es";
+	left: 50%;
+	margin: auto;
+	position: absolute;
+	text-shadow: 1px 1px 0 #111212;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	z-index: -1;
+}
+
+.qeel_qcontent #desc_gr3 .groupe_nom::after {
+	background: none;
+	content: "Anthois·es";
+	left: 50%;
+	margin: auto;
+	position: absolute;
+	text-shadow: 1px 1px 0 #111212;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	z-index: -1;
+}
+
+.qeel_qcontent #desc_gr4 .groupe_nom::after {
+	background: none;
+	content: "Adamantois·es";
+	left: 50%;
+	margin: auto;
+	position: absolute;
+	text-shadow: 1px 1px 0 #111212;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	z-index: -1;
+}
+
+.qeel_qcontent #desc_gr5 .groupe_nom::after {
+	background: none;
+	content: "Kopadien·nes";
+	left: 50%;
+	margin: auto;
+	position: absolute;
+	text-shadow: 1px 1px 0 #111212;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: fit-content;
+	z-index: -1;
+}
+
+.qeel_qcontent .description_groupe {
+	height: 150px;
+	overflow: hidden;
+	position: relative;
+	width: 426px;
+	display: flex;
+	z-index: 0;
+}
+
+.qeel_qcontent .description_groupe.calleis {
+	background-image: url(https://i.servimg.com/u/f24/18/99/97/34/img_gr10.png);
+}
+
+.qeel_qcontent .description_groupe.haptos {
+	background-image: url(https://i.servimg.com/u/f24/18/99/97/34/img_gr11.png);
+}
+
+.qeel_qcontent .description_groupe.anthos {
+	background-image: url(https://i.servimg.com/u/f24/18/99/97/34/img_gr12.png);
+}
+
+.qeel_qcontent .description_groupe.adamantia {
+	background-image: url(https://i.servimg.com/u/f24/18/99/97/34/img_gr13.png);
+}
+
+.qeel_qcontent .description_groupe.kopadia {
+	background-image: url(https://i.servimg.com/u/f24/18/99/97/34/img_gr14.png);
+}
+
+.qeel_qcontent .groupe_shadow {
+	position: absolute;
+	font-size: 60px;
+	text-transform: uppercase;
+	color: var(--forum-main-grey);
+	font-weight: bold;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	opacity: 0.4;
+}
+
+.qeel_qcontent .informations_stats-forum div.discord,
+.qeel_qcontent .informations_stats-forum div#totalpo,
+.qeel_qcontent .informations_stats-forum div#totalus {
+	background: green;
+	box-sizing: border-box;
+	color: var(--white);
+	font-size: 12px;
+	font-weight: 700;
+	line-height: .9;
+	padding: 8px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 140px;
+}
+
+.qeel_qcontent .informations_stats-forum div.discord {
+  padding: 7.5px 0;
+}
+
+.qeel_qcontent .informations_stats-forum div#totalus {
+	background-color: var(--forum-main-color);
+}
+
+.qeel_qcontent .informations_stats-forum div#totalpo {
+	background-color: #80c449;
+}
+
+.qeel_qcontent .informations_stats-forum div.discord {
+	background-color: var(--forum-accent-color);
+}
+
+.qeel_qcontent .informations_stats-forum div strong {
+	font-size: 18px;
+	display: block;
+}
+
+.qeel_qcontent .informations_stats-forum {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6px;
+}
+
+.qeel_qcontent .lien.discord .lien_name img {
+	vertical-align: middle;
+	margin-right: 4px;
+}

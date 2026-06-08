@@ -1,0 +1,301 @@
+/* T-card pokémon */
+
+button.editpkm img {
+    width: 24px;
+}
+
+
+clrbw {
+  color: var(--accentClr);
+}
+
+.filterCheck {
+  display: none!important;
+}
+
+
+iframe.iframeVidegrenier {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  overflow: auto;
+}
+#p185 {
+  position: relative;
+}
+
+.shopForm > h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-left: 7px;
+}
+
+.shopevent > .list_item, .shopevent > .list_item .item_name {
+    font-size: 12px!important;
+}
+
+.shopevent > span:first-of-type {
+    margin-left: 7px;
+    margin-right: 2px;
+}
+.shopevent > span {
+    background: var(--forum-thirth-grey);
+    display: inline-block;
+    width: 260px;
+    height: 25px;
+    font-size: 13px;
+    padding-top: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.bw__pcV2 .types__tera {
+    padding: 0 !important;
+    background: transparent !important;
+    width: 17px !important;
+    height: 17px !important;
+}
+
+/* ----- Formulaire défis luminescents ----- */
+
+.defiForm hr {
+    background-image: linear-gradient(90deg, var(--forum-text), var(--white))!important;
+}
+
+.listDefi {
+    width: 100%;
+    padding: 15px 5px 1px;
+    color: var(--white);
+    text-align: justify;
+    background: var(--forum-second-grey);
+}
+
+.unDefi {
+    margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(-90deg, var(--forum-main-color), var(--forum-accent-color));
+    position: relative;
+    border: 1px solid var(--forum-accent-color);
+}
+
+span.product_name {
+    background: var(--forum-main-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.product_gain {
+    font-size: 11px;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+}
+
+.product_descri {
+    background: var(--forum-main-grey);
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 7px;
+    font-size: 12px;
+    height: 75px;
+    overflow: auto;
+}
+
+.product_bottom {
+    background: var(--forum-thirth-grey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.product_bottom > a {
+    width: 100%;
+    text-align: center;
+    color: var(--forum-accent-color);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.product_bottom > .autre {
+    margin: 10px 0 -3px 8px;
+    font-size: 13px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.product_comm {
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Arial;
+    width: 100%;
+    margin: 5px;
+    background: var(--forum-main-grey);
+    padding: 4px;
+}
+
+/* ----- Formulaire trocs et échanges ----- */
+
+.trocgroupe, .echangegroupe {
+    color: var(--group-first-color);
+    font-weight: bold;
+}
+.perso_implique, .echange_effectue {
+    margin: 10px 0;
+}
+.echange_effectue {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+}
+.perso_implique {
+    text-align: center;
+    margin-top: 20px;
+}
+.historique_echange > h6 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.troc_autre {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    text-align: justify;
+}
+
+/* ----- Nouvelle boutique ----- */
+
+iframe.iframeShop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+div#p3 {
+    position: relative;
+    height: 12100px;
+}
+
+.shopForm > .list_item {
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    margin: 7px;
+    color: var(--white);
+    font-size: 15px;
+}
+.shopForm > .list_item .item_name {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--forum-accent-color);
+}
+.message_subtitle > span {
+    color: var(--forum-accent-color);
+    font-weight: bold;
+}
+span.oldprice {
+    color: var(--forum-text);
+    text-decoration: line-through;
+    font-size: 13px;
+}
+.shopForm > a.shop_historique, .historique_echange > a {
+    display: block;
+    width: 285px;
+    margin: 10px auto;
+    padding: 6px 15px;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+}
+.shopForm > a.shop_historique:hover, .historique_echange > a:hover {
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+.shopForm > p {
+    margin: 0 5px 5px;
+    padding: 10px;
+    background: var(--forum-thirth-grey);
+    text-align: justify;
+}
+a.shop_discord img {
+    display: block;
+    margin: auto;
+    width: 150px;
+    transition: all .5s;
+}
+a.shop_discord img:hover{
+    opacity: 0.8;
+}
+
+
+/* ----- T-card (modifications liées aux formulaires) ---- */
+
+:root {
+    --color-collec: #62D9DC,#4EA3A5;
+    --color-soutien: #F6C749,#CDA63F;
+    --color-combat: #DE6262,#A44D4D;
+}
+
+.bw_trainer-card .competences_list .list_competence {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.bw_trainer-card .competences_list .list_competence.soutien {
+    background-image: linear-gradient(180deg,var(--color-soutien));
+}
+.bw_trainer-card .competences_list .list_competence.combattant {
+    background-image: linear-gradient(180deg,var(--color-combat));
+}
+.bw_trainer-card .competences_list .list_competence.collectionneur {
+    background-image: linear-gradient(180deg,var(--color-collec));
+}
+
+.trainer-card_inventaire .bloc_content > div {
+  cursor: text!important;
+}
+.trainer-card_inventaire .bloc_content .remove1Item, .trainer-card_inventaire .bloc_content .add1Item{
+  display: none;
+}
+
+.bloc_content span {
+  padding-left:3px;
+}
+
+.bw_trainer-card .bloc_content div > a {
+    padding-left: 4px;
+}
+
+.bw_trainer-card img.header_img {
+    width: 150px;
+    height: 150px;
+}
+
+.bw_trainer-card .header_infoperso .infoperso_name {
+    font-size: 29px;
+}
+
+.bw_trainer-card .competences_list .list_competence span:last-of-type {
+    font-size: 0!important;
+}
