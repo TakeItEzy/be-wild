@@ -191,3 +191,58 @@
     text-transform: uppercase;
     font-family: arial;
   }
+
+/****** VERISON LIGHT ******/
+
+html {
+    background-color: #272727;
+}
+
+.codeRPBW1_light {
+    width: 500px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #6b6b6b;
+    
+
+    .content_background {
+        background-color: #f2f2f2;
+        color: #6b6b6b;
+        border: 1px solid #c5c5c5;
+        
+    }
+
+    .codeRPBW_content {
+        background-color: #d7d7d7;
+    }
+
+     .codeRPBW_title {
+        background-color: #f2f2f2;
+        color: #6b6b6b;
+    }
+
+    .codeRPBW_footer .footer_content {
+        background-color: #f2f2f2;
+    }
+
+    .codeRPBW_header .header_arrow {
+        background: linear-gradient(90deg, #d7d7d7, rgb(242, 242, 242));
+    }
+
+    .header_arrow .arrow_infos div {
+        background-color: #f2f2f2;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    hr {
+        height: 5px;
+        border: none;
+        background-image: linear-gradient(90deg, var(--first-color), var(--accent-color));
+        margin: 0;
+    }
+
+    .pv_progress[value]::-webkit-progress-bar {
+        background-color: #f2f2f2;
+    }
+}
