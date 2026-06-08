@@ -1,0 +1,227 @@
+.codeRPBW_V2 {
+    width: 500px;
+    font-family: arial;
+    color: #e3e3e3;
+    border: 1px solid var(--accent-color);
+    padding:20px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: auto;
+    line-height: 1.2;
+}
+
+.codeRPBW_V2 .codeRPBW__header {
+    width: 100%;
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+
+.codeRPBW_V2 .header__iconBackground {
+    background-color: #272727;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    top: -25px;
+    left: 10px;
+    position: absolute;
+    border-left: 3px solid var(--accent-color);
+    border-right: 3px solid var(--accent-color);
+}
+
+.codeRPBW_V2 .header__icon {
+    border-right: 5px solid var(--accent-color);
+    border-radius: 100px;
+    height: 125px;
+    width: fit-content;
+    padding-right: 3px;
+    position: absolute;
+    margin-left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.codeRPBW_V2 .header__icon img {
+    border-radius: 100px;
+    filter: grayscale(1);
+    width: 125px;
+    height: 125px;
+}
+
+.codeRPBW_V2 .header__title {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    font-family: 'times new roman';
+    font-style: italic;
+    text-transform: lowercase;
+    letter-spacing: -2px;
+}
+
+.header__title span {
+    color : var(--main-color);
+}
+
+.codeRPBW_V2 .codeRPBW__separator {
+    height: 15px;
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+}
+
+.codeRPBW_V2 .title__firstPart {
+    height: 50%;
+    padding: 0 10px 5px 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+
+.codeRPBW_V2 .title__secondPart {
+    background: linear-gradient(90deg, #3b3a3a,#111212);
+    height: 50%;
+    padding: 0 10px 10px 0;
+    box-sizing: border-box;
+}
+
+.codeRPBW_V2 .secondPart_feat {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: arial;
+    letter-spacing: normal;
+    font-style: normal;
+    width: 55%;
+    background-color: white;
+    margin-left: 45%;
+    color: #111212;
+    font-weight: bold;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    margin-top: 2px;
+}
+
+.codeRPBW_V2 .footer_HRP {
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    padding: 5px 10px 10px 10px ;
+}
+
+.codeRPBW_V2 .footer_HRP > div {
+    background-color: #111212;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.codeRPBW_V2 .footer_infos {
+    width: 100%;
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    padding: 10px 10px 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 11px;
+}
+
+.codeRPBW_V2 .footer_infos span {
+    background-color: #111212;
+    padding: 2px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 155px;
+    text-align: center;
+}
+
+.codeRPBW_V2 .team_info span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.codeRPBW_V2 .footer_team {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 15px;
+    background: linear-gradient(90deg, #3b3a3a,#111212);
+}
+
+.codeRPBW_V2 .team_pokemon {
+    width: 31%;
+}
+
+.codeRPBW_V2 .pokemon_infos {
+    font-size: 11px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.codeRPBW_V2 .footer_team .pv_progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+}
+
+.codeRPBW_V2 .footer_team .pv_progress[value]::-webkit-progress-bar {
+    background-color: white;
+}
+
+.codeRPBW_V2 .footer_team .pv_progress[value]::-webkit-progress-value {
+    background-color: var(--main-color);
+}
+
+.codeRPBW_V2 .pokemon_infos img {
+    width: 32px;
+    height: 32px;
+    border-right: 3px solid var(--accent-color);
+    border-radius: 100px;
+}
+
+.codeRPBW_V2 .team_pokemon progress {
+    width: 100%;
+}
+
+.codeRPBW_V2 .content_text {
+    background-color: #111212;
+    font-size: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.codeRPBW_V2 .content_text > div {
+    background-color: #272727;
+    font-size: 12px;
+    padding: 15px;
+}
+
+.codeRPBW_V2.duo .team_pokemon {
+    width: fit-content;
+}
+
+.codeRPBW_V2.duo .footer_team {
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+.codeRPBW_V2.duo .footer_HRP {
+    padding: 10px;
+}
+
+.creditTakeItEzy {
+    font-size: 9px;
+    text-align: center;
+    margin-top:10px;
+    color:lightgray;
+    text-transform: uppercase;
+    font-family: arial;
+}

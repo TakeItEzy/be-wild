@@ -1,0 +1,193 @@
+.codeRPBW {
+    width:500px;
+    margin:auto;
+    font-size:12px;
+    line-height:1.2;
+    border:5px solid white;
+    color:var(--forum-text);
+    font-family: arial;
+}
+
+.codeRPBW .codeRPBW_header {
+    background-image:linear-gradient(90deg, var(--first-color) 75%, var(--accent-color) 100%);
+    height: 130px;
+    width: 100%;
+}
+
+.codeRPBW .codeRPBW_header .header_arrow {
+    background-image:linear-gradient(90deg, var(--forum-thirth-grey), var(--forum-second-grey));
+    height: 100%;
+    width: 90%;
+    clip-path: polygon(0% 0%, 92% 0%, 100% 50%, 92% 100%, 0% 100%);
+    padding:10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.codeRPBW .codeRPBW_header .header_arrow .arrow_icons {
+    display: flex;
+    width:230px;
+    justify-content: space-between;
+}
+
+.codeRPBW .codeRPBW_header .header_arrow img {
+    border:5px solid white;
+    display: block;
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+
+.codeRPBW .codeRPBW_header .header_arrow img:hover {
+    filter: grayscale(0);
+}
+
+.codeRPBW .header_arrow .arrow_infos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 164px;
+}
+
+.codeRPBW .header_arrow .arrow_infos div {
+    background-color: var(--forum-thirth-grey);
+    margin-bottom:5px;
+    margin-left:10px;
+    text-transform: uppercase;
+    padding:2px 5px 1px 5px;
+    text-align: center;
+}
+
+.codeRPBW .header_arrow .arrow_infos div:last-of-type {
+    margin-bottom:0;
+}
+
+.codeRPBW .codeRPBW_title {
+    background-color: var(--forum-second-grey);
+    color: var(--white);
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 3px 5px 2px;
+}
+
+.codeRPBW hr {
+    height: 5px;
+    border: none;
+    background-image: linear-gradient(90deg, var(--first-color), var(--accent-color));
+    margin: 5px 0  0;
+}
+
+.codeRPBW .codeRPBW_content {
+    background-color: var(--forum-second-grey);
+    padding:20px;
+    text-align: justify;
+}
+
+.codeRPBW .content_background {
+    background-color: var(--forum-main-grey);
+    padding:10px;
+    border:1px solid #101010;
+}
+
+.codeRPBW .codeRPBW_footer {
+    background-image:linear-gradient(90deg, var(--first-color), var(--accent-color));
+    padding:5px;
+}
+
+.codeRPBW .content_team {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px 20px 0 20px;
+    box-sizing: border-box;
+}
+
+.codeRPBW .team_pokemon {
+    margin-bottom:10px;
+}
+
+.codeRPBW .team_pokemon:nth-of-type(4), .codeRPBW .team_pokemon:nth-of-type(5), .codeRPBW .team_pokemon:nth-of-type(6) {
+    margin-bottom:0;
+}
+
+.codeRPBW .content_team .pokemon_infos {
+    display: flex;
+    align-items: center;
+}
+
+.codeRPBW .content_team .pokemon_infos img {
+    margin:auto;
+    filter:grayscale(1);
+    transition: all 0.5s;
+    background-color: white;
+    border-radius: 100px;
+    margin-right: 5px
+}
+
+.codeRPBW .content_team .pokemon_infos img:hover {
+    filter:grayscale(0);
+}
+
+.codeRPBW .content_team .pokemon_infos .infos_list {
+    width:95px;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.codeRPBW .content_team .pokemon_infos .infos_list div:first-of-type {
+    color:var(--first-color);
+}
+
+.pv_progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    margin-top:5px;
+}
+
+.pv_progress[value]::-webkit-progress-bar {
+    background-color: #3b3a3a;
+}
+
+.pv_progress[value]::-webkit-progress-value {
+    background-color: var(--first-color);
+}
+
+.codeRPBW.duo .content_team {
+    padding-right:90px;
+    padding-left:90px;
+    padding-bottom:10px;
+    padding-top:0;
+}
+
+.codeRPBW.duo .content_team img {
+    background-color: white;
+    border-radius: 100px;
+    filter: grayscale(1);
+    transition: all 0.5s;
+}
+
+.codeRPBW.duo .content_team img:hover {
+    filter:grayscale(0);
+}
+
+.codeRPBW .codeRPBW_footer .footer_content {
+    background-color: var(--forum-second-grey);
+    padding:10px;
+    text-align: justify;
+    text-transform: uppercase;
+    text-align: center;;
+}
+
+.creditTakeItEzy {
+    font-size: 9px;
+    text-align: center;
+    margin-top:10px;
+    color:lightgray;
+    text-transform: uppercase;
+    font-family: arial;
+  }
