@@ -1,0 +1,413 @@
+body {
+    margin: 0px;
+    background: var(--forum-second-grey);
+    padding-top: 10px;
+    font-family: arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+    
+:root {
+    --forum-main-color: #56ab2f;
+    --forum-accent-color: #a8de63;
+    --forum-main-grey: #272727;
+    --forum-second-grey: #111212;
+    --forum-thirth-grey: #3b3a3a;
+    --forum-text: #cdcdcd;
+    --white: #fff;
+    --black: #000;
+    --rouge: linear-gradient(90deg, #de6262, #a44d4d);
+    --jaune: linear-gradient(90deg, #f6c749, #cda63f);
+    --bleu: linear-gradient(90deg, #62dadd, #4da2a4);
+}
+
+
+bwclr, clrbw, .shop_desc a{
+  color: var(--forum-accent-color);
+}
+
+
+
+
+    
+.shop_desc {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    color: var(--forum-text);
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+
+  /* ----- Header ----- */
+
+
+h2 {
+    width: 100%;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px auto 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--forum-main-grey);
+    padding: 10px;
+}
+  
+.header-line-gradient {
+    background-image: linear-gradient(90deg,var(--forum-main-color),var(--forum-accent-color));
+    height: 5px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+    
+    /* ----- Le bloc entier de la boutique ----- */
+    
+#boutique {
+    position: relative;
+    background: var(--color1);
+    margin: 7px auto;
+    color: var(--white);
+    text-align: center;
+    font: 13px var(--police-text);
+    padding-bottom: 15px;
+}
+
+
+.clicheList{
+  display: none;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.product {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 275px;
+  width: 100%;
+  background: linear-gradient(-90deg, var(--forum-main-color), var(--forum-accent-color));
+}
+
+
+.productshow, .productshow1 {
+  display: flex;
+}
+
+
+span.item_name {
+    background: var(--forum-main-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+}
+
+
+.item_img {
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    background: var(--forum-main-grey);
+    border-radius: 50%;
+    padding-top: 10px;
+    position: relative;
+}
+
+
+.item_bottom {
+    background: var(--forum-thirth-grey);
+    margin-top: -33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+
+input[type="number"] {
+    display: inline-block;
+    max-width: 50px;
+    border: none;
+    background-color: var(--white);
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+
+span.item_subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+
+.item_price, .item_quantity {
+    width: 46%;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+#nbprix {
+  font-size: 14px;
+}
+
+
+.item_cate {
+    font-size: 11px;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+}
+
+
+p.item_desc {
+    background: var(--forum-main-grey);
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 7px;
+    font-size: 12px;
+    height: 75px;
+    overflow: auto;
+}
+
+
+button.add-to-cart {
+    width: 180px;
+    height: 25px;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+}
+
+
+button.add-to-cart:hover {
+  letter-spacing: 1.5px;
+}
+
+
+
+
+/* DÉBUT DU PANIER */
+
+
+div#panier, div#panier * {
+    box-sizing: initial;
+}
+
+
+div#panier {
+  margin-top: 70px;
+}
+
+
+.newBW_V2_content {
+    background: var(--forum-second-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+
+
+.newBW_V2 .newBW_V2__header .title__firstPart, .newBW_V2 .newBW_V2__header .title__secondPart, .newBW_V2 .newBW_V2__header .title__secondPart span {
+    font-family: Times new roman;
+}
+
+
+.message_subtitle {
+    width: 100%;
+    background: linear-gradient(-90deg, var(--main-color), var(--accent-color));
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+    color: var(--white);
+}
+
+
+.message_subtitle_px {
+    background: var(--forum-thirth-grey);
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 4px 0;
+}
+
+
+/* Début ligne item */
+
+
+div#myCart {
+    padding: 0;
+    margin: 10px 0 35px 0;
+}
+
+
+.cart_product {
+    position: relative;
+}
+
+
+.item_input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+input.input_nb_object {
+    width: 35px;
+    height: 22px;
+    padding: 0;
+    text-align: center;
+    background: var(--forum-second-grey);
+    border: none;
+    color: var(--forum-text);
+    margin: 0;
+}
+
+
+input.input_nb_object::-webkit-outer-spin-button,
+input.input_nb_object::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input.input_nb_object {
+  -moz-appearance: textfield;
+}
+
+
+.product_cate {
+    display: none;
+}
+
+
+button.btn_minus, button.btn_plus {
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    color: var(--white);
+    height: 22px;
+    width: 22px;
+    margin: 0 3px 0 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+span.item {
+    font-size: 13px;
+    display: block;
+    width: 400px;
+    margin-left: 5px;
+}
+
+
+button.button_delete {
+    background: var(--rouge);
+    height: 22px;
+    width: 22px;
+    color: var(--white);
+    border-radius: 100%;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    transition: all 0.3s;
+}
+button.button_delete:hover {
+    transform: scale(1.2);
+}
+
+
+/* Fin d'un item */
+
+
+/* DÉBUT AUTRE */
+
+
+h4.titleAutre {
+    margin-top: -40px;
+    margin-bottom: -10px;
+    color: var(--forum-text);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+textarea#detail {
+    background: var(--white);
+    border: none;
+    font: 14px Arial;
+    text-align: justify;
+    width: 100%!important;
+    height: 70px!important;
+    color: var(--black);
+}
+
+
+/* BOUTONS PANIER */
+
+
+.btn-empty, .btn-previ, .btn-pay {
+    margin-bottom: 10px;
+    height: 24px;
+    padding: 0 8px 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+    display: none;
+}
+
+
+.newBW_V2_content > p {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.btn-empty {
+  width: 165px;
+  background-image: var(--rouge);
+}
+.btn-previ {
+  width: 120px;
+}
+.btn-pay {
+  width: 177px;
+}
+.btn-empty:hover, .btn-previ:hover, .btn-pay:hover {
+  letter-spacing: 0.5px;
+}
