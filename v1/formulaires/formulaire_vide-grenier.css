@@ -327,6 +327,7 @@ button.button_delete {
     height: 22px;
     width: 22px;
     color: var(--white);
+    border: none;
     border-radius: 100%;
     position: absolute;
     right: -5px;
