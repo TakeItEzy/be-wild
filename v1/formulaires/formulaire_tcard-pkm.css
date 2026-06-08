@@ -1,0 +1,1459 @@
+:root .bwclr {
+    --group-first-color: #84b448;
+    --group-second-color: #33830e;
+}
+
+body{
+    background-image: url(https://i.servimg.com/u/f24/18/99/97/34/backgr24.png);
+    background-attachment: scroll;
+    padding: 50px;
+    padding-top: 10px;
+    font-family: arial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+a {
+    text-decoration: none;
+}
+  
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.bw__team-pokemonV2 .hidden.pokemon__moderation {
+    display: flex!important;
+}
+  
+.team__pokemon {
+    overflow: initial!important;
+}
+
+
+/* ------ BLOC DE GAUCHE ------ */
+
+
+.bloc_left {
+    box-sizing: border-box;
+    width: 44%;
+    background: var(--forum-main-grey);
+    color: var(--forum-text);
+    font-size: 13px;
+    margin-right: 15px;
+    padding: 15px;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 15px;
+}
+  
+.bloc_left > p {
+    font-size: 13px;
+    text-align: justify;
+    width: 100%;
+}
+  
+.bloc_left > p span {
+    color: var(--group-first-color);
+}
+
+
+.bloc_left input, .bloc_left select, .bloc_left label {
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    height: 23px;
+}
+
+
+.bloc_left label {
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: right;
+    width: 43% !important;
+}
+
+
+.bloc_left select {
+  cursor: pointer;
+}
+
+
+.modifs {
+    width: 100%;
+    position: sticky;
+    top: 20px;
+}
+  
+.bloc_modif {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    width: 545px;
+}
+  
+.bloc_modif h2 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial;
+    letter-spacing: -0.4px;
+    font-weight: 100;
+    color: var(--forum-light-grey);
+}
+  
+.bloc_modif h2 span:nth-child(1) {
+    color: var(--group-first-color);
+}
+  
+.blocHidden {
+    display: none;
+}
+  
+select option {
+    background: var(--forum-main-grey);
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/* ------ REGION SELECT ------ */
+
+
+select#region {
+    width: 254px;
+    text-align: center;
+    font: 14px Arial;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, var(--group-first-color), var(--group-second-color));
+}
+  
+select option {
+    background: var(--forum-main-grey);
+    color: #fff;
+    font-size: 12px;
+}
+  
+/* ------ TYPES & ÉTATS ------ */
+
+
+.type_select, .etat_select {
+    width: 254px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+select#type1, select#type2, select#etat1, select#etat2, select#teratype {
+    height: 25px;
+    text-align: center;
+}
+  
+.bloc_left option:selected {
+  color: #000;
+}
+
+
+.types__tera img {
+    width: 100%;
+}
+
+
+/* ------ RECHERCHE OBJET ----- */
+  
+input#autoComplete {
+    width: 250px;
+    height: 23px;
+}
+
+
+.autoComplete_wrapper {
+    position: relative;
+}
+
+
+.ui-menu {
+    max-height: 84px;
+    overflow: hidden;
+    width: 253px!important;
+    border-radius: 7px;
+    font: 13px Arial;
+    color: var(--forum-second-grey);
+}
+  
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: none!important;
+  background-color: rgba(168,222,99,.35);
+  font-weight: normal;
+  color: var(--forum-second-grey);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
+}
+  
+  /* ----- BLOC DE DROITE ----- */  
+
+
+.tcard_modifiable {
+    background: var(--forum-main-grey);
+    width: 54%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 25px 0;
+}
+  
+.tcard_modifiable input, .tcard_modifiable textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--forum-white-text);
+    resize: none;
+    font-family: arial;
+}
+  
+input.container__subtitle {
+    padding: 0px 5px!important;
+    border: none;
+    text-align: center;
+    width: 423px;
+}
+  
+input.description__name {
+    height: 23px;
+}
+  
+input.description__species {
+    height: 15px;
+}
+
+
+textarea#pokemon_desc {
+    direction: ltr;
+}
+  
+.details__list input:not(.list__gender):not(.list__talent) {
+    width: 100%;
+    background-color: var(--forum-second-grey);
+    font-size: 11px;
+    border-left: 3px solid var(--forum-light-grey);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    padding: 2px 0!important;
+    justify-content: center;
+    text-align: center;
+}
+  
+.details__list input#lvl, .details__list input#lvl2 {
+    border: none!important;
+    margin-top: 1px;
+    background: none !important;
+}
+  
+.details__list input#lvl {
+    width: 35px;
+}
+.details__list input#lvl2 {
+    width: 45px;
+}
+
+
+.list__talent > input:nth-child(1) {
+    text-transform: uppercase;
+    color: var(--group-first-color);
+    font-weight: bold;
+    font-size: 11px;
+    border: none!important;
+    padding: 0!important;
+    text-align: left!important;
+}
+  
+textarea#pokemon_talent {
+    font-size: 11px;
+    resize: none;
+    overflow: hidden;
+    min-height: 30px;
+    max-height: 100px;
+}
+  
+/* Bloc Attaques */
+  
+.moves-trainers__moves div {
+    position: relative;
+}
+  
+.moves-trainers__moves input {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-left: 10px;
+}
+  
+.moves-trainers__moves select {
+    font-size: 0;
+    height: 15px;
+    border: none;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    background: var(--group-first-color);
+    color: #fff;
+    border: none!important;
+}
+  
+.moves-trainers__moves select.acier {
+  background: #AAAABB;
+  border: none!important;
+}
+.moves-trainers__moves select.combat {
+  background: #BB5544;
+  border: none!important;
+}
+.moves-trainers__moves select.dragon {
+  background: #7766EE;
+  border: none!important;
+}
+.moves-trainers__moves select.eau {
+  background: #3399FF;
+  border: none!important;
+}
+.moves-trainers__moves select.electrique {
+  background: #e3c726;
+  border: none!important;
+}
+.moves-trainers__moves select.fee {
+  background: #FFAAFF;
+  border: none!important;
+}
+.moves-trainers__moves select.feu {
+  background: #FF4422;
+  border: none!important;
+}
+.moves-trainers__moves select.glace {
+  background: #98D8DC;
+  border: none!important;
+}
+.moves-trainers__moves select.insecte {
+  background: #AABB22;
+  border: none!important;
+}
+.moves-trainers__moves select.normal {
+  background: #A8A878;
+  border: none!important;
+}
+.moves-trainers__moves select.plante {
+  background: #77CC55;
+  border: none!important;
+}
+.moves-trainers__moves select.poison {
+  background: #AA5599;
+  border: none!important;
+}
+.moves-trainers__moves select.psy {
+  background: #FF5599;
+  border: none!important;
+}
+.moves-trainers__moves select.roche {
+  background: #CAA038;
+  border: none!important;
+}
+.moves-trainers__moves select.sol {
+  background: #E3BB55;
+  border: none!important;
+}
+.moves-trainers__moves select.spectre {
+  background: #6666BB;
+  border: none!important;
+}
+.moves-trainers__moves select.tenebres {
+  background: #705868;
+  border: none!important;
+}
+.moves-trainers__moves select.vol {
+  background: #6699FF;
+  border: none!important;
+}
+  
+/* Bloc dresseurs */
+  
+.trainers__list input, .gu-mirror .trainers__list input {
+    height: 15px;
+    background-color: var(--forum-second-grey);
+    text-transform: uppercase;
+    border-left: 3px solid var(--group-first-color);
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+  
+/* BOUTONS POUR MODIFIER UN POKÉMON */
+  
+.buttons_1, .buttons_2, .gu-mirror .buttons_1, .gu-mirror .buttons_2 {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+  
+.buttons_1, .gu-mirror .buttons_1 {
+    position: absolute;
+    top: 4px;
+    right: -30px;
+    background: none !important;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border: none;
+    flex-direction: column;
+}
+  
+.buttons_2, .gu-mirror .buttons_2 {
+    position: absolute;
+    top: 4px;
+    left: -30px;
+    background: none !important;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border: none !important;
+    gap: 4px;
+    flex-direction: column;
+}
+  
+.team__pokemon:hover .buttons_1, .team__pokemon:hover .buttons_2, .gu-mirror:hover .buttons_1, .gu-mirror:hover .buttons_2 {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.buttons_1 span, .buttons_2 span, .gu-mirror .buttons_1 span, .gu-mirror .buttons_2 span {
+    color: var(--forum-white-text) !important;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px !important;
+}
+
+
+.drag {
+    background: var(--group-second-color);
+}
+  
+.delete, .add, .modif {
+    cursor: pointer;
+}
+
+
+.add {
+    background: #56ab2f;
+}
+  
+.delete {
+  background: #de6262;
+}
+  
+span.modif {
+    background: var(--group-third-color);
+}
+  
+/* ------ DRAG AND DROP ------ */
+.team__pokemon .drag {
+  cursor: move;
+}
+  
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  font-family: Arial;
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+
+.gu-hide {
+  display: none !important;
+}
+
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+
+.gu-mirror {
+    color: var(--forum-white-text);
+    font-size: 11px;
+}
+
+
+.gu-mirror input, .gu-mirror textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--forum-white-text);
+    resize: none;
+    font-family: arial;
+}
+
+
+.gu-mirror .pokemon__informations {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+
+.gu-mirror .informations__condition {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, var(--group-second-color), var(--group-first-color));
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+
+.gu-mirror .condition__types div:not(.types__tera), .gu-mirror .condition__state div {
+    width: 25px;
+    height: 25px;
+    margin: 4px 3px;
+    border-radius: 100%;
+    display: flex;
+    background-color: var(--forum-light-grey);
+}
+
+
+.gu-mirror .condition__types .types__tera {
+    width: 25px;
+    height: 25px;
+    margin: 3px 3px;
+}
+
+
+.gu-mirror .condition__state div img {
+    max-width: 21px;
+    max-height: 21px;
+    margin: auto;
+}
+
+
+.gu-mirror .condition__state {
+    background-color: var(--forum-second-grey);
+}
+
+
+.gu-mirror .condition__state div {
+    width: 25px;
+    height: 25px;
+    margin: 4px 3px;
+    border-radius: 100%;
+    display: flex;
+    background-color: var(--forum-light-grey);
+}
+
+
+.gu-mirror .informations__description {
+    border-left: 3px solid var(--group-first-color);
+    margin: 10px 0px 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0 5px 5px;
+    margin-right: 15px;
+    width: 233px;
+}
+
+
+.gu-mirror .description__name {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: -1.5px;
+    line-height: 0.8;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 23px;
+}
+
+
+.gu-mirror .description__species {
+    font-size: 18px;
+    color: var(--group-first-color);
+    text-transform: uppercase;
+    line-height: 0.8;
+    height: 15px;
+}
+
+
+.gu-mirror .description__text {
+    font-size: 11px;
+    text-align: justify;
+    overflow: auto;
+    height: 72px;
+    line-height: 1.1;
+    padding-right: 5px;
+    width: 98%;
+    direction: ltr;
+}
+
+
+.gu-mirror .informations__infos {
+    width: 281px;
+}
+
+
+.gu-mirror .infos__details {
+    width: 100%;
+    display: flex;
+    margin: 10px 0 5px 0px;
+    position: relative;
+}
+
+
+.gu-mirror .details__item {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 3;
+    background-color: var(--forum-light-grey);
+    border-radius: 100%;
+    box-sizing: border-box;
+    display: flex;
+    top: 3px;
+    left: 3px;
+}
+
+
+.gu-mirror .details__item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+
+.gu-mirror .details__item:after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: var(--forum-second-grey);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    z-index: -1;
+}
+
+
+.gu-mirror .details__sprite {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    border-left: 1px;
+    border: 3px solid var(--forum-light-grey);
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+}
+
+
+.gu-mirror .details__sprite img {
+    z-index: 2;
+    position: relative;
+    margin: auto;
+}
+
+
+.gu-mirror .details__sprite:after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--black);
+    top: 2px;
+    right: 0;
+    position: absolute;
+}
+
+
+.gu-mirror .details__list {
+    height: 110px;
+    width: 226px;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+    margin-left: 57px;
+    padding: 5px 10px 5px 61px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+.gu-mirror .details__list div:not(.list__gender):not(.list__talent) {
+    width: 100%;
+    background-color: var(--forum-second-grey);
+    font-size: 11px;
+    border-left: 3px solid var(--forum-light-grey);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+    justify-content: center;
+    line-height: 1;
+}
+
+
+.gu-mirror .details__list input#lvl {
+    width: 35px;
+}
+
+
+.gu-mirror .details__list input#lvl, .gu-mirror .details__list input#lvl2 {
+    border: none !important;
+    margin-top: 1px;
+    background: none !important;
+}
+
+
+.gu-mirror .details__list input:not(.list__gender):not(.list__talent) {
+    width: 100%;
+    background-color: var(--forum-second-grey);
+    font-size: 11px;
+    border-left: 3px solid var(--forum-light-grey);
+    text-transform: uppercase;
+    box-sizing: border-box;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    padding: 2px 0 !important;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.gu-mirror .list__gender {
+    display: flex;
+    gap: 5px;
+}
+
+
+.gu-mirror .list__talent {
+    height: 49px;
+    overflow: auto;
+    width: 100%;
+    background-color: var(--forum-second-grey);
+    font-size: 11px;
+    border-left: 3px solid var(--forum-light-grey);
+    box-sizing: border-box;
+    padding: 3px;
+    justify-content: center;
+    text-align: left;
+}
+
+
+.gu-mirror .list__talent > input:nth-child(1) {
+    text-transform: uppercase;
+    color: var(--group-first-color);
+    font-weight: bold;
+    font-size: 11px;
+    border: none !important;
+    padding: 0 !important;
+    text-align: left !important;
+}
+
+
+.gu-mirror textarea#pokemon_talent {
+    font-size: 11px;
+    resize: none;
+    overflow: hidden;
+    min-height: 30px;
+    max-height: 100px;
+}
+
+
+.gu-mirror .informations__btn-infos-supp {
+    width: 281px;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+    color: var(--forum-light-grey);
+    text-transform: uppercase;
+    font-size: 12px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    line-height: 0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+.gu-mirror .pokemon__moderation.hidden {
+    display: flex;
+}
+
+
+.gu-mirror .moderation__stats {
+    width: 270px;
+    padding: 10px 0px 20px 10px;
+    box-sizing: content-box;
+}
+
+
+.gu-mirror .stats__name {
+    display: flex;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+    justify-content: space-between;
+    margin-bottom: 2px;
+    height: 15px;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.gu-mirror .stats__name div:not(:last-child) {
+    border-right: 2px solid var(--forum-main-grey);
+}
+
+
+.gu-mirror .stats__name div {
+    text-align: center;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gu-mirror .stats__values {
+    display: flex;
+}
+
+
+.gu-mirror .values__bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(to top, var(--group-second-color), var(--group-first-color));
+    margin-right: 2px;
+    border-radius: 0 0 0 5px;
+}
+
+
+.gu-mirror .values__bonus div:not(:last-child) {
+    border-bottom: 2px solid var(--forum-main-grey);
+}
+
+
+.gu-mirror .values__bonus div {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+}
+
+
+.gu-mirror .values__table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+}
+
+
+.gu-mirror .values__table .row {
+    display: contents;
+}
+
+
+.gu-mirror .values__table .row .cell {
+    text-align: center;
+    font-size: 11px;
+    width: 36px;
+    height: 15px;
+}
+
+
+.gu-mirror .stats__pv {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+
+.gu-mirror .stats__pv div {
+    width: 112px;
+    height: 15px;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gu-mirror .stats__pv div span {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+.gu-mirror .moderation_moves-trainers {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+
+
+.gu-mirror .moves-trainers__moves {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+
+.gu-mirror .moves-trainers__moves div {
+    width: calc(50% - 1.5px);
+    background-color: var(--forum-second-grey);
+    border-left: 3px solid var(--group-first-color);
+    box-sizing: border-box;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+
+.gu-mirror .moves-trainers__moves a {
+    display: block;
+    text-decoration: none;
+    color: var(--forum-white-text);
+    width: calc(50% - 1.5px);
+    transition: all 0.5s;
+    flex-grow: 1;
+}
+
+
+.gu-mirror .moves-trainers__moves a div {
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+}
+
+
+.gu-mirror .moves-trainers__trainers {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+.gu-mirror .trainers__title {
+    width: 100px;
+    margin-right: 5px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -1.5px;
+    font-style: italic;
+    text-align: right;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.gu-mirror .trainers__title span {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--group-first-color);
+    font-style: normal;
+}
+
+
+.gu-mirror .trainers__list {
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+
+
+/* ENVOI */
+
+
+.buttons_envoi {
+    margin: 50px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.buttons_envoi input {
+    width: 185px;
+    height: 30px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--group-first-color), var(--group-third-color));
+}
+
+
+
+
+/* -------------------------
+         BOÎTES PC
+-------------------------- */
+
+
+.tcard_modifiable ::placeholder {
+  color: #cdcdcd;
+  opacity: 1;
+}
+
+
+.tcard_modifiable ::-ms-input-placeholder {
+  color: #cdcdcd;
+}
+  
+.bloc_modif small {
+    margin-left: 4%;
+    margin-top: -16px;
+}
+  
+a.add_separator {
+    display: flex;
+    width: 175px;
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--group-first-color), var(--group-third-color));
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 5px;
+}
+  
+.pc_pokemon {
+    position: relative;
+}
+  
+.trainer-cardV2__separator > input {
+  background-color: var(--black);
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: -1.5px;
+  font-style: italic;
+  line-height: 0.8;
+  height: 25px;
+  text-align: center;
+}
+  
+.infos_name-species {
+  text-align: center;
+}
+
+
+.talent-lvl_talent, .talent-lvl_lvl {
+  font-size: 11px;
+  text-transform: uppercase;
+  height: 15px;
+  border-left: 3px solid var(--group-first-color)!important;
+  background-color: var(--forum-second-grey)!important;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 5px!important;
+  justify-content: center;
+}
+  
+.talent-lvl_talent {
+  width: 140px!important;
+}
+  
+.talent-lvl_lvl {
+  width: 90px!important;
+}
+  
+textarea.content_text {
+    width: 219px;
+}
+  
+.pokemon_types > div {
+    display: flex;
+}
+  
+input.content_state {
+    height: 15px;
+    border: none;
+    font-family: arial;
+    color: var(--forum-white-text);
+    text-align: center;
+}
+  
+.wrap_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    width: 100%;
+    min-height: 5px;
+}
+  
+/* BOUTONS POUR MODIFIER UN POKÉMON */
+  
+.buttons_1, .buttons_2, .gu-mirror .buttons_1, .gu-mirror .buttons_2 {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+    z-index: 100;
+}
+ 
+.buttons_1, .gu-mirror .buttons_1 {
+    position: absolute;
+    top: 4px;
+    right: -30px;
+    background: none !important;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border: none;
+    flex-direction: column;
+}
+  
+.buttons_2, .gu-mirror .buttons_2 {
+    position: absolute;
+    top: 4px;
+    left: -30px;
+    background: none !important;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border: none !important;
+    gap: 4px;
+    flex-direction: column;
+}
+  
+.pc_pokemon:hover .buttons_1, .pc_pokemon:hover .buttons_2, .gu-mirror:hover .buttons_1, .gu-mirror:hover .buttons_2 {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.buttons_1 span, .buttons_2 span, .gu-mirror .buttons_1 span, .gu-mirror .buttons_2 span {
+    color: var(--forum-white-text) !important;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px !important;
+}
+
+
+.drag {
+    background: var(--group-second-color);
+}
+  
+.delete, .add, .modif {
+    cursor: pointer;
+}
+
+
+.add {
+    background: #56ab2f;
+}
+  
+.delete {
+  background: #de6262;
+}
+  
+span.modif {
+    background: var(--group-third-color);
+}
+  
+.wrap_box .pc_pokemon:nth-child(even) .buttons_2 {
+    left: 285px;
+}
+  
+.bw__pcV2 .types__tera {
+    padding: 0 !important;
+    background: transparent !important;
+    width: 17px !important;
+    height: 17px !important;
+}
+  
+/* ----- SÉPARATEURS ----- */
+.trainer-cardV2__separator:hover .buttons_2, .trainer-cardV2__separator:hover .buttons_1 {
+    opacity: 1;
+    visibility: visible;
+}
+  
+.trainer-cardV2__separator .buttons_2, .trainer-cardV2__separator .buttons_1 {
+    margin-top: -3px;
+}
+  
+/* ------ DRAG AND DROP ------ */
+.pc_pokemon .drag, .trainer-cardV2__separator .drag {
+  cursor: move;
+}
+  
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  font-family: Arial;
+  font-size: 12px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+
+.gu-hide {
+  display: none !important;
+}
+
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+
+.gu-mirror {
+    color: var(--forum-white-text);
+    font-size: 11px;
+}
+
+
+.gu-mirror input, .gu-mirror textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--forum-white-text);
+    resize: none;
+    font-family: arial;
+}
+  
+.gu-mirror .pokemon_types {
+    width: 17px;
+    background: var(--black);
+    border-right: 3px solid var(--group-first-color);
+    padding: 5px 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+  
+.gu-mirror .pokemon_types div:not(.types__tera) {
+    background-color: var(--forum-light-grey);
+    border-radius: 100%;
+    padding: 2px;
+    width: 13px;
+    height: 13px;
+}
+  
+.gu-mirror .pokemon_types div img {
+    width: 100%;
+}
+  
+.gu-mirror .pokemon_infos {
+    background-color: var(--black);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 239px;
+    position: relative;
+}
+  
+.gu-mirror .infos_sprite {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border: 3px solid var(--forum-light-grey);
+    border-radius: 100%;
+    width: 38px;
+    height: 38px;
+}
+  
+.gu-mirror .infos_sprite div {
+    background-color: black;
+    border-radius: 100%;
+    border-left: 2px solid var(--group-first-color);
+    border-top: 2px solid var(--group-first-color);
+    border-bottom: 2px solid var(--group-first-color);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+  
+.gu-mirror .infos_sprite div img {
+    margin: auto;
+}
+  
+.gu-mirror .infos_name-species {
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -1.5px;
+    font-style: italic;
+    font-size: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.gu-mirror .content_talent-lvl {
+    display: flex;
+    gap: 5px;
+    margin: 5px 10px;
+    line-height: 1;
+}
+  
+.gu-mirror .content_text {
+    background-color: var(--forum-second-grey);
+    margin: 5px 10px;
+    height: 45px;
+    font-size: 11px;
+    overflow: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 219px;
+}
+  
+.gu-mirror .content_state {
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+    font-size: 11px;
+    text-transform: uppercase;
+    width: 110px;
+    margin-left: 119px;
+    height: 15px;
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+ 
+.calleis .gu-mirror .pokemon_infos {
+    background-image: url('https://i.servimg.com/u/f24/18/99/97/34/backg124.png');
+}
+.haptos .gu-mirror .pokemon_infos {
+    background-image: url('https://i.servimg.com/u/f24/18/99/97/34/backg127.png');
+}
+.anthos .gu-mirror .pokemon_infos {
+    background-image: url('https://i.servimg.com/u/f24/18/99/97/34/backg125.png');
+}
+.adamantia .gu-mirror .pokemon_infos {
+    background-image: url(https://i.servimg.com/u/f24/18/99/97/34/backg126.png);
+}
+.kopadia .gu-mirror .pokemon_infos {
+    background-image: url('https://i.servimg.com/u/f24/18/99/97/34/backgr93.png');
+}
+  
+/* Séparateurs */
+.gu-mirror .trainer-cardV2__separator {
+    width: 100%;
+    height: 35px;
+    position: relative;
+}
+  
+.gu-mirror .tc__separator:after {
+    position: absolute!important;
+    bottom: 0!important;
+    content: " "!important;
+    display: block!important;
+    width: 100%!important;
+    height: 5px!important;
+    margin-top: 5px!important;
+    background: red!important;
+}
+  
+.gu-mirror .tc__separator {
+    background-color: var(--black);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: -1.5px;
+    font-style: italic;
+    line-height: 0.8;
+    height: 25px;
+    text-align: center;
+    position: relative;
+}
+  
+.gu-mirror space {
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, var(--group-second-color), var(--group-first-color));
+}
