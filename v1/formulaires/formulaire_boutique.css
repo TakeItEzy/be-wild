@@ -1,0 +1,401 @@
+body {
+    margin: 0px;
+    background: var(--forum-second-grey);
+    padding-top: 10px;
+    font-family: arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+   
+    
+:root {
+    --forum-main-color: #56ab2f;
+    --forum-accent-color: #a8de63;
+    --forum-main-grey: #272727;
+    --forum-second-grey: #111212;
+    --forum-thirth-grey: #3b3a3a;
+    --forum-text: #cdcdcd;
+    --white: #fff;
+    --black: #000;
+    --rouge: linear-gradient(90deg, #de6262, #a44d4d);
+    --jaune: linear-gradient(90deg, #f6c749, #cda63f);
+    --bleu: linear-gradient(90deg, #62dadd, #4da2a4);
+}
+
+bwclr, clrbw, .shop_desc a{
+  color: var(--forum-accent-color);
+}
+    
+.shop_desc {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    color: var(--forum-text);
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+  /* ----- Header ----- */
+
+h2 {
+    width: 100%;
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px auto 10px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: var(--forum-main-grey);
+    padding: 10px;
+}
+  
+.header-line-gradient {
+    background-image: linear-gradient(90deg,var(--forum-main-color),var(--forum-accent-color));
+    height: 5px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.head_shop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+a.showCart {
+    background: var(--forum-second-grey);
+    border: 1px solid var(--forum-text);
+    padding: 6px 10px;
+    text-transform: uppercase;
+    transition: 0.5s linear;
+    font-size: 13px;
+}
+a.showCart:hover {
+    background: var(--forum-main-color);
+    color: #fff;
+}
+    
+    /* ----- Le bloc entier de la boutique ----- */
+    
+#boutique {
+    position: relative;
+    background: var(--color1);
+    margin: 7px auto;
+    color: var(--white);
+    text-align: center;
+    font: 13px var(--police-text);
+    padding-bottom: 15px;
+}
+
+.clicheList{
+  display: none;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 275px;
+  width: 100%;
+  background: linear-gradient(-90deg, var(--forum-main-color), var(--forum-accent-color));
+}
+
+.productshow, .productshow1 {
+  display: flex;
+}
+
+.bleu, .bleu button.add-to-cart {
+  background-image: var(--bleu);
+}
+.jaune, .jaune button.add-to-cart {
+  background-image: var(--jaune);
+}
+.rouge, .rouge button.add-to-cart {
+  background-image: var(--rouge);
+}
+
+span.item_name {
+    background: var(--forum-main-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: block;
+}
+
+.item_img {
+    margin: 10px auto;
+    width: 50px;
+    height: 50px;
+    background: var(--forum-main-grey);
+    border-radius: 50%;
+    padding-top: 10px;
+    position: relative;
+}
+    
+.item_img > img {
+    max-width: 32px;
+    max-height: 32px;
+}
+
+.item_bottom {
+    background: var(--forum-thirth-grey);
+    margin-top: -33px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+input[type="number"] {
+    display: inline-block;
+    max-width: 50px;
+    border: none;
+    background-color: var(--white);
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+span.item_subtitle {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.item_price, .item_quantity {
+    width: 46%;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.priceOriginal {
+    text-decoration: line-through;
+    color: var(--forum-text);
+    font-size: 12px;
+}
+
+#nbprix {
+  font-size: 14px;
+}
+
+.noPrice .item_price {
+  font-size: 0px;
+}
+
+.noButton {
+    width: 180px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.item_cate {
+    font-size: 11px;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    background: var(--forum-thirth-grey);
+    color: var(--forum-text);
+}
+
+p.item_desc {
+    background: var(--forum-main-grey);
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 7px;
+    font-size: 12px;
+    height: 75px;
+    overflow: auto;
+}
+
+button.add-to-cart {
+    width: 180px;
+    height: 25px;
+    color: #fff;
+    font-size: 13px;
+    margin: 10px auto;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+}
+
+button.add-to-cart:hover {
+  letter-spacing: 1.5px;
+}
+
+input#searchInput {
+    display: block;
+    width: 250px;
+    height: 30px;
+    border: none;
+    background: var(--white);
+}
+
+.shop_filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px auto 50px;
+}
+.shop_filter > input {
+    display: none;
+}
+.shop_filter > label, .shop_filter > a {
+    width: 15%;
+    text-align: center;
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: pointer;
+}
+.shop_filter > a:hover {
+    color: var(--white);
+}
+    
+.shop_filter input:checked + label, .shop_filter > a.filtchecked {
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ----- DÃ©but du panier ----- */
+
+.bw_message {
+    width: 612px!important;
+    margin-top: 50px;
+}
+
+.myPoints {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6px;
+}
+.myPoints > span {
+    background: var(--forum-thirth-grey);
+    width: 292px;
+    height: 25px;
+    font-size: 13px;
+    padding-top: 5px;
+    margin-top: 15px;
+}
+
+.bw_message .message_subtitle {
+    font-size: 14px;
+}
+
+.bw_message .message_header img {
+    width: 298px;
+    top: 110%;
+}
+
+#myCart {
+    width: 100%;
+    max-height: 200px;
+    padding: 15px 5px 0;
+    color: var(--white);
+    text-align: justify;
+    overflow: auto;
+}
+
+input.input_nb_object {
+    width: 50px;
+    height: 22px;
+    border: none;
+}
+
+.cart_product {
+    margin-bottom: 7px;
+}
+
+.item_input {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--forum-thirth-grey);
+    padding: 5px;
+}
+
+button.btn_minus, button.btn_plus {
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    height: 22px;
+    width: 22px;
+    margin: 0 3px 0 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+span.item {
+    display: block;
+    width: 450px;
+    font-size: 13px;
+    padding-top: 3px;
+}
+
+button.button_delete {
+    background: #e35050;
+    height: 22px;
+    width: 22px;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+input#historique, textarea#detail, input#discord {
+    background: var(--white);
+    border: none;
+    font: 14px Arial;
+    text-align: justify;
+    width: 590px!important;
+    height: 70px!important;
+    color: var(--black);
+    margin: 5px;
+}
+
+input#historique, input#discord {
+    height: 30px!important;
+}
+
+.btn-empty, .btn-previ, .btn-pay {
+    margin-bottom: 10px;
+    height: 24px;
+    padding: 0 14px 0;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
+    transition: all .5s;
+}
+.btn-empty {
+  width: 185px;
+  background-image: var(--rouge);
+}
+.btn-previ {
+  width: 138px;
+}
+.btn-pay {
+  width: 205px;
+}
+.btn-empty:hover, .btn-previ:hover, .btn-pay:hover {
+  letter-spacing: 0.5px;
+}
