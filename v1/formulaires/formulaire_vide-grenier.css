@@ -8,10 +8,6 @@ body {
 * {
     box-sizing: border-box;
 }
-
-clrbw{
-  color: var(--forum-accent-color);
-}
     
 :root {
     --forum-main-color: #56ab2f;
@@ -27,6 +23,9 @@ clrbw{
     --bleu: linear-gradient(90deg, #62dadd, #4da2a4);
 }
 
+clrbw{
+  color: var(--forum-accent-color);
+}
 
 #vide-grenier {
     position: relative;
@@ -306,6 +305,7 @@ input.input_nb_object {
 button.btn_minus, button.btn_plus {
     background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
     color: var(--white);
+    border: none;
     height: 22px;
     width: 22px;
     margin: 0 3px 0 3px;
