@@ -17,7 +17,7 @@ body {
     background-color: var(--bg);
     background-image: url(https://i.imgur.com/AzTC6ZO.png);
     background-position: bottom right;
-    background-size: 150vh;
+    background-size: 100vw 50vh;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
