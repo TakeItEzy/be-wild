@@ -374,7 +374,7 @@ input[type=number].error {
 
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (min: 820px) and (max-width: 1120px) {
 
     .calculator_background > img {
         display: none;
