@@ -325,14 +325,6 @@ input[type=number].error {
 
 /* ----- Format smartphone ----- */
 
-@media screen and (max-width: 1120px) {
-
-    .calculator_background > img {
-        display: none;
-    }
-
-}
-
 @media screen and (max-width: 820px) {
     .bw_calculator, .bw_calculator1, .bw_calculator2 {
         width: 545px;
@@ -378,6 +370,14 @@ input[type=number].error {
 
     .bw_calculator .weakness_resistance div, .bw_calculator1 .weakness_resistance div, .bw_calculator2 .weakness_resistance div {
         margin-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .calculator_background > img {
+        display: none;
     }
 
 }
