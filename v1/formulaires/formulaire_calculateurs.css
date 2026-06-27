@@ -326,6 +326,10 @@ input[type=number].error {
 /* ----- Format smartphone ----- */
 
 @media screen and (max-width: 1100px) {
+    body {
+        width: 450px;
+    }
+    
     .bw_calculator, .bw_calculator1, .bw_calculator2 {
         width: 545px;
         height: auto;
