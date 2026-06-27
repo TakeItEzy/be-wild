@@ -346,6 +346,7 @@ input[type=number].error {
 
     .bw_calculator .calculator_background > div, .bw_calculator1 .calculator_background > div, .bw_calculator2 .calculator_background > div {
         width: 100%;
+        padding: 15px;
     }
 
     .bw_calculator .calculator_left > fieldset:last-of-type, .bw_calculator1 .calculator_left > fieldset:last-of-type, .bw_calculator2 .calculator_left > fieldset:last-of-type {
@@ -357,11 +358,11 @@ input[type=number].error {
     }
 
     .bw_calculator .calculator_section, .section_breaker, .bw_calculator1 .calculator_section, .bw_calculator2 .calculator_section {
-        width: 211px;
+        width: 164px;
     }
 
     .bw_calculator input[type=number], .bw_calculator input[type=text], .bw_calculator1 input[type=number], .bw_calculator1 input[type=text], .bw_calculator2 input[type=number], .bw_calculator2 input[type=text] {
-        width: 211px;
+        width: 164px;
     }
 
     .bw_calculator .calculator_section.sauvage, .bw_calculator1 .calculator_section.sauvage, .bw_calculator2 .calculator_section.sauvage {
