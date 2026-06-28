@@ -4678,4 +4678,6 @@ var products = [
   imageUrl: "https://2img.net/i.imgur.com/lJe1YTW.png",
 }];
   DisplayProductList(products);
+  DisplayCTList(products);
+  DisplayItemList(products);
 });
