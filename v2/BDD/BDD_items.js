@@ -1,7 +1,57 @@
 $(document).ready(function() {
 	//liste des catégories : yellow, ct, cs, survie, dressage, équipement, comestible, capture, évolutif
 
-var products = [//GOLD
+var products = [
+{
+      name: "CT N°038 - Nitrocharge",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
+      price: 425,
+	  
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°063 - Psycho-Croc",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
+      price: 425,
+	  
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°149 - Séisme",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
+      price: 425,
+	  
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°209 - Ocroupi",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
+      price: 425,
+	  
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°216 - Danse Plumes",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
+      price: 425,
+	  
+      qty_videgrenier: 1
+    },
 {
       name: "Accro Griffe",
       categories_videgrenier: "équipement",
@@ -4627,5 +4677,5 @@ var products = [//GOLD
       categories_tc: "displayed",
   imageUrl: "https://2img.net/i.imgur.com/lJe1YTW.png",
 }];
-  
+  DisplayProductList(products);
 });
