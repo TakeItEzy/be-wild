@@ -327,7 +327,7 @@ input[type=number].error {
 
 @media screen and (max-width: 1100px) {
     body {
-        min-width: 450px;
+        /*min-width: 450px;*/
     }
     
     .bw_calculator, .bw_calculator1, .bw_calculator2 {
@@ -358,11 +358,11 @@ input[type=number].error {
     }
 
     .bw_calculator .calculator_section, .section_breaker, .bw_calculator1 .calculator_section, .bw_calculator2 .calculator_section {
-        width: 164px;
+        width: 47%;
     }
 
     .bw_calculator input[type=number], .bw_calculator input[type=text], .bw_calculator1 input[type=number], .bw_calculator1 input[type=text], .bw_calculator2 input[type=number], .bw_calculator2 input[type=text] {
-        width: 164px;
+        width: 100%;
     }
 
     .bw_calculator .calculator_section.sauvage, .bw_calculator1 .calculator_section.sauvage, .bw_calculator2 .calculator_section.sauvage {
@@ -375,6 +375,13 @@ input[type=number].error {
 
     .bw_calculator .weakness_resistance div, .bw_calculator1 .weakness_resistance div, .bw_calculator2 .weakness_resistance div {
         margin-right: 15px;
+    }
+
+    .bw_calculator .add_calculator {
+        position: absolute;
+        top: auto;
+        bottom: -70px;
+        right: 0;
     }
 
 }
@@ -408,11 +415,11 @@ input[type=number].error {
 }
 
 .bw_calculator1 .calculator_section, .bw_calculator2 .calculator_section {
-    width: 211px;
+    width: 47%;
 }
 
 .bw_calculator1 input[type=number], .bw_calculator1 input[type=text], .bw_calculator2 input[type=number], .bw_calculator2 input[type=text] {
-    width: 211px;
+    width: 100%;
 }
 
 .bw_calculator1 .calculator_section.sauvage, .bw_calculator2 .calculator_section.sauvage {
