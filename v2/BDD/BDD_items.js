@@ -4677,5 +4677,5 @@ var products = [
       categories_tc: "displayed",
   imageUrl: "https://2img.net/i.imgur.com/lJe1YTW.png",
 }];
-  //DisplayProductList(products);
+  
 });
