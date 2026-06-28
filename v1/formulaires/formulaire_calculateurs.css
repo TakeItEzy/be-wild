@@ -326,7 +326,7 @@ input[type=number].error {
 /* ----- Format smartphone ----- */
 
 @media screen and (max-width: 1100px) {
-    body {
+    html, body {
         min-width: 545px;
     }
     
