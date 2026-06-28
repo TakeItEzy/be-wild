@@ -50,7 +50,7 @@ var products = [//GOLD
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 300,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Cape Obscure",
@@ -311,7 +311,7 @@ var products = [//GOLD
       imageUrl: "https://2img.net/i.imgur.com/HP3SpQN.png",
       price: 525,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Roche Météo",
@@ -731,7 +731,7 @@ var products = [//GOLD
       imageUrl: "https://2img.net/i.imgur.com/vgb8jRk.png",
       price: 450,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Alga",
@@ -831,7 +831,7 @@ var products = [//GOLD
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lansat10.png",
       price: 150,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Lichii",
@@ -1862,7 +1862,7 @@ var products = [//GOLD
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°081 - Nœud Herbe",
