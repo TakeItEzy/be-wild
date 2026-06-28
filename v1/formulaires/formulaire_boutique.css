@@ -116,6 +116,10 @@ a.showCart:hover {
   display: flex;
 }
 
+.product.none {
+    display: none;
+}
+
 .bleu, .bleu button.add-to-cart {
   background-image: var(--bleu);
 }
