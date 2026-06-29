@@ -563,6 +563,16 @@ var products = [
 	  
       qty_videgrenier: 0
     },
+	{
+      name: "Super Repousse-Chroma",
+      categories_videgrenier: "survie",
+      categories_boutique: "bleu survie",
+      description: "En sujet de capture, les <u>six</u> prochains Pokémons qui apparaîtront seront forcément non chromatiques.",
+      imageUrl: "https://www.pokepedia.fr/images/0/0a/Miniature_Repousse_Max_DEPS.png",
+      price: 375,
+      
+      qty_videgrenier: 0
+    },
     {
       name: "Écaille cœur",
       categories_videgrenier: "dressage",
