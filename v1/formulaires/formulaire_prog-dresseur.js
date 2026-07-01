@@ -1716,63 +1716,54 @@ function removeCuisine(recetteremove){
 $(document).ready(function() {
 var primes = [
     {
-      id: 0,
       niveau: "1",
       numero: "01",
       description: "Capturer un Pokémon sur un dé compris entre 1 et 5 inclus.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 1,
       niveau: "1",
       numero: "02",
       description: "Capturer un Pokémon d'expédition.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 2,
       niveau: "1",
       numero: "03",
       description: "Capturer un Pokémon de type Eau ailleurs qu’à Kopadia.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 3,
       niveau: "1",
       numero: "04",
       description: "Capturer un Pokémon à son premier stade d’évolution (forme de base > premier stade > évolution finale ; il s’agit de l’ « évolution du milieu »).",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 4,
       niveau: "1",
       numero: "05",
       description: "Capturer un Pokémon de double type Vol - Normal.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 5,
       niveau: "1",
       numero: "06",
       description: "Capturer un Pokémon avec une Superball.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 6,
       niveau: "1",
       numero: "07",
       description: "Capturer un Pokémon de type Spectre apparu en 9e génération.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 7,
       niveau: "1",
       numero: "08",
       description: "Capturer un Pokémon avec taux de capture de 190 ou 200 selon Poképédia.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 8,
       niveau: "1",
       numero: "09",
       description: "Capturer un Pokémon dont un des talents est apparu en 4e génération.",
@@ -1786,217 +1777,186 @@ var primes = [
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 10,
       niveau: "1",
       numero: "11",
       description: "Capturer un Pokémon appartenant au groupe d’œufs Amorphe.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 11,
       niveau: "1",
       numero: "12",
       description: "Capturer un Pokémon dont la couleur principale selon Poképédia est le gris.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 12,
       niveau: "1",
       numero: "13",
       description: "Capturer un Pokémon présentant un dimorphisme sexuel.",
       gain: "[100 p$ / 10 EXP]"
     },
 {
-      id: 13,
       niveau: "1",
       numero: "14",
       description: "Capturer un Pokémon dont le nom de “catégorie” contient le mot « oiseau ».",
       gain: "[100 p$ / 10 EXP]"
     },
  {
-      id: 14,
       niveau: "2",
       numero: "01",
       description: "Capturer un Pokémon évoluant avec une Pierre Foudre.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 15,
       niveau: "2",
       numero: "02",
       description: "Capturer un Pokémon au niveau 13.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 16,
       niveau: "2",
       numero: "03",
       description: "Capturer un Pokémon capable d’apprendre la capacité Estocorne, que ce soit par niveau ou par CT.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 17,
       niveau: "2",
       numero: "04",
       description: "Capturer un Pokémon Starter d’une des 9 générations à son premier stade d'évolution (forme de base > premier stade > évolution finale ; il s’agit de l’évolution du milieu).",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 18,
       niveau: "2",
       numero: "05",
       description: "Capturer un Pokémon dont l'espèce est uniquement femelle.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 19,
       niveau: "2",
       numero: "06",
       description: "Capturer un Pokémon avec un double-type dont l’un des types est faible à l’autre.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 20,
       niveau: "2",
       numero: "07",
       description: "Capturer un Pokémon qui possède au moins deux formes différentes non régionales, et qui ne résultent pas d’un dimorphisme sexuel.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 21,
       niveau: "2",
       numero: "08",
       description: "Capturer un Pokémon de moins de 20 cm.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 22,
       niveau: "2",
       numero: "09",
       description: "Capturer un Pokémon avec un double-type et qui a au maximum une seule faiblesse, en comptant un éventuel talent immunisant.",
       gain: "[200 p$ / 20 EXP]"
     },
  {
-      id: 23,
       niveau: "3",
       numero: "01",
       description: "Capturer un Pokémon possédant Méga-Sangsue dans son movepool (autrement dit, la capacité fait partie de ses possibilités d'apprentissage, même s'il ne la connaît pas).",
       gain: "[300 p$ / 30 EXP]"
     },
  {
-      id: 24,
       niveau: "3",
       numero: "02",
       description: "Capturer un Pokémon pouvant apprendre Requiem.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
-      id: 25,
       niveau: "3",
       numero: "03",
       description: "Capturer un Pokémon qui serait rouge ou violet et que l’on retrouverait essentiellement dans les milieux urbains, selon Poképédia.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
-      id: 26,
       niveau: "3",
       numero: "04",
       description: "Capturer un Pokémon à son dernier stade d’évolution et pouvant méga-évoluer.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
-      id: 27,
       niveau: "3",
       numero: "05",
       description: "Capturer un Pokémon qui ne peut se trouver que dans une seule zone sur le forum.",
       gain: "[300 p$ / 30 EXP]"
     },
  {
-      id: 28,
       niveau: "3",
       numero: "06",
       description: "Capturer un Pokémon dont l’habitat est un “milieu hostile” selon Poképédia, et qui a déjà évolué au moins une fois.",
       gain: "[300 p$ / 30 EXP]"
     },
   {
-      id: 29,
       niveau: "4",
       numero: "01",
       description: "Capturer un Pokémon de niveau 1.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 30,
       niveau: "4",
       numero: "02",
       description: "Capturer un Pokémon ayant attaqué le joueur 3 fois d'affilée avant capture.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 31,
       niveau: "4",
       numero: "03",
       description: "Capturer un Pokémon de plus de 4 m.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 32,
       niveau: "4",
       numero: "04",
       description: "Capturer un Pokémon dont la somme des statistiques de base est supérieure à 535 selon Poképédia.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 33,
       niveau: "4",
       numero: "05",
       description: "Capturer un Pokémon possédant plus (+) de 6 faiblesses selon Poképédia.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 34,
       niveau: "4",
       numero: "06",
       description: "Capturer un Pokémon possédant au moins 4 talents selon Poképédia.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 35,
       niveau: "4",
       numero: "07",
       description: "Capturer un Pokémon qui pèse au moins 400 kg.",
       gain: "[400 p$ / 40 EXP]"
     },
  {
-      id: 36,
       niveau: "5",
       numero: "01",
       description: "Capturer un Pokémon introuvable en dessous de la zone 4.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
-      id: 37,
       niveau: "5",
       numero: "02",
       description: "Capturer un Pokémon en 4 lancers exactement.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
-      id: 38,
       niveau: "5",
       numero: "03",
       description: "Capturer un Pokémon de type Eau OU Feu OU Plante chromatique.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
-      id: 39,
       niveau: "5",
       numero: "04",
       description: "Capturer un Pokémon pouvant à la fois posséder le talent Heavy Metal et Light Metal.",
       gain: "[500 p$ / 50 EXP]"
     },
  {
-      id: 40,
       niveau: "5",
       numero: "05",
       description: "Capturer un Pokémon “de justesse”, c’est-à-dire sur un dé à la limite du taux de capture (exemple, sur un 15 en Zone verte avec une pokéball).",
@@ -2129,7 +2089,6 @@ function removePrime(primeremove){
 $(document).ready(function() {
 var exploits = [
 {
-      id: 0,
       niveau: "1",
       numero: "01",
       description: "Faire 3 OS d’affilée en PVE dans le même sujet.",
@@ -2137,7 +2096,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 1,
       niveau: "1",
       numero: "02",
       description: "Vaincre un adversaire en étant faible à au moins un de ses types.",
@@ -2145,7 +2103,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 2,
       niveau: "1",
       numero: "03",
       description: "Utiliser 3 capacités non offensives.",
@@ -2153,7 +2110,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 3,
       niveau: "1",
       numero: "04",
       description: "Utiliser 3 capacités super efficaces.",
@@ -2161,7 +2117,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 4,
       niveau: "1",
       numero: "05",
       description: "Utiliser 3 capacités bénéficiant du STAB.",
@@ -2169,7 +2124,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 5,
       niveau: "1",
       numero: "06",
       description: "Vaincre 3 Pokémon en zone verte.",
@@ -2177,7 +2131,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 6,
       niveau: "1",
       numero: "07",
       description: "Déclencher une météo durant un combat, à l’aide d’une capacité ou d’un talent.",
@@ -2185,7 +2138,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 7,
       niveau: "1",
       numero: "08",
       description: "Vaincre un adversaire en PVE sans avantage de niveau.",
@@ -2193,7 +2145,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 8,
       niveau: "1",
       numero: "09",
       description: "Paralyser ou brûler 5 adversaires. Les statuts sont combinables, c’est-à-dire que paralyser 3 fois et brûler 2 fois compterait, par exemple.",
@@ -2201,7 +2152,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 9,
       niveau: "1",
       numero: "10",
       description: "Terminer un combat face à un autre joueur, qu’il soit remporté ou perdu.",
@@ -2209,7 +2159,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 10,
       niveau: "1",
       numero: "11",
       description: "Utiliser une capacité de zone ou multicible, de manière à ce qu’elle touche effectivement plusieurs cibles. Elle peut être offensive ou non offensive, au choix.",
@@ -2217,7 +2166,6 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 11,
       niveau: "1",
       numero: "12",
       description: "Utiliser à 3 reprises un objet sur son Pokémon au combat via une action dresseur. « Au combat » signifie qu’un combat doit être en cours, et qu’il ne peut s’agir que du Pokémon de tête, celui qui combat effectivement.",
@@ -2225,7 +2173,13 @@ var exploits = [
       gain: "[150 p$ / 15 EXP]"
     },
 {
-      id: 12,
+      niveau: "1",
+      numero: "13",
+      description: "Vaincre 1 Horde de Pokémon.",
+      nb_champs: 1,
+      gain: "[150 p$ / 15 EXP]"
+    },
+{
       niveau: "2",
       numero: "01",
       description: "Faire 5 OS d’affilée en PVE dans le même sujet.",
@@ -2233,7 +2187,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 13,
       niveau: "2",
       numero: "02",
       description: "Vaincre un adversaire en étant doublement faible à l’un de ses types.",
@@ -2241,7 +2194,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 14,
       niveau: "2",
       numero: "03",
       description: "Utiliser 7 capacités non offensives.",
@@ -2249,7 +2201,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 15,
       niveau: "2",
       numero: "04",
       description: "Utiliser 7 capacités super efficaces.",
@@ -2257,7 +2208,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 16,
       niveau: "2",
       numero: "05",
       description: "Utiliser 7 capacités bénéficiant du STAB.",
@@ -2265,7 +2215,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 17,
       niveau: "2",
       numero: "06",
       description: "Vaincre 3 Pokémon en zone orange.",
@@ -2273,7 +2222,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 18,
       niveau: "2",
       numero: "07",
       description: "Remporter un combat sous la Pluie et un combat sous le Soleil.",
@@ -2281,7 +2229,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 19,
       niveau: "2",
       numero: "08",
       description: "Vaincre un adversaire en PVE avec au moins 5 niveaux d’écart (au désavantage du joueur).",
@@ -2289,7 +2236,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 20,
       niveau: "2",
       numero: "09",
       description: "Apeurer 5 fois un adversaire.",
@@ -2297,7 +2243,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 21,
       niveau: "2",
       numero: "10",
       description: "Outspeed 3 Pokémon. Ce qu’on entend par « outspeed » c’est, en tant que Joueur n° 2, agir en premier grâce à une vitesse ou une priorité plus importante.",
@@ -2305,7 +2250,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 22,
       niveau: "2",
       numero: "11",
       description: "Vaincre 6 espèces de Pokémon différentes.",
@@ -2313,7 +2257,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 23,
       niveau: "2",
       numero: "12",
       description: "Déclencher un talent en combat à 4 reprises. Ce peut être le même talent ou des talents différents, et ce peut être dans des combats différents.",
@@ -2321,7 +2264,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 24,
       niveau: "2",
       numero: "13",
       description: "Vaincre un Pokémon obscur sauvage.",
@@ -2329,7 +2271,6 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 25,
       niveau: "2",
       numero: "14",
       description: "Vaincre un adversaire avec uniquement des aléas 1 ou 2.",
@@ -2337,7 +2278,13 @@ var exploits = [
       gain: "[250 p$ / 25 EXP]"
     },
 {
-      id: 26,
+      niveau: "2",
+      numero: "15",
+      description: "Vaincre 3 Hordes de Pokémon.",
+      nb_champs: 3,
+      gain: "[250 p$ / 25 EXP]"
+    },
+{
       niveau: "3",
       numero: "01",
       description: "Faire 7 OS d’affilée en PVE dans le même sujet.",
@@ -2345,7 +2292,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 27,
       niveau: "3",
       numero: "02",
       description: "Vaincre 2 adversaires à l’aide d’une ou plusieurs capacités auxquelles ils sont résistants uniquement.",
@@ -2353,7 +2299,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 28,
       niveau: "3",
       numero: "03",
       description: "Utiliser 11 capacités non offensives.",
@@ -2361,7 +2306,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 29,
       niveau: "3",
       numero: "04",
       description: "Utiliser 11 capacités super efficaces.",
@@ -2369,7 +2313,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 30,
       niveau: "3",
       numero: "05",
       description: "Utiliser 11 capacités bénéficiant du STAB.",
@@ -2377,7 +2320,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 31,
       niveau: "3",
       numero: "06",
       description: "Vaincre 5 Pokémon en zone orange.",
@@ -2385,7 +2327,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 32,
       niveau: "3",
       numero: "07",
       description: "Remporter 3 combats, sous 3 météos différentes (un par météo).",
@@ -2393,7 +2334,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 33,
       niveau: "3",
       numero: "08",
       description: "Vaincre un adversaire en PVE avec au moins 7 niveaux d’écart (au désavantage du joueur).",
@@ -2401,7 +2341,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 34,
       niveau: "3",
       numero: "09",
       description: "Geler ou endormir 5 fois un adversaire. Les statuts sont combinables, c’est-à-dire que geler 3 fois et endormir 2 fois compterait, par exemple.",
@@ -2409,7 +2348,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 35,
       niveau: "3",
       numero: "10",
       description: "Remporter un combat PVP en 4vs4, 5vs5 ou 6vs6.",
@@ -2417,7 +2355,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 36,
       niveau: "3",
       numero: "11",
       description: "Vaincre 9 espèces de Pokémon différentes.",
@@ -2425,7 +2362,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 37,
       niveau: "3",
       numero: "12",
       description: "Déclencher un talent en combat à 6 reprises. Ce peut être le même talent ou des talents différents, et ce peut être dans des combats différents.",
@@ -2433,7 +2369,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 38,
       niveau: "3",
       numero: "13",
       description: "Vaincre un Pokémon Alpha.",
@@ -2441,7 +2376,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 39,
       niveau: "3",
       numero: "14",
       description: "Faire Méga-Évoluer un Pokémon.",
@@ -2449,7 +2383,6 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 40,
       niveau: "3",
       numero: "15",
       description: "Faire un coup critique.",
@@ -2457,7 +2390,13 @@ var exploits = [
       gain: "[350 p$ / 35 EXP]"
     },
 {
-      id: 41,
+      niveau: "3",
+      numero: "16",
+      description: "Vaincre 5 Hordes de Pokémon.",
+      nb_champs: 5,
+      gain: "[350 p$ / 35 EXP]"
+    },
+{
       niveau: "4",
       numero: "01",
       description: "Faire 9 OS d’affilée en PVE dans le même sujet.",
@@ -2465,7 +2404,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 42,
       niveau: "4",
       numero: "02",
       description: "Encaisser 3 capacités super efficaces et y survivre.",
@@ -2473,7 +2411,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 43,
       niveau: "4",
       numero: "03",
       description: "Utiliser 14 capacités non offensives.",
@@ -2481,7 +2418,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 44,
       niveau: "4",
       numero: "04",
       description: "Utiliser 14 capacités super efficaces.",
@@ -2489,7 +2425,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 45,
       niveau: "4",
       numero: "05",
       description: "Utiliser 14 capacités bénéficiant du STAB.",
@@ -2497,7 +2432,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 46,
       niveau: "4",
       numero: "06",
       description: "Vaincre 2 Pokémon en zone rouge.",
@@ -2505,7 +2439,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 47,
       niveau: "4",
       numero: "07",
       description: "Remporter 5 combats, sous 5 météos différentes (un par météo).",
@@ -2513,7 +2446,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 48,
       niveau: "4",
       numero: "08",
       description: "Vaincre un adversaire en PVE avec au moins 10 niveaux d’écart (au désavantage du joueur).",
@@ -2521,7 +2453,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 49,
       niveau: "4",
       numero: "09",
       description: "Réussir de justesse une capacité avec une précision baissée, c’est-à-dire en obtenant au dé le résultat équivalent à la valeur de précision ou jusqu’à 4 de moins.<br/>Par exemple, si la précision est de 70 %, l’exploit est réussi si le dé sort 66, 67, 68, 69 ou 70.",
@@ -2529,7 +2460,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 50,
       niveau: "4",
       numero: "10",
       description: "Remporter une saison à l’Arena Caelestia ou être sacré champion·ne de son île.",
@@ -2537,7 +2467,6 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 51,
       niveau: "4",
       numero: "11",
       description: "Remporter un combat en PVE de plus de 4 tours.",
@@ -2545,14 +2474,19 @@ var exploits = [
       gain: "[500 p$ / 50 EXP]"
     },
 {
-      id: 52,
       niveau: "4",
       numero: "12",
       description: "Encaisser un coup critique et y survivre.",
       nb_champs: 1,
       gain: "[500 p$ / 50 EXP]"
+    },
+{
+      niveau: "4",
+      numero: "13",
+      description: "Vaincre 7 Hordes de Pokémon.",
+      nb_champs: 7,
+      gain: "[500 p$ / 50 EXP]"
     }];
-
 
   DisplayExploitList(exploits);
 });
