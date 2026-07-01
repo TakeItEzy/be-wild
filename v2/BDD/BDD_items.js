@@ -537,7 +537,7 @@ var products = [
       name: "Total Soin",
       categories_videgrenier: "survie",
 	  categories_boutique: "bleu survie",
-      description: "Permet de soigner les problèmes de statut du Pokémon ciblé.",
+      description: "Permet de soigner les problèmes de statut du Pokémon ciblé. Peut être tenu comme un Équipement de combat.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/full-h10.png",
       price: 250,
 	  
@@ -3938,7 +3938,7 @@ var products = [
       name: "Sérum",
       categories_videgrenier: "none",
       categories_boutique: "rare",
-      description: "Permet de soigner un pokémon Obscur, et de l'utiliser en capture comme un pokémon normal. Le pokémon conservera un boost de 15% (x1,15) permanent sur l’ensemble de ses statistiques, ainsi que son sprite Obscur.",
+      description: "Permet de soigner un pokémon Obscur, et de l'utiliser en capture comme un pokémon normal. Lors de son utilisation en Progression Pokémon, vous devez choisir la forme complète ou incomplète :<br/>Forme complète : le Pokémon devient «&nbsp;immunisé&nbsp;» et retrouve son état normal.<br/>Forme incomplète : le pokémon conservera un boost de 15% (x1,15) permanent sur l’ensemble de ses statistiques, ainsi que son sprite Obscur, mais continuera à souffrir inRP.",
       imageUrl: "https://2img.net/i.imgur.com/t81acMy.png",
       price: 1000
     },
