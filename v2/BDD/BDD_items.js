@@ -20,7 +20,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°149 - Séisme",
@@ -30,7 +30,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°209 - Ocroupi",
@@ -481,7 +481,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Superball",
@@ -581,7 +581,7 @@ var products = [
       imageUrl: "https://zupimages.net/up/18/25/s8j7.png",
       price: 150,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Nœud Destin",
@@ -611,7 +611,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/jCS22g2.png",
       price: 250,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pierre Aube",
@@ -2132,7 +2132,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°102 - Détricanon",
