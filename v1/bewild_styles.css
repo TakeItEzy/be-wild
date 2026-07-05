@@ -3328,7 +3328,7 @@ form#form-calculator fieldset legend {
   text-transform: uppercase;
 }
 
-.bw_trainer-card .trainer-card_inventaire {
+/*.bw_trainer-card .trainer-card_inventaire {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -3392,7 +3392,7 @@ form#form-calculator fieldset legend {
 
 .bw_trainer-card .inventaire_bloc .bloc_content div:not(.content_title) span {
   color:var(--group-first-color);
-}
+}*/
 
 /****** Partie 2 ******/
 .bw_trainer-card .content_details {
