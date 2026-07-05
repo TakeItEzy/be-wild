@@ -3395,7 +3395,7 @@ form#form-calculator fieldset legend {
 }
 
 /****** Partie 2 ******/
-.bw_trainer-card .trainer-card_team {
+/*.bw_trainer-card .trainer-card_team {
   padding:10px;
 }
 
@@ -3482,7 +3482,7 @@ form#form-calculator fieldset legend {
 
 .bw_trainer-card .pokemon_content .content_sprite .sprite_hexagon img {
   margin:auto;
-}
+}*/
 
 .bw_trainer-card .content_details {
   display: flex;
