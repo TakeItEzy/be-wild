@@ -69,6 +69,34 @@
 
 }
 
+clradamantia {
+    color: #C196F8!important
+}
+
+clranthos {
+    color: #19BAEF!important
+}
+
+clrcalleis {
+    color: #E6BC00!important
+}
+
+clrhaptos {
+    color: #30DB30!important
+}
+
+clrkopadia {
+    color: #F06BF7!important
+}
+
+clraureas {
+    color: #ceba9c!important
+}
+
+clrbw {
+    color: #A8DE63!important
+}
+
 .bw__trainer-cardV2 {
 	border: 1px solid var(--group-first-color);
 	padding: 20px;
