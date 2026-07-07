@@ -13,26 +13,6 @@ var products = [
       qty_videgrenier: 1
     },
 {
-      name: "CT N°063 - Psycho-Croc",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
-      price: 425,
-	  
-      qty_videgrenier: 0
-    },
-{
-      name: "CT N°149 - Séisme",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
-      price: 425,
-	  
-      qty_videgrenier: 0
-    },
-{
       name: "CT N°209 - Ocroupi",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
@@ -361,7 +341,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/HP3SpQN.png",
       price: 525,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Roche Météo",
@@ -411,7 +391,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/lpqIrOl.png",
       price: 525,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "CS Coupe",
@@ -581,7 +561,7 @@ var products = [
       imageUrl: "https://zupimages.net/up/18/25/s8j7.png",
       price: 150,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Nœud Destin",
