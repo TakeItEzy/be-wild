@@ -117,7 +117,8 @@ a.showCart:hover {
 }
 
 .product.none {
-    display: none;
+    display: none!important;
+    visibility: hidden;
 }
 
 .bleu, .bleu button.add-to-cart {
