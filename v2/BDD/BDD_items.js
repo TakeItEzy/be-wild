@@ -3767,6 +3767,14 @@ var products = [
       price: 425
     },
 {
+      name: "Cristal Z aléatoire",
+      categories_videgrenier: "none",
+      categories_boutique: "rouge équipement",
+      description: "Permet d’utiliser la capacité Z associée. Il est nécessaire d’utiliser la commande « /bw cristal X » en ⁠salon-du-hasard sur Discord pour savoir quel cristal a été tiré (X remplaçant le nombre de cristaux achetés).",
+      imageUrl: "https://www.pokepedia.fr/images/e/e2/Miniature_Mewz%C3%A9lite_SL.png",
+      price: 600
+    },
+{
       name: "Crème Fraîche",
       categories_videgrenier: "none",
       categories_boutique: "comestible butin",
