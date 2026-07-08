@@ -22,6 +22,26 @@ var products = [
 	  
       qty_videgrenier: 1
     },
+	{
+      name: "CT gold",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
+      price: 425,
+	  
+      qty_videgrenier: 0
+    },
+	{
+      name: "CT gold",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
+      price: 425,
+	  
+      qty_videgrenier: 0
+    },
 {
       name: "CT N°216 - Danse Plumes",
       categories_videgrenier: "yellow",
