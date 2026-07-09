@@ -297,7 +297,7 @@ var products = [
       name: "Lunettes Filtre",
       categories_videgrenier: "équipement",
 	  categories_boutique: "bleu équipement",
-      description: "Augmente la puissance des attaques spéciales de 10% (x1,1).",
+      description: "Si cet objet est tenu par un Pokémon, ce dernier sera immunisé aux dégâts de la Météo ainsi qu'aux capacités et talents de poudre.",
       imageUrl: "https://2img.net/i.imgur.com/HBh3apu.png",
       price: 450,
 	  
