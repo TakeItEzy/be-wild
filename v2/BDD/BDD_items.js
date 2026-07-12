@@ -1232,7 +1232,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°012 - Balayage",
@@ -1622,7 +1622,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "CT N°051 - Tempête de Sable",
@@ -1682,7 +1682,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°057 - Faux-Chage",
@@ -1992,7 +1992,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°088 - Danse Lames",
@@ -2822,7 +2822,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°171 - Téra Explosion",
@@ -2862,7 +2862,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°175 - Toxik",
@@ -3055,14 +3055,14 @@ var products = [
       qty_videgrenier: 0
     },
 {
-      name: "CT N°194 - Gliss’Herbe",
+      name: "CT N°194 - Gliss'Herbe",
       categories_videgrenier: "ct",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°195 - Feu Envieux",
@@ -3222,7 +3222,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°211 - Toile Élek",
