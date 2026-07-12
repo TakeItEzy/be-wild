@@ -1292,7 +1292,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°018 - Larcin",
@@ -1432,7 +1432,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°032 - Météores",
@@ -1452,7 +1452,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°034 - Vent Glace",
@@ -1562,7 +1562,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°045 - Choc Venin",
@@ -1592,7 +1592,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°048 - Change Éclair",
@@ -1632,7 +1632,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°052 - Chute de Neige",
@@ -2212,7 +2212,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°110 - Aqua-Brèche",
@@ -3012,7 +3012,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°190 - Lame Solaire",
@@ -3212,7 +3212,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°210 - Volt Assaut",
