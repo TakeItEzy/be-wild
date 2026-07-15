@@ -481,7 +481,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 3
     },
     {
       name: "Superball",
@@ -671,7 +671,7 @@ var products = [
       imageUrl: "https://img.pokemondb.net/sprites/items/ice-stone.png",
       price: 250,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pierre Lune",
@@ -3222,7 +3222,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°211 - Toile Élek",
