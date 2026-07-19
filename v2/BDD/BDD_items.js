@@ -4697,5 +4697,6 @@ var products = [
 }];
   DisplayProductList(products);
   DisplayCTList(products);
+  DisplayMegaList(products)
   DisplayItemList(products);
 });
