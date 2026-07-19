@@ -474,6 +474,7 @@ a.ui-button:active,
 .transformateur > a {
     display: inline-block;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 
