@@ -1152,7 +1152,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°004 - Hâte",
@@ -1232,7 +1232,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
 {
       name: "CT N°012 - Balayage",
@@ -1272,7 +1272,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°016 - Rafale Psy",
@@ -1622,7 +1622,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
     {
       name: "CT N°051 - Tempête de Sable",
@@ -1642,7 +1642,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°053 - Estocorne",
@@ -1672,7 +1672,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°056 - Balle Graine",
@@ -1682,7 +1682,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
 {
       name: "CT N°057 - Faux-Chage",
@@ -1802,7 +1802,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°069 - Poing Glace",
@@ -1922,7 +1922,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
 {
       name: "CT N°081 - Nœud Herbe",
@@ -2022,7 +2022,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°091 - Pics Toxik",
@@ -2042,7 +2042,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°093 - Luminocanon",
@@ -2182,7 +2182,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°107 - Feu Follet",
@@ -2202,7 +2202,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°109 - Tour de Magie",
@@ -2212,7 +2212,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
 	  
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
 {
       name: "CT N°110 - Aqua-Brèche",
@@ -2242,7 +2242,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°113 - Vent Arrière",
@@ -2402,7 +2402,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°129 - Plénitude",
@@ -2462,7 +2462,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°135 - Laser Glace",
@@ -2562,7 +2562,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°145 - Aire d’Eau",
@@ -2652,7 +2652,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°154 - Hydroblast",
@@ -2662,7 +2662,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°155 - Végé-Attaque",
@@ -2842,7 +2842,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°173 - Chargeur",
@@ -2892,7 +2892,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°178 - Gravité",
@@ -2962,7 +2962,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°185 - Furie-Bond",
@@ -3042,7 +3042,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°193 - Ball’Météo",
@@ -3072,7 +3072,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°196 - Eau Revoir",
@@ -3092,7 +3092,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°198 - Esprit Frappeur",
@@ -3182,7 +3182,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°207 - Indignition",
@@ -3252,7 +3252,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°214 - Cradovague",
@@ -3362,7 +3362,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "CT N°225 - Pression Extrême",
@@ -3412,7 +3412,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
 	  
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
 {
       name: "Aérozélite",
