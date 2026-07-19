@@ -448,7 +448,7 @@ a.ui-button:active,
 }
 
 
-.buttonVente, .buttonTransformCT, .buttonTransformObj, .buttonTransformBaie {
+.buttonVente, .buttonTransformCT, .buttonTransformObj, .buttonTransformBaie, .buttonTransformMega {
     display: block;
     width: 180px;
     height: 25px;
@@ -463,7 +463,7 @@ a.ui-button:active,
     background-image: linear-gradient(90deg, var(--forum-main-color), var(--forum-accent-color));
     transition: all .5s;
 }
-.buttonVente:hover, .buttonTransformCT:hover, .buttonTransformObj:hover, .buttonTransformBaie:hover {
+.buttonVente:hover, .buttonTransformCT:hover, .buttonTransformObj:hover, .buttonTransformBaie:hover, .buttonTransformMega:hover {
     letter-spacing: 1.5px;
 }
 
@@ -485,6 +485,9 @@ a.ui-button:active,
 }
 .buttonTransformBaie {
     width: 225px;
+}
+.buttonTransformMega {
+    width: 260px;
 }
 
 
