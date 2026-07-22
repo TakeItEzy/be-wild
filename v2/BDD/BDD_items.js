@@ -408,7 +408,7 @@ var products = [
       categories_videgrenier: "équipement",
 	  categories_boutique: "jaune équipement",
       description: "Une fois par combat, s’il est la cible d’une attaque super efficace, le porteur voit son attaque et son attaque spéciale augmenter de deux crans (x2).",
-      imageUrl: "https://2img.net/i.imgur.com/lpqIrOl.png",
+      imageUrl: "https://i.imgur.com/lpqIrOl.png",
       price: 525,
 	  
       qty_videgrenier: 1
