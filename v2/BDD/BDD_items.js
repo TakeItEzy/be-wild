@@ -1,569 +1,570 @@
 $(document).ready(function() {
-	//liste des catégories : yellow, ct, cs, survie, dressage, équipement, comestible, capture, évolutif
+    //liste des catégories : yellow, ct, cs, survie, dressage, équipement, comestible, capture, évolutif
 
 var products = [
 {
-      name: "CT N°038 - Nitrocharge",
+      name: "CT N°001 - Bélier",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
+      imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 1
     },
 {
-      name: "CT N°209 - Ocroupi",
+      name: "CT N°030 - Aboiement",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
+      imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 1
-    },
-	{
-      name: "CT gold",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
-      price: 425,
-	  
-      qty_videgrenier: 0
-    },
-	{
-      name: "CT gold",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
-      price: 425,
-	  
-      qty_videgrenier: 0
     },
 {
-      name: "CT N°216 - Danse Plumes",
+      name: "CT N°060 - Demi-Tour",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
+      imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 1
     },
+{
+      name: "CT N°083 - Direct Toxik",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
+      price: 425,
+      
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°183 - Croc Fatal",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
+      price: 425,
+      
+      qty_videgrenier: 1
+    },
+
 {
       name: "Accro Griffe",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Les attaques piégeantes durent 7 tours au lieu de 5. Attaques compatibles : Claquoir, Danse Flamme, Étreinte, Harcèlement, Ligotage, Siphon, Tourbi-Sable, Vortex Magma.",
       imageUrl: "https://2img.net/i.imgur.com/EMfvS4n.png",
       price: 325,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Bande Étreinte",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Les dégâts résiduels des attaques piégeantes s’élèvent à ⅙ des PV max de la cible, au lieu de ⅛.",
       imageUrl: "https://2img.net/i.imgur.com/qez6LtJ.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Bandeau Choix",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Augmente la statistique d'Attaque du porteur de 50% (x1,5). En contrepartie, il n'est plus possible que d'utiliser une seule attaque du moveset jusqu'à ce que le Pokémon soit échangé.",
       imageUrl: "https://2img.net/i.imgur.com/GkKq17K.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Bandeau Muscle",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "La puissance des attaques physiques augmente de 10% (x1,1).",
       imageUrl: "https://2img.net/i.imgur.com/MCfGIDj.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Bouton Fuite",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Lorsque le porteur est touché par n’importe quelle attaque, il est échangé avec un autre Pokémon de l’équipe. Fonctionne une fois par combat.",
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 300,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
     {
       name: "Cape Obscure",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Le porteur n’est pas affecté par les effets additionnels des capacités reçues, à l’exception de ceux infligés par les capacités piégeantes.",
       imageUrl: "https://www.pokepedia.fr/images/thumb/9/97/Miniature_Cape_Obscure_EV.png/32px-Miniature_Cape_Obscure_EV.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Carton Rouge",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Le porteur, s’il est ciblé par une attaque offensive, force le Pokémon attaquant à être échangé. Fonctionne une seule fois par combat.",
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 350,
-	  
-      qty_videgrenier: 0
+      
+      qty_videgrenier: 1
     },
     {
       name: "Casque Brut",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Si un Pokémon effectue une attaque directe sur le porteur de cet objet, il perdra 1/6e de ses PV maximums.",
       imageUrl: "https://2img.net/i.imgur.com/sE9wScJ.png",
       price: 550,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Ceinture Force",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Si le porteur a 100% de ses PV et subit une attaque qui devrait le mettre KO, il résistera à l’attaque en gardant 1 PV.",
       imageUrl: "https://2img.net/i.imgur.com/aJrZ91D.png",
       price: 475,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Ceinture Pro",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "La puissance des attaques super efficaces est augmentée de 20% (x1,2).",
       imageUrl: "https://2img.net/i.imgur.com/AzL7Fnf.png",
       price: 475,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Dé Pipé",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Les capacités à multi-coups infligées par le porteur touchent 4 fois lorsque c’est le maximum de coups possibles, et lorsque le maximum de coups est 5, elles ont 50 % de chances de toucher 5 fois, et 50% de chance de toucher 4 fois.",
       imageUrl: "https://www.pokepedia.fr/images/thumb/5/5a/Miniature_D%C3%A9_Pip%C3%A9_EV.png/32px-Miniature_D%C3%A9_Pip%C3%A9_EV.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Émulateur",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Émule les objets spécifiques aux Pokémon (ex : Poireau, Masse Os, Balle Lumière...)",
       imageUrl: "https://2img.net/i.imgur.com/feggJef.png",
       price: 575,
-	  
+      
       qty_videgrenier: 0
     },
-	
+    
     {
       name: "Évoluroc",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Si le porteur de cet objet possède une évolution, sa défense et sa défense spéciale sont augmentées de 50% (x1,5).",
       imageUrl: "https://2img.net/i.imgur.com/g67lKHk.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Gant de Boxe",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "La puissance des capacités Coup de poing augmente de 10 % (x1,1). Le porteur peut aussi utiliser des capacités provoquant un contact physique avec la cible sans qu'elles ne soient considérés comme telles, ce qui permet par exemple d'éviter les dégâts occasionnés par Pico-Défense, le Casque Brut, etc. ou des talents comme Statik, Peau Dure, etc.",
       imageUrl: "https://www.pokepedia.fr/images/thumb/6/6d/Miniature_Gant_de_Boxe_EV.png/32px-Miniature_Gant_de_Boxe_EV.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Grelot Coque",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "À chaque attaque, le porteur récupère en points de vie l’équivalent de 1/8e des dégâts qu’il inflige à son adversaire.",
       imageUrl: "https://2img.net/i.imgur.com/ZdDMzpN.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Griffe Rasoir",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Augmente le taux de coups critiques du porteur d’un cran.",
       imageUrl: "https://2img.net/i.imgur.com/ztXzvO3.png",
       price: 375,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Grosses Bottes",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Le porteur n’est pas affecté par les pièges au sol tels que Pics Toxik ou Picots.",
       imageUrl: "https://www.pokebip.com/pages/icones/objets/grosses-bottes.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Grosse Racine",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Les attaques drainant des PV restaurent 30% (x1,3) de PV supplémentaires. Fonctionne avec Anneau Hydro, Dévorêve, Encornebois, Giga-Sangsue, Méga-Sangsue, Mort-Ailes, Parabocharge, Racines, Vampibaiser, Vampigraine, Vampi-Poing, Vampirisme et Vole-Vie.",
       imageUrl: "https://2img.net/i.imgur.com/mgorwWX.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
-	{
+    {
       name: "Herbe Blanche",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Une fois par combat, restaure les statistiques du Pokémon qui tient cet objet à leur valeur d'origine quand elles subissent une perte, même auto-infligée.",
       imageUrl: "https://2img.net/i.imgur.com/Ig5OrDt.png",
       price: 475,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Herbe Pouvoir",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Une fois par combat, le porteur de cet objet peut éviter le tour de chargement nécessaire à certaines attaques telles que Lance Soleil.",
       imageUrl: "https://2img.net/i.imgur.com/wsjCMl1.png",
       price: 475,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
     {
       name: "Lentille Zoom",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Augmente la précision des attaques du porteur de 20 % (x1,2), à condition que le porteur attaque après son adversaire.",
       imageUrl: "https://2img.net/i.imgur.com/Ddjf2UN.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Loupe",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Augmente la précision des attaques du porteur de 10% (x1,1).",
       imageUrl: "https://2img.net/i.imgur.com/Z5yMoea.png",
       price: 325,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Lumargile",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Les effets de Mur Lumière et Protection durent 8 tours au lieu de 5.",
       imageUrl: "https://2img.net/i.imgur.com/kw7smHj.png",
       price: 300,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Lunettes Choix",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Augmente la statistique d'Attaque Spéciale du porteur de 50% (x1,5). En contrepartie, il n'est plus possible d'utiliser qu’une seule attaque du moveset jusqu'à ce que le Pokémon soit échangé.",
       imageUrl: "https://2img.net/i.imgur.com/9EKnYKX.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Lunettes Filtre",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Si cet objet est tenu par un Pokémon, ce dernier sera immunisé aux dégâts de la Météo ainsi qu'aux capacités et talents de poudre.",
       imageUrl: "https://2img.net/i.imgur.com/HBh3apu.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Lunettes Sages",
       categories_videgrenier: "équipement",
-	  categories_boutique: "rouge équipement",
+      categories_boutique: "rouge équipement",
       description: "Augmente la puissance des attaques spéciales de 10% (x1,1).",
       imageUrl: "https://2img.net/i.imgur.com/m3pTAID.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Mouchoir Choix",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Augmente la statistique de vitesse du porteur de 50% (x1,5). En contrepartie, celui-ci est bloqué sur la dernière attaque utilisée de son moveset jusqu'à ce qu'il soit switché.",
       imageUrl: "https://2img.net/i.imgur.com/BfrbT3B.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Orbe Flamme",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Le statut du porteur est altéré par une brûlure dès la fin de son premier tour de combat.",
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Orbe Toxique",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Le statut du porteur est altéré par un empoisonnement grave dès la fin de son premier tour de combat.",
       imageUrl: "https://2img.net/i.imgur.com/BbtKlZ1.png",
       price: 300,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Orbe Vie",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Augmente la puissance des attaques de 30% (x1,3), mais le porteur perd 10% de ses PV max à chaque fois qu'il touche sa cible avec une capacité offensive.",
       imageUrl: "https://2img.net/i.imgur.com/ZmPFyk1.png",
       price: 475,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Restes",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Permet de soigner 1/16e des PV max du porteur à chaque fin de tour.",
       imageUrl: "https://2img.net/i.imgur.com/HP3SpQN.png",
       price: 525,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Roche Météo",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Permet de faire durer une météo installée par le porteur pendant 8 tours au lieu de 5.",
       imageUrl: "https://media.pokemoncentral.it/wiki/7/7a/Rocciafredda_IV_Sprite_Zaino.png",
       price: 300,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Roche Royale",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Toutes les attaques ont 10% de chances d’apeurer la cible.",
       imageUrl: "https://2img.net/i.imgur.com/8jpRIB4.png",
       price: 375,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Spray Gorge",
       categories_videgrenier: "équipement",
-	  categories_boutique: "bleu équipement",
+      categories_boutique: "bleu équipement",
       description: "Lorsque le porteur utilise une capacité sonore, augmente sa statistique d'Attaque spéciale d'un niveau.",
       imageUrl: "https://2img.net/i.imgur.com/cMRlBai.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Veste de Combat",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Augmente de 50% (x1,5) la défense spéciale. En contrepartie, le porteur ne peut pas lancer d’attaques non offensives.",
       imageUrl: "https://2img.net/i.imgur.com/rRWYQRO.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Vulné-Assurance",
       categories_videgrenier: "équipement",
-	  categories_boutique: "jaune équipement",
+      categories_boutique: "jaune équipement",
       description: "Une fois par combat, s’il est la cible d’une attaque super efficace, le porteur voit son attaque et son attaque spéciale augmenter de deux crans (x2).",
       imageUrl: "https://i.imgur.com/lpqIrOl.png",
       price: 525,
-	  
+      
       qty_videgrenier: 1
     },
     {
       name: "CS Coupe",
       categories_videgrenier: "cs",
-	  categories_boutique: "bleu cs",
+      categories_boutique: "bleu cs",
       description: "Permet d’accéder à la zone 7 de Calléis, pour dix butins et / ou une capture.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "CS Escalade",
       categories_videgrenier: "cs",
-	  categories_boutique: "jaune cs",
+      categories_boutique: "jaune cs",
       description: "Permet d’accéder à la zone 7 d'Adamantia, pour dix butins et / ou une capture.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "CS Éclate-Roc",
       categories_videgrenier: "cs",
-	  categories_boutique: "jaune cs",
+      categories_boutique: "jaune cs",
       description: "Permet d’accéder à la zone 7 d'Haptos, pour dix butins et / ou une capture.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "CS Surf",
       categories_videgrenier: "cs",
-	  categories_boutique: "bleu cs",
+      categories_boutique: "bleu cs",
       description: "Permet d’accéder à la zone 7 de Kopadia, pour dix butins et / ou une capture.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "CS Cascade",
       categories_videgrenier: "cs",
-	  categories_boutique: "rouge cs",
+      categories_boutique: "rouge cs",
       description: "Permet d’accéder à la zone 7 d’Anthos, pour dix butins et / ou une capture.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Corde sortie",
       categories_videgrenier: "survie",
-	  categories_boutique: "jaune survie",
+      categories_boutique: "jaune survie",
       description: "Permet de fuir de manière certaine n'importe quel Pokémon (à l'exception d'un obscur) de n'importe quelle zone, sans gain d'EXP.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/cordes10.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pokéball",
       categories_videgrenier: "capture",
-	  categories_boutique: "jaune capture",
+      categories_boutique: "jaune capture",
       description: "Permet la capture de Pokémons avec un taux de succès relatif.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
-	  
-      qty_videgrenier: 3
+      
+      qty_videgrenier: 0
     },
     {
       name: "Superball",
       categories_videgrenier: "capture",
-	  categories_boutique: "jaune capture",
+      categories_boutique: "jaune capture",
       description: "Permet la capture de Pokémons avec un taux de succès amélioré.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/superb10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Hyperball",
       categories_videgrenier: "capture",
-	  categories_boutique: "jaune capture",
+      categories_boutique: "jaune capture",
       description: "Permet la capture de Pokémons avec un taux de succès excellent.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/hyperb10.png",
       price: 300,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Potion",
       categories_videgrenier: "survie",
-	  categories_boutique: "bleu survie",
+      categories_boutique: "bleu survie",
       description: "Permet de soigner le tiers des points de vie du Pokémon ciblé.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/potion10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Super Potion",
       categories_videgrenier: "survie",
-	  categories_boutique: "bleu survie",
+      categories_boutique: "bleu survie",
       description: "Permet de soigner la moitié des points de vie du Pokémon ciblé.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/super-10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Hyper Potion",
       categories_videgrenier: "survie",
-	  categories_boutique: "bleu survie",
+      categories_boutique: "bleu survie",
       description: "Permet de soigner les deux tiers des points de vie du Pokémon ciblé.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/hyper-10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Total Soin",
       categories_videgrenier: "survie",
-	  categories_boutique: "bleu survie",
+      categories_boutique: "bleu survie",
       description: "Permet de soigner les problèmes de statut du Pokémon ciblé. Peut être tenu comme un Équipement de combat.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/full-h10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Rappel",
       categories_videgrenier: "survie",
-	  categories_boutique: "bleu survie",
+      categories_boutique: "bleu survie",
       description: "Permet de ranimer un Pokémon ayant été mis hors jeu et de lui rendre 50 % de ses PV maximum.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/revive10.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Super Repousse",
       categories_videgrenier: "survie",
-	  categories_boutique: "rouge survie",
+      categories_boutique: "rouge survie",
       description: "En sujet de capture, les <u>six</u> prochains Pokémons qui apparaîtront auront un niveau compris entre -3 et +3 par rapport à votre moyenne d'équipe active.",
       imageUrl: "https://2img.net/i.imgur.com/PKVcJ5Z.png",
       price: 750,
-	  
+      
       qty_videgrenier: 0
     },
-	{
+    {
       name: "Super Repousse-Chroma",
       categories_videgrenier: "survie",
       categories_boutique: "bleu survie",
@@ -576,552 +577,552 @@ var products = [
     {
       name: "Écaille cœur",
       categories_videgrenier: "dressage",
-	  categories_boutique: "bleu dressage",
+      categories_boutique: "bleu dressage",
       description: "Permet d’apprendre une capacité que le Pokémon aurait dû apprendre à un niveau antérieur. Les capacités apprises à des stades d’évolution antérieurs ne sont pas considérées dans la liste des possibilités qu’ouvre cet objet.",
       imageUrl: "https://zupimages.net/up/18/25/s8j7.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Nœud Destin",
       categories_videgrenier: "dressage",
-	  categories_boutique: "bleu dressage",
+      categories_boutique: "bleu dressage",
       description: "Lors de l'éclosion d'un œuf, permet d'obtenir une liste de choix de 3 capacités de reproduction en plus des 3 de base, pour un total de 6CR.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/destin10.png",
       price: 350,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pilule Talent",
       categories_videgrenier: "dressage",
-	  categories_boutique: "bleu dressage",
+      categories_boutique: "bleu dressage",
       description: "Permet de changer le talent de son Pokémon. Cela ne donne toutefois pas accès aux talents cachés.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abilit10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Grelot Zen",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://2img.net/i.imgur.com/jCS22g2.png",
       price: 250,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
     {
       name: "Pierre Aube",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/aube10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Eau",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/eau10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Éclat",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/eclat10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Feu",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/feu10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Foudre",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/foudre10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Glace",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://img.pokemondb.net/sprites/items/ice-stone.png",
       price: 250,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
     {
       name: "Pierre Lune",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lune10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Nuit",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/nuit10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Plante",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/plante10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pierre Soleil",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet l’évolution de certaines espèces de Pokémon.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/soleil10.png",
       price: 250,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Pointeau ADN",
       categories_videgrenier: "évolutif",
-	  categories_boutique: "évolutif",
+      categories_boutique: "évolutif",
       description: "Permet d'éveiller la nature ancienne de Pokémons dont les formes évoluées ont disparu du globe.",
       imageUrl: "https://www.pokebip.com/pages/icones/objets/pointeau-adn.png",
       price: 250,
-	  
+      
       qt_videgreniery: 0
     },
     {
       name: "Magnésium",
       categories_videgrenier: "dressage",
-	  categories_boutique: "bleu dressage",
+      categories_boutique: "bleu dressage",
       description: "Permet d’augmenter de 5 la statistique de base des points de vie d’un Pokémon. Effet Permanent",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/magnes10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Protéine",
       categories_videgrenier: "dressage",
-	  categories_boutique: "rouge dressage",
+      categories_boutique: "rouge dressage",
       description: "Permet d’augmenter de 5 la statistique de base d’attaque d’un Pokémon. Effet Permanent",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/protei10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Fer",
       categories_videgrenier: "dressage",
-	  categories_boutique: "jaune dressage",
+      categories_boutique: "jaune dressage",
       description: "Permet d’augmenter de 5 la statistique de base de défense d’un Pokémon. Effet Permanent",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/iron10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Calcium",
       categories_videgrenier: "dressage",
-	  categories_boutique: "jaune dressage",
+      categories_boutique: "jaune dressage",
       description: "Permet d’augmenter de 5 la statistique de base d’attaque spéciale d’un Pokémon. Effet Permanent",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/calciu10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Zinc",
       categories_videgrenier: "dressage",
-	  categories_boutique: "rouge dressage",
+      categories_boutique: "rouge dressage",
       description: "Permet d’augmenter de 5 la statistique de base de défense spéciale d’un Pokémon. Effet Permanent",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/zinc10.png",
       price: 150,
-	  
-      qty_videgrenier: 0
+      
+      qty_videgrenier: 1
     },
     {
       name: "Carbone",
       categories_videgrenier: "dressage",
-	  categories_boutique: "rouge dressage",
+      categories_boutique: "rouge dressage",
       description: "Permet d’augmenter de 5 la statistique de base de vitesse d’un Pokémon. Effet Permanent",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/carbon10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Grena",
       categories_videgrenier: "comestible",
-	  categories_boutique: "bleu comestible",
+      categories_boutique: "bleu comestible",
       description: "Permet de réinitialiser entièrement la statistique de base des points de vie de façon permanente sur un Pokémon après utilisation d'une ou plusieurs vitamines. Elle peut aussi être utilisée en cuisine et augmente le niveau d’une recette de deux niveaux.",
       imageUrl: "https://2img.net/i.imgur.com/vgb8jRk.png",
       price: 450,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
     {
       name: "Baie Alga",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet de réinitialiser entièrement la statistique de base de l'attaque de façon permanente sur un Pokémon après utilisation d'une ou plusieurs vitamines. Elle peut aussi être utilisée en cuisine et augmente le niveau d’une recette de deux niveaux.",
       imageUrl: "https://2img.net/i.imgur.com/mrYvSnK.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Qualot",
       categories_videgrenier: "comestible",
-	  categories_boutique: "jaune comestible",
+      categories_boutique: "jaune comestible",
       description: "Permet de réinitialiser entièrement la statistique de base de la défense de façon permanente sur un Pokémon après utilisation d'une ou plusieurs vitamines. Elle peut aussi être utilisée en cuisine et augmente le niveau d’une recette de deux niveaux.",
       imageUrl: "https://2img.net/i.imgur.com/VhCT1ZE.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Lonme",
       categories_videgrenier: "comestible",
-	  categories_boutique: "jaune comestible",
+      categories_boutique: "jaune comestible",
       description: "Permet de réinitialiser entièrement la statistique de base de l'attaque spéciale de façon permanente sur un Pokémon après utilisation d'une ou plusieurs vitamines. Elle peut aussi être utilisée en cuisine et augmente le niveau d’une recette de deux niveaux.",
       imageUrl: "https://2img.net/i.imgur.com/yC7IvrT.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Resin",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet de réinitialiser entièrement la statistique de base de la défense spéciale de façon permanente sur un Pokémon après utilisation d'une ou plusieurs vitamines. Elle peut aussi être utilisée en cuisine et augmente le niveau d’une recette de deux niveaux.",
       imageUrl: "https://2img.net/i.imgur.com/mtIC5ds.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Tamato",
       categories_videgrenier: "comestible",
-	  categories_boutique: "bleu comestible",
+      categories_boutique: "bleu comestible",
       description: "Permet de réinitialiser entièrement la statistique de base de la vitesse de façon permanente sur un Pokémon après utilisation d'une ou plusieurs vitamines. Elle peut aussi être utilisée en cuisine et augmente le niveau d’une recette de deux niveaux.",
       imageUrl: "https://2img.net/i.imgur.com/TdKDEtv.png",
       price: 450,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Abriko",
       categories_videgrenier: "comestible",
-	  categories_boutique: "jaune comestible",
+      categories_boutique: "jaune comestible",
       description: "Permet d’augmenter les statistiques de défense et de défense spéciale d’un cran pour un combat. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Cherrim",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet d’assurer d’attaquer en premier une fois dans un combat, même si l’attaque n’en est pas une de priorité. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/cherri10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Jaboca",
       categories_videgrenier: "comestible",
-	  categories_boutique: "bleu comestible",
+      categories_boutique: "bleu comestible",
       description: "Permet d’absorber 25 % des dégâts reçus sur une attaque et de les retourner sur son assaillant. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/jaboca10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Kika",
       categories_videgrenier: "comestible",
-	  categories_boutique: "jaune comestible",
+      categories_boutique: "jaune comestible",
       description: "Permet de soigner la confusion. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://media.pokemoncentral.it/wiki/0/0d/Baccaki_III_Sprite_Zaino.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Lansatt",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet d’augmenter le taux de coups critiques d’un cran pour un combat. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lansat10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 1
     },
     {
       name: "Baie Lichii",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet d’augmenter les statistiques d’attaque et d’attaque spéciale d’un cran pour un combat. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lichii10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Micle",
       categories_videgrenier: "comestible",
-	  categories_boutique: "jaune comestible",
+      categories_boutique: "jaune comestible",
       description: "Permet d’augmenter de 10% la précision d’une attaque une fois dans un combat. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/micle10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Oran",
       categories_videgrenier: "comestible",
-	  categories_boutique: "bleu comestible",
+      categories_boutique: "bleu comestible",
       description: "Permet de soigner un Pokémon du quart de ses points de vie totaux. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/oran10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Prine",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet d'augmenter la vitesse d'un cran pour un combat. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/prine10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Baie Sailak",
       categories_videgrenier: "comestible",
-	  categories_boutique: "rouge comestible",
+      categories_boutique: "rouge comestible",
       description: "Permet d'augmenter la vitesse de deux crans lorsque les PV du Pokémon passent sous 1/4 de ses PV max. Elle peut aussi être utilisée en cuisine.",
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/sailak10.png",
       price: 150,
-	  
+      
       qty_videgrenier: 0
     },
 //VIDE GRENIER EXCLUSIF
     {
       name: "Plaque élémentaire Acier",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Acier.",
       imageUrl: "https://2img.net/i.imgur.com/UqQR2PN.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Combat",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Combat.",
       imageUrl: "https://2img.net/i.imgur.com/Dw1bpul.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Dragon",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Dragon.",
       imageUrl: "https://2img.net/i.imgur.com/eXuKDwc.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Eau",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Eau.",
       imageUrl: "https://2img.net/i.imgur.com/CFE818t.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Fée",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Fée.",
       imageUrl: "https://2img.net/i.imgur.com/NV8lQCi.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Feu",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Feu.",
       imageUrl: "https://2img.net/i.imgur.com/Uc3jUFV.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Électrik",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Électrique.",
       imageUrl: "https://2img.net/i.imgur.com/Oc6QP0l.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Glace",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Glace.",
       imageUrl: "https://2img.net/i.imgur.com/IiJrVZP.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Insecte",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Insecte.",
       imageUrl: "https://2img.net/i.imgur.com/T8TDBPH.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Normal",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Normal.",
       imageUrl: "https://2img.net/i.imgur.com/Ld2oe5u.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Plante",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Plante.",
       imageUrl: "https://2img.net/i.imgur.com/C9gsqMp.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Poison",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Poison.",
       imageUrl: "https://2img.net/i.imgur.com/jp3zdeD.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Psy",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Psy.",
       imageUrl: "https://2img.net/i.imgur.com/GuX1R8u.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Roche",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Roche",
       imageUrl: "https://2img.net/i.imgur.com/wHrU8BT.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Sol",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Sol.",
       imageUrl: "https://2img.net/i.imgur.com/fjelCpe.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Spectre",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Spectre.",
       imageUrl: "https://2img.net/i.imgur.com/rP8P7k2.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Ténèbres",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Ténèbres.",
       imageUrl: "https://2img.net/i.imgur.com/OpN0mnJ.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Vol",
       categories_videgrenier: "équipement",
-	  categories_boutique: "none",
+      categories_boutique: "none",
       description: "Augmente de 20% (x1,2) la puissance des attaques de type Vol.",
       imageUrl: "https://2img.net/i.imgur.com/pSF5HUI.png",
       price: 500,
-	  
+      
       qty_videgrenier: 0
     },
     {
@@ -1131,7 +1132,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1141,7 +1142,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1151,8 +1152,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°004 - Hâte",
@@ -1161,7 +1162,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1171,7 +1172,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1181,7 +1182,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1191,7 +1192,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1201,7 +1202,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1211,7 +1212,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1221,7 +1222,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1231,8 +1232,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°012 - Balayage",
@@ -1241,7 +1242,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1251,7 +1252,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1261,7 +1262,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1271,8 +1272,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°016 - Rafale Psy",
@@ -1281,7 +1282,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1291,8 +1292,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°018 - Larcin",
@@ -1301,7 +1302,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1311,7 +1312,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1321,7 +1322,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1331,7 +1332,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1341,7 +1342,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1351,7 +1352,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1361,7 +1362,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1371,7 +1372,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
@@ -1381,7 +1382,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1391,7 +1392,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1401,7 +1402,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1411,7 +1412,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1421,7 +1422,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1431,8 +1432,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°032 - Météores",
@@ -1441,7 +1442,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1451,8 +1452,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°034 - Vent Glace",
@@ -1461,7 +1462,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1471,7 +1472,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1481,7 +1482,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1491,7 +1492,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1501,7 +1502,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1511,7 +1512,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1521,7 +1522,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1531,7 +1532,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1541,7 +1542,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1551,7 +1552,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1561,8 +1562,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°045 - Choc Venin",
@@ -1571,7 +1572,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1581,7 +1582,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1591,8 +1592,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°048 - Change Éclair",
@@ -1601,7 +1602,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1611,7 +1612,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1621,8 +1622,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
     {
       name: "CT N°051 - Tempête de Sable",
@@ -1631,8 +1632,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°052 - Chute de Neige",
@@ -1641,8 +1642,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°053 - Estocorne",
@@ -1651,7 +1652,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1661,7 +1662,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1671,8 +1672,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°056 - Balle Graine",
@@ -1681,8 +1682,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°057 - Faux-Chage",
@@ -1691,7 +1692,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1701,7 +1702,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1711,7 +1712,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1721,7 +1722,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1731,7 +1732,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1741,7 +1742,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1751,7 +1752,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1761,7 +1762,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1771,7 +1772,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1781,7 +1782,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1791,7 +1792,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1801,8 +1802,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°069 - Poing Glace",
@@ -1811,7 +1812,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1821,7 +1822,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1831,7 +1832,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1841,7 +1842,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1851,7 +1852,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1861,7 +1862,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1871,7 +1872,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
@@ -1881,7 +1882,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1891,7 +1892,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1901,7 +1902,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1911,7 +1912,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1921,8 +1922,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°081 - Nœud Herbe",
@@ -1931,7 +1932,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1941,7 +1942,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1951,7 +1952,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1961,7 +1962,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1971,7 +1972,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1981,7 +1982,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -1991,8 +1992,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°088 - Danse Lames",
@@ -2001,7 +2002,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2011,7 +2012,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2021,8 +2022,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°091 - Pics Toxik",
@@ -2031,7 +2032,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2041,8 +2042,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°093 - Luminocanon",
@@ -2051,7 +2052,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2061,7 +2062,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2071,7 +2072,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2081,7 +2082,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2091,7 +2092,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2101,7 +2102,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2111,7 +2112,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2121,7 +2122,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
@@ -2131,8 +2132,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°102 - Détricanon",
@@ -2141,7 +2142,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2151,7 +2152,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2161,7 +2162,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2171,7 +2172,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2181,8 +2182,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°107 - Feu Follet",
@@ -2191,7 +2192,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2201,8 +2202,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°109 - Tour de Magie",
@@ -2211,8 +2212,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°110 - Aqua-Brèche",
@@ -2221,7 +2222,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2231,7 +2232,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2241,8 +2242,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°113 - Vent Arrière",
@@ -2251,7 +2252,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2261,7 +2262,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2271,7 +2272,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2281,7 +2282,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2291,7 +2292,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2301,7 +2302,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2311,7 +2312,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2321,7 +2322,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2331,7 +2332,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2341,7 +2342,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2351,7 +2352,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2361,7 +2362,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2371,7 +2372,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
@@ -2381,7 +2382,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2391,7 +2392,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2401,8 +2402,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°129 - Plénitude",
@@ -2411,7 +2412,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2421,7 +2422,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2431,7 +2432,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2441,7 +2442,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2451,7 +2452,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2461,8 +2462,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°135 - Laser Glace",
@@ -2471,7 +2472,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2481,7 +2482,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2491,7 +2492,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2501,7 +2502,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2511,7 +2512,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2521,7 +2522,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2531,7 +2532,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2541,7 +2542,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2551,7 +2552,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2561,8 +2562,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°145 - Aire d’Eau",
@@ -2571,7 +2572,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2581,7 +2582,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2591,7 +2592,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2601,7 +2602,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2611,7 +2612,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2621,7 +2622,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
     {
@@ -2631,7 +2632,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2641,7 +2642,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2651,8 +2652,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°154 - Hydroblast",
@@ -2661,8 +2662,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°155 - Végé-Attaque",
@@ -2671,7 +2672,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2681,7 +2682,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2691,7 +2692,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2701,7 +2702,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2711,7 +2712,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2721,7 +2722,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2731,7 +2732,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2741,7 +2742,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2751,7 +2752,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2761,7 +2762,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2771,7 +2772,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2781,7 +2782,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2791,7 +2792,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2801,7 +2802,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2811,7 +2812,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2821,8 +2822,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°171 - Téra Explosion",
@@ -2831,7 +2832,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2841,8 +2842,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°173 - Chargeur",
@@ -2851,7 +2852,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2861,8 +2862,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°175 - Toxik",
@@ -2871,7 +2872,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2881,7 +2882,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2891,8 +2892,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°178 - Gravité",
@@ -2901,7 +2902,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2911,7 +2912,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2921,7 +2922,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2931,7 +2932,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2941,7 +2942,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2951,7 +2952,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2961,8 +2962,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°185 - Furie-Bond",
@@ -2971,7 +2972,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2981,7 +2982,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -2991,7 +2992,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3001,7 +3002,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3011,8 +3012,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°190 - Lame Solaire",
@@ -3021,7 +3022,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3031,7 +3032,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3041,8 +3042,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°193 - Ball’Météo",
@@ -3051,7 +3052,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3061,8 +3062,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°195 - Feu Envieux",
@@ -3071,8 +3072,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°196 - Eau Revoir",
@@ -3081,7 +3082,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3091,8 +3092,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
-      qty_videgrenier: 1
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°198 - Esprit Frappeur",
@@ -3101,7 +3102,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3111,7 +3112,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3121,7 +3122,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3131,7 +3132,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3141,7 +3142,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3151,7 +3152,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3161,7 +3162,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3171,7 +3172,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3181,8 +3182,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°207 - Indignition",
@@ -3191,7 +3192,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3201,7 +3202,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3211,8 +3212,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°210 - Volt Assaut",
@@ -3221,7 +3222,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3231,7 +3232,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3241,7 +3242,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3251,8 +3252,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°214 - Cradovague",
@@ -3261,7 +3262,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3271,7 +3272,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3281,7 +3282,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3291,7 +3292,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3301,7 +3302,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3311,7 +3312,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3321,7 +3322,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3331,7 +3332,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3341,7 +3342,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3351,7 +3352,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3361,8 +3362,8 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "CT N°225 - Pression Extrême",
@@ -3371,7 +3372,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3381,7 +3382,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/XqHczdQ.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3391,7 +3392,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3401,7 +3402,7 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
-	  
+      
       qty_videgrenier: 0
     },
 {
@@ -3411,326 +3412,326 @@ var products = [
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
-	  
-      qty_videgrenier: 2
+      
+      qty_videgrenier: 0
     },
 {
       name: "Aérozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/d/d9/Miniature_A%C3%A9roz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Aquazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/b/bd/Miniature_Aquaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Combazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/b/bc/Miniature_Combaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Cryozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/f/f1/Miniature_Cryoz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Dracozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/e/e0/Miniature_Dracoz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Florazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/b/b4/Miniature_Floraz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Insectozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/9/95/Miniature_Insectoz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Métallozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/f/f6/Miniature_M%C3%A9talloz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Normazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/c/c4/Miniature_Normaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Nymphézélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/c/cb/Miniature_Nymph%C3%A9z%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Psychézélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/1/1e/Miniature_Psych%C3%A9z%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Pyrozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/7/75/Miniature_Pyroz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Rocazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/5/57/Miniature_Rocaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Spectrozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/0/04/Miniature_Spectroz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Ténébrozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/c/c2/Miniature_T%C3%A9n%C3%A9broz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Terrazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/9/98/Miniature_Terraz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Toxizélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/a/a5/Miniature_Toxiz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Voltazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/a/ab/Miniature_Voltaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Aloraïzélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/3/38/Miniature_Alora%C3%AFz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Archézélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/0/0c/Miniature_Arch%C3%A9z%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Ékaïzélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/3/37/Miniature_%C3%89ka%C3%AFz%C3%A9lite_USUL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Évolizélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/1/1b/Miniature_%C3%89voliz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Félinozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/4/44/Miniature_F%C3%A9linoz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Lougarozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/d/d5/Miniature_Lougaroz%C3%A9lite_USUL.png",
       price: 600,
-	  
-      qty_videgrenier: 0
+      
+      qty_videgrenier: 1
     },
 {
       name: "Mimiquizélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/7/72/Miniature_Mimiquiz%C3%A9lite_USUL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Oratozélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/6/67/Miniature_Oratoz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Pikachazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/b/b1/Miniature_Pikachaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Pikazélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/6/65/Miniature_Pikaz%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 {
       name: "Ronflézélite",
       categories_videgrenier: "équipement",
-	    categories_boutique: "none",
+        categories_boutique: "none",
       categories_tc: "displayed",
       description: "Permet d’utiliser la capacité Z associée.",
       imageUrl: "https://www.pokepedia.fr/images/3/39/Miniature_Ronfl%C3%A9z%C3%A9lite_SL.png",
       price: 600,
-	  
+      
       qty_videgrenier: 0
     },
 //boutique exclusif
@@ -3761,10 +3762,18 @@ var products = [
 {
       name: "CT aléatoire",
       categories_videgrenier: "none",
-      categories_boutique: "jaune ct",
+      categories_boutique: "jaune ct cts",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique. Pour en acheter, il faut lancer en #salon-du-hasard la commande « /bw ct X » (X remplaçant le nombre de CT achetées) et reporter le lien du message Discord (clic droit > copier le lien du message) dans le post d'achat.",
       imageUrl: "https://www.pokebip.com/pages/icones/objets/cs-normal.png",
       price: 425
+    },
+{
+      name: "CT de la bannière",
+      categories_videgrenier: "none",
+      categories_boutique: "bleu ctban cts",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique. Pour en acheter, il faut lancer en #salon-du-hasard la commande « /bw ct X » (X remplaçant le nombre de CT achetées) et reporter le lien du message Discord (clic droit > copier le lien du message) dans le post d'achat.",
+      imageUrl: "https://www.pokebip.com/pages/icones/objets/cs-normal.png",
+      price: 600
     },
 {
       name: "Cristal Z aléatoire",
@@ -4127,7 +4136,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/kmMvjVG.png",
       speed: "2"
 },
-//mega-gemmes	
+//mega-gemmes   
 {
       name: "Absolite",
       categories_videgrenier: "none",
