@@ -30,7 +30,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°083 - Direct Toxik",
@@ -342,7 +342,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/BbtKlZ1.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
     {
       name: "Orbe Vie",
@@ -772,7 +772,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/zinc10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Carbone",
@@ -963,7 +963,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/Dw1bpul.png",
       price: 500,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Plaque élémentaire Dragon",
@@ -3677,7 +3677,7 @@ var products = [
       imageUrl: "https://www.pokepedia.fr/images/d/d5/Miniature_Lougaroz%C3%A9lite_USUL.png",
       price: 600,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "Mimiquizélite",
