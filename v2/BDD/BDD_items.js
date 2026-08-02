@@ -121,7 +121,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 350,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Casque Brut",
@@ -372,7 +372,7 @@ var products = [
       imageUrl: "https://media.pokemoncentral.it/wiki/7/7a/Rocciafredda_IV_Sprite_Zaino.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Roche Royale",
