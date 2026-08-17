@@ -287,6 +287,10 @@ input#searchInput {
     border-radius: 8px;
 }
 
+.bw_item.none {
+    display: none;
+}
+
 .bw_item-top {
     height: 50px;
     border-radius: 8px 8px 0 0;
