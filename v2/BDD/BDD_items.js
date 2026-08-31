@@ -50,7 +50,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 
 {
@@ -1133,7 +1133,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°002 - Charme",
