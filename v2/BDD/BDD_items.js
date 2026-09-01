@@ -3,54 +3,54 @@ $(document).ready(function() {
 
 var products = [
 {
-      name: "CT N°001 - Bélier",
+      name: "CT N°014 - Acrobatie",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
+      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°030 - Aboiement",
+      name: "CT N°113 - Vent Arrière",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
+      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°060 - Demi-Tour",
+      name: "CT N°118 - Canicule",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
+      price: 425,
+      
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°136 - Champ Électrifié",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
+      price: 425,
+      
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°182 - Piqûre",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
       
-      qty_videgrenier: 0
-    },
-{
-      name: "CT N°083 - Direct Toxik",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
-      price: 425,
-      
       qty_videgrenier: 1
-    },
-{
-      name: "CT N°183 - Croc Fatal",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
-      price: 425,
-      
-      qty_videgrenier: 0
     },
 
 {
@@ -262,7 +262,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/Ddjf2UN.png",
       price: 500,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Loupe",
@@ -342,7 +342,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/BbtKlZ1.png",
       price: 300,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 0
     },
     {
       name: "Orbe Vie",
@@ -372,7 +372,7 @@ var products = [
       imageUrl: "https://media.pokemoncentral.it/wiki/7/7a/Rocciafredda_IV_Sprite_Zaino.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Roche Royale",
@@ -412,7 +412,7 @@ var products = [
       imageUrl: "https://i.imgur.com/lpqIrOl.png",
       price: 525,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "CS Coupe",
@@ -452,7 +452,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "CS Cascade",
@@ -472,7 +472,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/cordes10.png",
       price: 500,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pokéball",
@@ -852,7 +852,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Cherrim",
@@ -872,7 +872,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/jaboca10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Kika",
@@ -892,7 +892,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lansat10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Baie Lichii",
@@ -963,7 +963,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/Dw1bpul.png",
       price: 500,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Plaque élémentaire Dragon",
@@ -1133,7 +1133,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°002 - Charme",
