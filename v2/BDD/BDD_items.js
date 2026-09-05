@@ -262,7 +262,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/Ddjf2UN.png",
       price: 500,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Loupe",
@@ -712,7 +712,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/soleil10.png",
       price: 250,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 2
     },
     {
       name: "Pointeau ADN",
@@ -872,7 +872,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/jaboca10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Baie Kika",
