@@ -3942,6 +3942,14 @@ var products = [{
       price: 0
     },
     {
+      name: "Fragment Irisé",
+      categories_videgrenier: "none",
+      categories_boutique: "butin",
+      description: "Petit débris de pierre précieuse aux propriétés étranges. Lorsque trois fragments sont assemblés, ils permettent de doubler les gains de Pokédollars ou d'EXP reçue lors de la validation des Exploits de Combattants ou des Primes de recherche des Collectionneurs, à hauteur de 100 EXP / 1000p$ maximum.",
+      imageUrl: "https://i.imgur.com/HVB3bbF.png",
+      price: 0
+    },
+    {
       name: "Boîte Mystère",
       categories_videgrenier: "none",
       categories_boutique: "boite rare",
