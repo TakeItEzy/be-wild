@@ -240,7 +240,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/Ig5OrDt.png",
       price: 475,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Herbe Pouvoir",
