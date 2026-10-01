@@ -1,58 +1,56 @@
 $(document).ready(function() {
     //liste des catégories : yellow, ct, cs, survie, dressage, équipement, comestible, capture, évolutif
 
-var products = [
-{
-      name: "CT N°014 - Acrobatie",
+var products = [{
+      name: "CT N°055 - Tunnel",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
+      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°113 - Vent Arrière",
+      name: "CT N°061 - Griffe Ombre",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
+      imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°118 - Canicule",
+      name: "CT N°064 - Gonflette",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
+      imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°136 - Champ Électrifié",
+      name: "CT N°101 - Rayon Gemme",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
+      imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°182 - Piqûre",
+      name: "CT N°225 - Pression Extrême",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
+      imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
       
       qty_videgrenier: 1
     },
-
 {
       name: "Accro Griffe",
       categories_videgrenier: "équipement",
@@ -171,7 +169,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/feggJef.png",
       price: 575,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     
     {
@@ -242,7 +240,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/Ig5OrDt.png",
       price: 475,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Herbe Pouvoir",
@@ -332,7 +330,7 @@ var products = [
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Orbe Toxique",
@@ -452,7 +450,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "CS Cascade",
@@ -472,7 +470,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/cordes10.png",
       price: 500,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Pokéball",
@@ -602,7 +600,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abilit10.png",
       price: 250,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Grelot Zen",
@@ -712,7 +710,7 @@ var products = [
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/soleil10.png",
       price: 250,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 0
     },
     {
       name: "Pointeau ADN",
@@ -3941,6 +3939,14 @@ var products = [
       categories_boutique: "comestible butin",
       description: "Permet d’améliorer une recette de trois niveaux.",
       imageUrl: "https://www.pokebip.com/pages/icones/objets/tubercule.png",
+      price: 0
+    },
+    {
+      name: "Fragment Irisé",
+      categories_videgrenier: "none",
+      categories_boutique: "butin",
+      description: "Petit débris de pierre précieuse aux propriétés étranges. Lorsque trois fragments sont assemblés, ils permettent de doubler les gains de Pokédollars ou d'EXP reçus lors de la validation des Exploits de Combattants ou des Primes de recherche des Collectionneurs, à hauteur de 100 EXP / 1000p$ maximum.",
+      imageUrl: "https://i.imgur.com/HVB3bbF.png",
       price: 0
     },
     {
