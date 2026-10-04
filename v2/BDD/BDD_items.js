@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Superball",
@@ -600,7 +600,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abilit10.png",
       price: 250,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Grelot Zen",
@@ -890,7 +890,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lansat10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Lichii",
