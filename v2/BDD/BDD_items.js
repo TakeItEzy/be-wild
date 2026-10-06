@@ -39,7 +39,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°225 - Pression Extrême",
@@ -99,7 +99,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Cape Obscure",
@@ -280,7 +280,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kw7smHj.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Lunettes Choix",
@@ -330,7 +330,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Orbe Toxique",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
     {
       name: "Superball",
