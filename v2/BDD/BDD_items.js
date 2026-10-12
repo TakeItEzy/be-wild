@@ -19,7 +19,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°064 - Gonflette",
@@ -119,7 +119,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 350,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Casque Brut",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 4
     },
     {
       name: "Superball",
