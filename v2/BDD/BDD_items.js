@@ -280,7 +280,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kw7smHj.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Lunettes Choix",
@@ -370,7 +370,7 @@ var products = [{
       imageUrl: "https://media.pokemoncentral.it/wiki/7/7a/Rocciafredda_IV_Sprite_Zaino.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Roche Royale",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 4
+      qty_videgrenier: 6
     },
     {
       name: "Superball",
@@ -850,7 +850,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
     {
       name: "Baie Cherrim",
@@ -1201,7 +1201,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°009 - Crocs Éclair",
@@ -1571,7 +1571,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°046 - Avalanche",
@@ -2961,7 +2961,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°185 - Furie-Bond",
