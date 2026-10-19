@@ -300,7 +300,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/HBh3apu.png",
       price: 450,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Lunettes Sages",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 6
+      qty_videgrenier: 5
     },
     {
       name: "Superball",
@@ -620,7 +620,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/aube10.png",
       price: 250,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pierre Eau",
@@ -1571,7 +1571,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/dKxitmG.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°046 - Avalanche",
@@ -2961,7 +2961,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°185 - Furie-Bond",
