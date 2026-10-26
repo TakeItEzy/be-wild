@@ -9,7 +9,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°061 - Griffe Ombre",
@@ -19,7 +19,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°064 - Gonflette",
@@ -29,7 +29,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°101 - Rayon Gemme",
@@ -39,7 +39,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°225 - Pression Extrême",
@@ -49,7 +49,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "Accro Griffe",
@@ -169,7 +169,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/feggJef.png",
       price: 575,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     
     {
@@ -240,7 +240,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/Ig5OrDt.png",
       price: 475,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Herbe Pouvoir",
@@ -330,7 +330,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Orbe Toxique",
@@ -600,7 +600,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abilit10.png",
       price: 250,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Grelot Zen",
@@ -850,7 +850,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Baie Cherrim",
@@ -3964,6 +3964,36 @@ var products = [{
       description: "Permet de soigner un pokémon Obscur, et de l'utiliser en capture comme un pokémon normal. Lors de son utilisation en Progression Pokémon, vous devez choisir la forme complète ou incomplète :<br/>Forme complète : le Pokémon devient «&nbsp;immunisé&nbsp;» et retrouve son état normal.<br/>Forme incomplète : le pokémon conservera un boost de 15% (x1,15) permanent sur l’ensemble de ses statistiques, ainsi que son sprite Obscur, mais continuera à souffrir inRP.",
       imageUrl: "https://2img.net/i.imgur.com/t81acMy.png",
       price: 1000
+    },
+     {
+      name: "Permis Expédition",
+      categories_videgrenier: "none",
+      categories_boutique: "rare",
+      description: "Permet de faire apparaître, en expédition, des Pokémon d’un niveau de la zone de la moyenne du joueur, pour les <u>six</u> prochaines apparitions. Les gains associés seront ceux de la zone du Pokémon.<br/>Par exemple, si votre moyenne est de 40 (correspondant à la Z3), les Pokémon d’expédition apparaîtront niveau 31 à 45 et feront gagner 15 Exp en cas de fuite, de capture ou de KO.",
+      imageUrl: "https://i.imgur.com/9WoZudG.png",
+      price: 1000,
+      
+      qty_videgrenier: 0
+    },
+{
+      name: "Œuf Chance",
+      categories_videgrenier: "none",
+      categories_boutique: "rare",
+      description: "Permet de doubler l’EXP reçue par la fuite, la capture ou le KO des <u>six</u> prochaines apparitions.<br/>Cet item n’est pas cumulable avec le Level Booster.",
+      imageUrl: "https://i.imgur.com/rC4TGGJ.png",
+      price: 750,
+      
+      qty_videgrenier: 0
+    },
+{
+      name: "Level Booster",
+      categories_videgrenier: "none",
+      categories_boutique: "rare",
+      description: "Lors des <u>six</u> prochaines apparitions, le Pokémon sera au niveau maximal de la zone dans laquelle le joueur se trouve. <br/>Cet item n’est pas cumulable avec le Level Booster.",
+      imageUrl: "https://i.imgur.com/duec5Bj.png",
+      price: 750,
+      
+      qty_videgrenier: 0
     },
     {
       name: "Charme chroma",
