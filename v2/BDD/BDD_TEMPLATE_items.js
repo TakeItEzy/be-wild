@@ -3989,7 +3989,7 @@ var products = [{
       name: "Level Booster",
       categories_videgrenier: "none",
       categories_boutique: "rare",
-      description: "Lors des <u>six</u> prochaines apparitions, le Pokémon sera au niveau maximal de la zone dans laquelle le joueur se trouve. <br/>Cet item n’est pas cumulable avec le Level Booster.",
+      description: "Lors des <u>six</u> prochaines apparitions, le Pokémon sera au niveau maximal de la zone dans laquelle le joueur se trouve. <br/>Cet item n’est pas cumulable avec l'Œuf Chance.",
       imageUrl: "https://i.imgur.com/duec5Bj.png",
       price: 750,
       
