@@ -2,34 +2,24 @@ $(document).ready(function() {
     //liste des catégories : yellow, ct, cs, survie, dressage, équipement, comestible, capture, évolutif
 
 var products = [{
-      name: "CT N°055 - Tunnel",
+      name: "CT N°074 - Protection",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
+      imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
-      name: "CT N°061 - Griffe Ombre",
+      name: "CT N°097 - Vol",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
+      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
       
-      qty_videgrenier: 0
-    },
-{
-      name: "CT N°064 - Gonflette",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
-      price: 425,
-      
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°101 - Rayon Gemme",
@@ -39,17 +29,27 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
-      name: "CT N°225 - Pression Extrême",
+      name: "CT N°142 - Hydrocanon",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
+      imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°149 - Séisme",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
+      price: 425,
+      
+      qty_videgrenier: 1
     },
 {
       name: "Accro Griffe",
@@ -370,7 +370,7 @@ var products = [{
       imageUrl: "https://media.pokemoncentral.it/wiki/7/7a/Rocciafredda_IV_Sprite_Zaino.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Roche Royale",
@@ -500,7 +500,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/hyperb10.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Potion",
@@ -760,7 +760,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/calciu10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Zinc",
@@ -860,7 +860,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/cherri10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Jaboca",
@@ -900,7 +900,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lichii10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Micle",
