@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 5
+      qty_videgrenier: 6
     },
     {
       name: "Superball",
@@ -490,7 +490,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/superb10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Hyperball",
@@ -860,7 +860,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/cherri10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Jaboca",
@@ -1201,7 +1201,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/qB5NjTo.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°009 - Crocs Éclair",
