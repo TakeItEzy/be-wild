@@ -240,7 +240,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/Ig5OrDt.png",
       price: 475,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Herbe Pouvoir",
@@ -330,7 +330,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Orbe Toxique",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 6
+      qty_videgrenier: 0
     },
     {
       name: "Superball",
@@ -490,7 +490,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/superb10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Hyperball",
@@ -690,7 +690,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/nuit10.png",
       price: 250,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pierre Plante",
@@ -850,7 +850,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 3
     },
     {
       name: "Baie Cherrim",
@@ -890,7 +890,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lansat10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
     {
       name: "Baie Lichii",
