@@ -3969,7 +3969,7 @@ var products = [{
       name: "Permis Expédition",
       categories_videgrenier: "none",
       categories_boutique: "rare",
-      description: "Permet de faire apparaître, en expédition, des Pokémon d’un niveau de la zone de la moyenne du joueur, pour les <u>six</u> prochaines apparitions. Les gains associés seront ceux de la zone du Pokémon.<br/>Par exemple, si votre moyenne est de 40 (correspondant à la Z3), les Pokémon d’expédition apparaîtront niveau 31 à 45 et feront gagner 15 Exp en cas de fuite, de capture ou de KO.",
+      description: "Permet de faire apparaître, en expédition, des Pokémon d’un niveau de la zone de la moyenne du joueur, pour les <u>six</u> prochaines apparitions. Les gains associés seront ceux de la zone du Pokémon.<br/>Par exemple, si votre moyenne est de 40 (correspondant à la Z3), les Pokémon d’expédition apparaîtront niveau 31 à 45 et feront gagner 15 Exp en cas de fuite, de capture ou de KO.<br/>Cet item n’est pas cumulable avec le Level Booster.",
       imageUrl: "https://i.imgur.com/9WoZudG.png",
       price: 1000,
       
@@ -3979,7 +3979,7 @@ var products = [{
       name: "Œuf Chance",
       categories_videgrenier: "none",
       categories_boutique: "rare",
-      description: "Permet de doubler l’EXP reçue par la fuite, la capture ou le KO des <u>six</u> prochaines apparitions.<br/>Cet item n’est pas cumulable avec le Level Booster.",
+      description: "Permet de doubler l’EXP reçue par la fuite, la capture ou le KO des <u>six</u> prochaines apparitions.<br/>L'Exp Share n'est pas doublée avec cet item.",
       imageUrl: "https://i.imgur.com/rC4TGGJ.png",
       price: 750,
       
@@ -3989,7 +3989,7 @@ var products = [{
       name: "Level Booster",
       categories_videgrenier: "none",
       categories_boutique: "rare",
-      description: "Lors des <u>six</u> prochaines apparitions, le Pokémon sera au niveau maximal de la zone dans laquelle le joueur se trouve. <br/>Cet item n’est pas cumulable avec l'Œuf Chance.",
+      description: "Lors des <u>six</u> prochaines apparitions, le Pokémon sera au niveau maximal de la zone dans laquelle le joueur se trouve. <br/>Cet item n’est pas cumulable avec le Permis Expédition.",
       imageUrl: "https://i.imgur.com/duec5Bj.png",
       price: 750,
       
