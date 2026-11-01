@@ -2,31 +2,21 @@ $(document).ready(function() {
     //liste des catégories : yellow, ct, cs, survie, dressage, équipement, comestible, capture, évolutif
 
 var products = [{
-      name: "CT N°055 - Tunnel",
+      name: "CT N°074 - Protection",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
+      imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
       
       qty_videgrenier: 1
     },
 {
-      name: "CT N°061 - Griffe Ombre",
+      name: "CT N°097 - Vol",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
-      price: 425,
-      
-      qty_videgrenier: 0
-    },
-{
-      name: "CT N°064 - Gonflette",
-      categories_videgrenier: "yellow",
-      categories_boutique: "none",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
+      imageUrl: "https://2img.net/i.imgur.com/jbrh5O1.png",
       price: 425,
       
       qty_videgrenier: 1
@@ -39,14 +29,24 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
-      name: "CT N°225 - Pression Extrême",
+      name: "CT N°142 - Hydrocanon",
       categories_videgrenier: "yellow",
       categories_boutique: "none",
       description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
-      imageUrl: "https://2img.net/i.imgur.com/0vd9iuu.png",
+      imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
+      price: 425,
+      
+      qty_videgrenier: 1
+    },
+{
+      name: "CT N°149 - Séisme",
+      categories_videgrenier: "yellow",
+      categories_boutique: "none",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique.",
+      imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
       
       qty_videgrenier: 1
@@ -99,7 +99,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Cape Obscure",
@@ -119,7 +119,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 350,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Casque Brut",
@@ -169,7 +169,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/feggJef.png",
       price: 575,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     
     {
@@ -300,7 +300,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/HBh3apu.png",
       price: 450,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Lunettes Sages",
@@ -330,7 +330,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Orbe Toxique",
@@ -500,7 +500,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/hyperb10.png",
       price: 300,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Potion",
@@ -620,7 +620,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/aube10.png",
       price: 250,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Pierre Eau",
@@ -690,7 +690,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/nuit10.png",
       price: 250,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Pierre Plante",
@@ -760,7 +760,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/calciu10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Zinc",
@@ -850,7 +850,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
       
-      qty_videgrenier: 3
+      qty_videgrenier: 0
     },
     {
       name: "Baie Cherrim",
@@ -890,7 +890,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lansat10.png",
       price: 150,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 0
     },
     {
       name: "Baie Lichii",
@@ -900,7 +900,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/lichii10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Micle",
@@ -3964,6 +3964,36 @@ var products = [{
       description: "Permet de soigner un pokémon Obscur, et de l'utiliser en capture comme un pokémon normal. Lors de son utilisation en Progression Pokémon, vous devez choisir la forme complète ou incomplète :<br/>Forme complète : le Pokémon devient «&nbsp;immunisé&nbsp;» et retrouve son état normal.<br/>Forme incomplète : le pokémon conservera un boost de 15% (x1,15) permanent sur l’ensemble de ses statistiques, ainsi que son sprite Obscur, mais continuera à souffrir inRP.",
       imageUrl: "https://2img.net/i.imgur.com/t81acMy.png",
       price: 1000
+    },
+     {
+      name: "Permis Expédition",
+      categories_videgrenier: "none",
+      categories_boutique: "rare",
+      description: "Permet de faire apparaître, en expédition, des Pokémon d’un niveau de la zone de la moyenne du joueur, pour les <u>six</u> prochaines apparitions. Les gains associés seront ceux de la zone du Pokémon.<br/>Par exemple, si votre moyenne est de 40 (correspondant à la Z3), les Pokémon d’expédition apparaîtront niveau 31 à 45 et feront gagner 15 Exp en cas de fuite, de capture ou de KO.<br/>Cet item n’est pas cumulable avec le Level Booster.",
+      imageUrl: "https://i.imgur.com/9WoZudG.png",
+      price: 1000,
+      
+      qty_videgrenier: 0
+    },
+{
+      name: "Œuf Chance",
+      categories_videgrenier: "none",
+      categories_boutique: "rare",
+      description: "Permet de doubler l’EXP reçue par la fuite, la capture ou le KO des <u>six</u> prochaines apparitions.<br/>L'Exp Share n'est pas doublée avec cet item.",
+      imageUrl: "https://i.imgur.com/rC4TGGJ.png",
+      price: 750,
+      
+      qty_videgrenier: 0
+    },
+{
+      name: "Level Booster",
+      categories_videgrenier: "none",
+      categories_boutique: "rare",
+      description: "Lors des <u>six</u> prochaines apparitions, le Pokémon sera au niveau maximal de la zone dans laquelle le joueur se trouve. <br/>Cet item n’est pas cumulable avec le Permis Expédition.",
+      imageUrl: "https://i.imgur.com/duec5Bj.png",
+      price: 750,
+      
+      qty_videgrenier: 0
     },
     {
       name: "Charme chroma",
