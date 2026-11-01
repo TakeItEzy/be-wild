@@ -3769,7 +3769,7 @@ var products = [{
       name: "CT de la bannière",
       categories_videgrenier: "none",
       categories_boutique: "bleu ctban cts",
-      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique. Pour en acheter, il faut lancer en #salon-du-hasard la commande « /bw ct X » (X remplaçant le nombre de CT achetées) et reporter le lien du message Discord (clic droit > copier le lien du message) dans le post d'achat.",
+      description: "Permet d’apprendre la capacité associée au numéro de la capsule technique reçue. La capsule est à usage unique. Pour en acheter, il faut lancer en #salon-du-hasard la commande « /bw ct-bannière X » (X remplaçant le nombre de CT achetées) et reporter le lien du message Discord (clic droit > copier le lien du message) dans le post d'achat.",
       imageUrl: "https://www.pokebip.com/pages/icones/objets/cs-normal.png",
       price: 600
     },
