@@ -29,7 +29,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/wZib6U0.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°142 - Hydrocanon",
@@ -49,7 +49,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "Accro Griffe",
@@ -59,7 +59,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/EMfvS4n.png",
       price: 325,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "Bande Étreinte",
@@ -119,7 +119,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/JXMFf1A.png",
       price: 350,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Casque Brut",
@@ -440,7 +440,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "CS Surf",
@@ -500,7 +500,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/hyperb10.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Potion",
@@ -850,7 +850,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/abriko10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Baie Cherrim",
@@ -940,7 +940,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/sailak10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 //VIDE GRENIER EXCLUSIF
     {
