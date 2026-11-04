@@ -440,7 +440,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/permis10.png",
       price: 350,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 3
     },
     {
       name: "CS Surf",
@@ -630,7 +630,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/eau10.png",
       price: 250,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pierre Éclat",
@@ -650,7 +650,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/feu10.png",
       price: 250,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Pierre Foudre",
@@ -1691,7 +1691,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/UefGNge.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°058 - Casse-Brique",
@@ -2631,7 +2631,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kpYk19C.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°152 - Giga Impact",
@@ -2781,7 +2781,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°167 - Close Combat",
@@ -3271,7 +3271,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/g682r6i.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°216 - Danse Plumes",
@@ -3391,7 +3391,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/wm6COaR.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°228 - Dissonance Psy",
