@@ -9,7 +9,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/OQ9GjNb.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°097 - Vol",
@@ -940,7 +940,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/sailak10.png",
       price: 150,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 4
     },
 //VIDE GRENIER EXCLUSIF
     {
