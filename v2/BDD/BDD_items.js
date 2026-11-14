@@ -169,7 +169,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/feggJef.png",
       price: 575,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     
     {
@@ -270,7 +270,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/Z5yMoea.png",
       price: 325,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Lumargile",
@@ -310,7 +310,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/m3pTAID.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
     {
       name: "Mouchoir Choix",
@@ -350,7 +350,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/ZmPFyk1.png",
       price: 475,
       
-      qty_videgrenier: 3
+      qty_videgrenier: 2
     },
     {
       name: "Restes",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 4
+      qty_videgrenier: 3
     },
     {
       name: "Superball",
@@ -490,7 +490,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/superb10.png",
       price: 150,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Hyperball",
@@ -1151,7 +1151,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 1
     },
 {
       name: "CT N°004 - Hâte",
@@ -1641,7 +1641,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/RPwJTuI.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°053 - Estocorne",
@@ -1801,7 +1801,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°069 - Poing Glace",
@@ -2781,7 +2781,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/7Vurm5o.png",
       price: 425,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 1
     },
 {
       name: "CT N°167 - Close Combat",
@@ -3061,7 +3061,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/i4IuXqL.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°195 - Feu Envieux",
@@ -3201,7 +3201,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
 {
       name: "CT N°209 - Ocroupi",
@@ -3331,7 +3331,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/kljUs3u.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°222 - Abattage",
@@ -3411,7 +3411,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/pITz2Fs.png",
       price: 425,
       
-      qty_videgrenier: 2
+      qty_videgrenier: 3
     },
 {
       name: "Aérozélite",
