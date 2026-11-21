@@ -149,7 +149,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/AzL7Fnf.png",
       price: 475,
       
-      qty_videgrenier: 0
+      qty_videgrenier: 1
     },
     {
       name: "Dé Pipé",
@@ -330,7 +330,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/y8HycN7.png",
       price: 300,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 2
     },
     {
       name: "Orbe Toxique",
@@ -480,7 +480,7 @@ var products = [{
       imageUrl: "https://i.servimg.com/u/f30/20/48/90/66/tm/poke-b11.png",
       price: 50,
       
-      qty_videgrenier: 3
+      qty_videgrenier: 4
     },
     {
       name: "Superball",
@@ -1891,7 +1891,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/FPjRElo.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°078 - Draco-Griffe",
@@ -2741,7 +2741,7 @@ var products = [{
       imageUrl: "https://2img.net/i.imgur.com/DiRjhnc.png",
       price: 425,
       
-      qty_videgrenier: 1
+      qty_videgrenier: 0
     },
 {
       name: "CT N°163 - Ultralaser",
